@@ -1,0 +1,1082 @@
+Meet Meeting
+Sun, Jun 1, 2025
+
+0:10 - Conference Room (K) - Speaker 1
+1200 schools is not a lot.
+
+0:39 - Conference Room (K) - Speaker 1
+It's 25,000 kids can't build database it has 25,000 records I'm not like this isn't fucking 50 million people Right? It's 25,000.
+
+1:04 - Conference Room (K) - Speaker 1
+It's in memory.
+
+1:07 - Conference Room (K) - Speaker 9
+So I'm not daunted by the scale.
+
+1:12 - Conference Room (K) - Speaker 1
+I don't even know what you guys use, SuperBase or Firebase or whatever's behind it. They can all handle 25,000 records.
+
+1:29 - Unidentified Speaker
+Great.
+
+1:30 - Conference Room (K) - Speaker 1
+Enterprise, great. Great. Aurora, you can handle 25,000 records.
+
+1:37 - Conference Room (K) - Speaker 6
+Yeah.
+
+1:38 - Conference Room (K) - Speaker 9
+It's expensive, but definitely do it.
+
+1:42 - Conference Room (K) - Speaker 1
+Yeah, don't worry about the cost structure of the AWS set.
+
+1:50 - Conference Room (K) - Speaker 8
+That's all.
+
+1:52 - Unidentified Speaker
+Okay.
+
+1:53 - Unidentified Speaker
+Sweet.
+
+1:53 - Conference Room (K) - Speaker 6
+So that's, we're heads down now.
+
+1:58 - Conference Room (K) - Speaker 6
+interest in the pipeline.
+
+2:00 - Conference Room (K) - Speaker 6
+I think I've gone through everyone that's worked on Time Back, except Amanda Shipka. I sent her a message last night to meet tomorrow and ask her what processes are in place, what are you working on for AlphaLearn. Yeah, just trying to get a sense of where the student data is being centralized, but it's not in the SIS currently. So it's being tracked by the guides for their specific students. And if we want to have a dashboard of all the schools tracking how they're doing, we'd have to build that custom as well for GSA schools. So I'm going to get our feedback on that, how I should approach it. I've reached out to him a couple of times. I haven't gotten a response. I'll reach out again.
+
+3:06 - Conference Room (K) - Speaker 1
+He has a dash being developed on top of the one at TXL.
+
+3:15 - Conference Room (K) - Speaker 6
+Dash isn't the current system that's in place? I was told I'm not sure if this is true, but I was told that's being deprecated because the agency that worked on it no longer working on it. It breaks pretty frequently.
+
+3:36 - Conference Room (K) - Speaker 1
+So they're just not setting the project.
+
+3:38 - Conference Room (K) - Speaker 6
+It's been doing what it said.
+
+3:41 - Conference Room (K) - Speaker 9
+That's the intended replacement for that.
+
+3:43 - Conference Room (K) - Speaker 6
+I think it's the LMS for the high school based on the docs that I've read. Same doc, but the dash is being substituted. I'm not sure what the replacement is. I've learned the replacement for outflash.
+
+4:03 - Conference Room (K) - Speaker 1
+Yes, that's what I was trying to say. So there will be a dash replacement built on top of 1.10. OK. And there is two apps. There's Athena. It can be used for non-AMP as well. That is built on top of the Timeback Cloud. So all those will be on the Timeback Cloud. Help Learn and Athena on the learning side. And you'll be able to get the source code and customize it if you like how it's done. Very similar to the current alpha.
+
+4:49 - Conference Room (K) - Speaker 6
+There might be some student information. I'll reach out to AE studio, see if we can have an account that is for There's some students there. I can see other performance. That's anything you want to.
+
+5:21 - Conference Room (K) - Speaker 1
+Problem with it.
+
+5:22 - Conference Room (K) - Speaker 6
+So we're good on shadow days. Uh?
+
+5:27 - Unidentified Speaker
+The platform.
+
+5:28 - Conference Room (K) - Speaker 6
+That's down on it and a ton of coaches in the pipeline.
+
+5:35 - Unidentified Speaker
+So.
+
+5:35 - Conference Room (K) - Speaker 6
+Send a move.
+
+5:47 - Conference Room (K) - Speaker 1
+Great. If you have any problems as you're doing the platform, using it, you need help with the studio.
+
+5:55 - Conference Room (K) - Speaker 9
+Yeah, I was pretty responsible.
+
+5:58 - Conference Room (K) - Speaker 6
+And I was a studio.
+
+6:00 - Conference Room (K) - Speaker 6
+Yeah, I've had a few coaches asked to demo the academic software.
+
+6:05 - Conference Room (K) - Speaker 4
+And so I've got back in the jet, but there's a studio version that can show them or the who are learning as well. But Knowing that we can use ACE to get something.
+
+6:21 - Conference Room (K) - Speaker 1
+Yeah. On the coach part, one of the things that we want that's really important is getting a sort of the for both the coach and the students is a contract, not a legal contract, but a Yeah, alignment. So we need coaches to very much be. I'm committing to 2X learning. Outstanding academic performance, sort of core values alignment. That they sign up to. So that you don't get. People who just want sports and no academics, they understand their kids going to get put down. And then if too much of the coaches. You know, team is not learning, they're going to be turned off. You can't just use this and not deliver. You are setting the quality standard, right, for being on the platform. You also need the same thing for parents and kids to drive alignment, right? If I'm going to be at this program, this is where I'm going to find them too. Part of it. You could get. Our best contract is probably the one with Chris at Alpha High. We can modify it, but it lets you see, you know, what kids have to sign up if they're going to go to Alpha High. You know, I commit to get 15, before it was 1,500 SAT. You know, I commit to this, this, and this. Most schools don't do that. And it's super powerful. Make sure you have an anchor where the kids committed to it so the coaches can manage to that. You also. You guys also want to coach. Currently there would be nothing similar to We do it all with our guys, because our guys are important.
+
+8:50 - Conference Room (K) - Speaker 3
+So Chris can give us some of the guys too.
+
+8:54 - Conference Room (K) - Speaker 1
+We, you know, guys is all performance management, how we manage them. So Steph, you can give to Steph, which is, she has a system of what gets you promoted, demoted, fired. Right. And so it's basically, don't deliver the three commitments and hold high standards and high support. Right? High school is a little different in that the students can fire the coaches. And the guys. I don't know if coaches are going to want to do that. Most mature high school kids. But that concept, the hardest part How are you going to enforce quality across 1,000 coaches? Right? And when you're signing them up, you have to be right. You have to be right. It's just a holistic question.
+
+9:47 - Conference Room (K) - Speaker 2
+But when you're analyzing results, how do you know when a guide problem versus an academic team problem versus a student problem? Like you mentioned last week how a lot of the equator kind of just bombed the test because it didn't care. Does that always seem to be a guide problem?
+
+10:03 - Conference Room (K) - Speaker 1
+It's always a guide problem. Guides are accountable to the three commitments. So the coach is accountable. Now, the problem can be the student, because the guide hasn't motivated them. But fundamentally, it's the guide has to deliver the three commitments. The kid loves school, right? Learning 2X. And in this case, the sports the coach can find as to whatever it is. But you guys have to have a standard that it's not dick around. But like, I don't know if there's some athletic measure that coaches can have. But there's going to be something of, you know, think of the dysfunctional things you could have ties? And how would you stop that if you sounded coach?
+
+11:14 - Unidentified Speaker
+Right.
+
+11:15 - Conference Room (K) - Speaker 1
+Eight school, want to stick around all day? Come to my program.
+
+11:28 - Unidentified Speaker
+Right.
+
+11:31 - Conference Room (K) - Speaker 1
+Are you going to let it be on the platform? I don't believe in app or screen time. So you want to have those as part of it. All right, you need to make sure that these first ones you're getting, right, you want to make sure they're aligned. But 1,000, right, that's really hard. I can tell you there's 1,000 different views of how to educate kids and what is good. When you're dealing with people and stuff, they get very touchy.
+
+12:29 - Unidentified Speaker
+Right.
+
+12:30 - Conference Room (K) - Speaker 1
+The biggest issue with for-profit education is most of them don't give a shit about the academic. Right. Online colleges and shit like this. They're like, commits a kid, getting my student loan, pay the tuition, fuck it, I don't care if you learn.
+
+12:49 - Unidentified Speaker
+Right.
+
+12:49 - Conference Room (K) - Speaker 1
+And you have to have the opposite. No, I deal with it all the time. Even in my great ecosystem, I have people who manipulate the data. Makes it look like they're hitting a pretty good single man. So. All right, and that's going to be a very good thing, is you have to hold this high quality standard. Right, yeah. Let me just imagine, I would imagine 10 out of your thousand dysfunctionally. Ruining the reputation of all thousands. What are you going to do, stop it?
+
+13:45 - Conference Room (K) - Speaker 9
+Are you going to make sure that can't happen?
+
+13:50 - Conference Room (K) - Speaker 3
+I hate school choice.
+
+13:52 - Conference Room (K) - Speaker 1
+I fucking hate school choice. I'm going to go sign up on this Let the kids run around. I'm going to film it. But they don't do anything. There's no standards. I'm going to prove that school choice is terrible. You'll have those guys on your platform, right?
+
+14:17 - Unidentified Speaker
+And they will be broadcasted.
+
+14:20 - Unidentified Speaker
+What a joke it is.
+
+14:22 - Conference Room (K) - Speaker 1
+All right, get alignment, code of conduct for the guy, or behavior and expectations. And students, and the biggest thing on parents will be your academics. Right? Because that will be your point of fighting. When the coach is like, you can't do the sports in the afternoon because you didn't hit the academics in the morning. Yeah. Right? What do you do? Right? Jamal can tell you how hard the Jetsons are. They've been out for years.
+
+14:59 - Conference Room (K) - Speaker 9
+We'll ensure alignment. So. Along that we were discussing earlier about.
+
+15:08 - Conference Room (K) - Speaker 1
+In terms of life skills. Yes.
+
+15:12 - Conference Room (K) - Speaker 3
+Say a coach does two hours of school. The rest of the time they just that. Yeah. Yeah.
+
+15:26 - Conference Room (K) - Speaker 5
+Schools performing well academically.
+
+15:29 - Conference Room (K) - Speaker 3
+Are the life skills something that we should make like a requirement or are they learning most of the life skills to the final score?
+
+15:46 - Conference Room (K) - Speaker 1
+Well, if you feel you can that there's a test to pass for those life skills. Right. OK. We like do they frickin learn teamwork for playing football every day? I promise you.
+
+16:03 - Conference Room (K) - Speaker 9
+Right.
+
+16:03 - Conference Room (K) - Speaker 1
+Or whatever team sport they're playing. Right. But back to that, you this is where you get to set the standards. Right. And, you know, do you want it to be What do you do when Texas Sports Academy has a shitty reputation as a bunch of fucking sore losers, dicks on the field. You guys going to be excited to have them as part of your network, right? Or are you going to have teamwork and you're going to set a standard of behavior that is not alive, right? And what are they? Do you want, do you want to, Give them financial literacy, right? And public speaking ability or whatever. What are those life skills that you consider critical in addition to it? And that's back to this same thing with academics. You got to be 2X. These are the minimum set of skills that you have to have. And that's part of defining your products, right? The scale. And this is one where you can, you know, at three years ago, it's very loosey goose. Right. Like we were making them up in like the first two weeks. We're like, what are the check charts going to be? Right. We got Brian and we're like, let's make some check charts up. And then the next hour, like these are bad check charts and stuff. So, You can figure out what, you can evolve it and stuff, but I think you're going to want to be like, we deliver. Kids love school. I assume you want that. You have to have two hours or use my software. And third, the life skills. What is it? That's flexible, right? It doesn't have to be all these different ones, but what are great ones for sports. And I do believe you want, you do want to make sure you're like, yeah, we have good kids, right? We're, we're helping develop character, good behavioral stuff. This is your part of your thing that you have is you have domain. It's always hard when you're starting for it, but you know, it's one of those loops, which is by having high stakes, That's actually what is hard to sell at the beginning, but it's actually what then allows you to see going forward.
+
+18:50 - Unidentified Speaker
+Right.
+
+18:50 - Conference Room (K) - Speaker 5
+Right. And that. So. Earlier, they were asking the question. Yeah, everything is interesting. I think it's a little bit more similar. So my question was, how would you define the difference? Because if it's one of them on the same website, like in your brain, it's two different products. It's pretty close.
+
+19:44 - Conference Room (K) - Speaker 5
+I'm lost.
+
+19:45 - Conference Room (K) - Speaker 1
+Yeah, I believe you want it to be as close as you can, right? There shouldn't be. Like, why don't you want it? On these other ones, right? And then you have some cost things, and it's a micro school, or it's going to be a big school, a big campus. You know, there'll be differences, but fundamentally, the core of it is, right, we want a program that has high standards for the kids, that teaches them life skills and academics. Right? It's like, it's more developed. You don't have to put all the, oh my God, you have to do all these things. I'm a fricking 10 person micro school in rural Texas. I can't do it all, but I believe you guys should aspire to. We create workshops that teach these life skills that are on our platform for all these coaches to use, right? Like, you know, your teamwork one, leadership one, the refs, student plays the ref and whatever. Or you have that as a good one guy, you know, I'm a fricking coach. I've never done that before. Oh, that's a good idea. They can pull off your thing. Just, you know, alpha has a whole library of all workshops. And so like a new guide, like in Miami, the new guides looking at them and they pull down financial literacy. Right. This is a, I remember who did it, but, and then he's like, oh, I want to make some adjustments to it. And he actually built a better one. And then now he'll present it during staff days next week. Probably adopt it for Austin. But it's like this library of workshops and ideas. And you want to take the best ones.
+
+21:41 - Conference Room (K) - Speaker 9
+But that should be part of your platform is those life skill workshops, right?
+
+21:48 - Conference Room (K) - Speaker 1
+Full library. That's why coaches are going to want to be part of it. And as you're successful, you're going to get coaches who want to get on your platform and be like, I want to be the best one on, right? And what does that mean?
+
+22:15 - Conference Room (K) - Speaker 3
+Yes, a leaderboard for all of us.
+
+22:18 - Conference Room (K) - Speaker 1
+Correct. And you're just like, you have to have leaderboards on all the dimensions of three commitments as a quality control, as you want to be super transparent. Just like I can get the ratings, right? You've got to have all the ratings and the feedback from the kids and all the stuff so that that's how you're going to control, right? Parents are going to see transparency. Apparently, oh my god, this coach is it everybody hates kids hate it. They're not learning, right? Yes, and and this is where you'll have to you know have standards but and they just need coaching I mean the coaches just need Well, what do I do when they don't learn in the morning? Right. Well, they can't do the work. They can't do sports afternoon until they finish their lesson. Some of the parents don't care about 2X learning. Can't come to your school unless they do it. Right? That's going to be a common discussion coach. Right? And they're like 2X learning is too hard for my kid.
+
+23:29 - Conference Room (K) - Speaker 1
+My kid's blah, blah, just all that.
+
+23:47 - Unidentified Speaker
+It is my opinion.
+
+23:58 - Conference Room (K) - Speaker 1
+I mean, it happens everywhere.
+
+24:00 - Conference Room (K) - Speaker 5
+You're always, you're always dealing with people choosing us because they love life skills. They love the fact that their daughter said, I gave a TED talk on negotiating the $5,000 sales for the country to execute second. We're a lot better at sports. I think that that happens in a disproportionate way. I think that just go to Lake Travis, present them with two, your child could be going to It could be a 2X worker that makes $500 a month for a small business that they have. Or they could be a 1.2X worker. They could be a 1X worker. You never start quarterbacking on Lake Chavis. In Lake Chavis, they don't care. It's not even close. It's not even close. So I say that to say, like, academically, because they're such a blow. They're so blind. I have to just from the jump. If you say yes, sign it. There's no just you can go. That's fine, but they still got to get into our credit. No, it's you know, it's the sports.
+
+25:12 - Conference Room (K) - Speaker 1
+It's the sports movies you have to play where the coach has a higher standard. Right? Then the parents to play on the team, right? You have to get a B to play on my football team. All frickin' parents in the movie are yellin' at him, bullshit. Coach Carter, Coach Rick Carter, same thing. And he's just like, give me a break, right? And that's just what it is, right? Is high standards. Most parents don't believe in high standards, high support. They just don't. And every child psychologist, every development expert will tell you that's key. Great coaches know that, right? And that is what we do in our schools. And we do it, you know, and the coaches need to do that for their, for these, and that's what builds awesomeness. And it's also what makes kids love the school. It's very hard in a low standard school to actually make kids love it because there's no expectations and there's no, there's nothing to teach. Live them and excite them. And then you just get in, you know, the kids today don't learn. They dick around all day and they fucking hate school. They're just wasting their lives away. All these things you need, right? Do you love gym class where you sit in the corner and do nothing? You're like, no. Right. Right. But they'll fight you on, you know, OK, I don't want to. And that's the magic part, that it works because of high standards, even though that's what the parents fight against and the kids fight against. But then it's until they get into the positive cycle of it. And then it's like, OK, it's all work.
+
+27:06 - Unidentified Speaker
+I had a question about TSA marketing.
+
+27:09 - Unidentified Speaker
+Go ahead.
+
+27:10 - Unidentified Speaker
+And it's with the entire marketing funnel.
+
+27:14 - Conference Room (K) - Speaker 4
+So a couple days ago or last week, we talked about taking over the TSA marketing for all 1,200 schools. And we've been working on the transition now. And in the marketing funnel, there's many different steps. All the way down to the marketing that individual schools will do as well. And so, for example, TelcoDR had a foreigner events, and we were asked, like, do we create the flyers for that as well?
+
+27:44 - Conference Room (K) - Speaker 5
+Who owns that?
+
+27:45 - Conference Room (K) - Speaker 4
+And so that's what we're looking to get a little bit more clear on, is to determine for the specific marketing for Lake Travis, are we going to be leading that as well? Do we work with Kelly Davis and them to organize that? Or is that going to remain?
+
+28:02 - Conference Room (K) - Speaker 1
+No, it's 100% going to be yours. Because whatever the Pop Warner event you're doing is, or whatever the events are, your 1,200 schools are going to have events that you, Brooke Sherps, applaud. The Pop Warner is a specific case of, the general case of, OK, we're going to have an event to drive people. Right? And we need a flyer for that event. Is there anything special about the, anything that's special about the Texas, the flagship one? You should just figure out how it's like all the other ones. Right? When you think of your pipeline, The way you should look at it is, there's no difference between putting in 25 people into Flagship and putting 25 people into Lubbock, Texas. It shouldn't be different. Now, Texas Sports Academy may be doing some stuff that's different. It doesn't matter. You are building for 1,200 schools, and if you build it for As a byproduct, it'll fill what?
+
+29:26 - Conference Room (K) - Speaker 5
+So, right now, if you look at the data from the site, the dash, you still want that data track. You guys should just do the same thing, which is don't worry about that.
+
+29:50 - Conference Room (K) - Speaker 1
+Build your stack for 1,200 schools. And as soon as your stack would fill 1,200 schools, I'll add one called Flex. They're doing stuff right now, right? But build your stack that fills 1,200 schools the same way you're SISD.
+
+30:17 - Conference Room (K) - Speaker 4
+So ideally the marketing for each school will be the same, whether it's flagship or other ones.
+
+30:24 - Conference Room (K) - Speaker 5
+It's going to be the same marketing process.
+
+30:27 - Unidentified Speaker
+Yeah.
+
+30:27 - Unidentified Speaker
+Yeah.
+
+30:27 - Unidentified Speaker
+Cool.
+
+30:28 - Unidentified Speaker
+Yeah.
+
+30:28 - Unidentified Speaker
+Right.
+
+30:28 - Unidentified Speaker
+Yeah.
+
+30:29 - Unidentified Speaker
+I imagine the marketing.
+
+30:30 - Conference Room (K) - Speaker 4
+But they're all going to have different, they're all going to have different events.
+
+30:36 - Conference Room (K) - Speaker 1
+There's going to be, Oh, we're having a basketball tournament here for this thing over here or wait, it's freaking baseball season. And this happens. Right? Every sport's going to have different things. Right? But you're going to have events, and you're going to drive people to events. Right? And then, I mean, it's just, it's an event in the funnel. So say you guys had more events coming up.
+
+31:02 - Conference Room (K) - Speaker 4
+It would be to talk to us. It would be to organize the flyers for them.
+
+31:08 - Conference Room (K) - Speaker 4
+What are you going to do for all your other stuff?
+
+31:13 - Conference Room (K) - Speaker 4
+we would create flyers that could work for every school out there.
+
+31:17 - Conference Room (K) - Speaker 2
+We're not going to do event-specific flyers for each coach. Instead, it would be like a default template, because we don't think that scales to homeowners. If we're trying to create flyers for every single coach at each of these schools for all their specific events, instead, it would be like a template of, this is what your flyer should contain, and then your coach.
+
+31:37 - Conference Room (K) - Speaker 1
+And give them the same template flyer for that? What's the difference between what you think they need and what your template's not going to do?
+
+31:46 - Conference Room (K) - Speaker 2
+It would require some more conclusions for just, you know, taking our template and then converting that to their template.
+
+31:54 - Conference Room (K) - Speaker 1
+Back to whatever you have to decide. We're going to allow this amount of customization.
+
+32:01 - Unidentified Speaker
+Yeah.
+
+32:01 - Unidentified Speaker
+Gotcha.
+
+32:01 - Conference Room (K) - Speaker 1
+Right. Right. We're going to allow this amount of whatever that is, it's going to be fine for like, right. Just build your solution and whatever you build, if you're going to recruit 25,000 kids, right. Getting a hundred, 25,100, 25,200, which is your extra flagship ones is a rounding it. Surrounding or do not focus Right give me 25,000 kids As a side effect if you get in 25,000 kids will fill sports care collection Right the the upper funnel shit you have to do to get 25,000 things Right You know which upper funnel you have to do for that? Right? You have to build a McKinsey level.
+
+33:14 - Unidentified Speaker
+Right?
+
+33:15 - Unidentified Speaker
+Yeah.
+
+33:16 - Unidentified Speaker
+Right.
+
+33:16 - Unidentified Speaker
+Yeah.
+
+33:17 - Conference Room (K) - Speaker 2
+I mean, we can talk you through our plan for that if you want.
+
+33:24 - Conference Room (K) - Speaker 1
+But that helps. Yeah.
+
+33:26 - Conference Room (K) - Speaker 4
+So we'll, sounds like not focus on that. But just focus on building the marketing funnel to reach 25,000.
+
+33:37 - Conference Room (K) - Speaker 1
+Build that and then we will have out of those 1,201, we will have a flagship plan.
+
+33:57 - Conference Room (K) - Speaker 5
+As we got to the track, silence. Sure, so what are you guys going to do?
+
+34:29 - Conference Room (K) - Speaker 1
+You're going to be running events that have 10 or 15 people showing up for a thousand schools. How are you going to handle it? The tracking or whatever you're doing for your thousand schools? Whatever you're going to do for your 1,000 schools, you want to also do a budget.
+
+34:58 - Conference Room (K) - Speaker 5
+Budget. So I think one of the frustrations is asking $10,000 to give to people.
+
+35:06 - Unidentified Speaker
+But what do you make of that?
+
+35:09 - Conference Room (K) - Speaker 5
+I don't think that they have a number. But this is how much. We talked to Arthur and David and they didn't have a number.
+
+35:25 - Unidentified Speaker
+They what?
+
+35:26 - Unidentified Speaker
+They didn't have a number.
+
+35:29 - Unidentified Speaker
+How much to spend?
+
+35:31 - Conference Room (K) - Speaker 2
+The TSA marketing budget.
+
+35:33 - Conference Room (K) - Speaker 2
+So in your email you mentioned giving us the TSA marketing budget but we asked Arthur.
+
+35:42 - Conference Room (K) - Speaker 5
+Oh they don't know how big They don't know what it is yet. Part of the challenge.
+
+36:09 - Conference Room (K) - Speaker 1
+tomorrow. But the funnel you're building, right? So the most important thing you do is how are you going to drive right? A million freaking people Yeah. Right. In Texas, to watch your videos. Right. You have to create awareness. So in a million people. Right. Million people. So, yeah, I mean, we have two strategies. I mean, we have two strategies right now.
+
+36:53 - Conference Room (K) - Speaker 2
+One strategy is just full calling these coaches. We can get like we have a list. I mean, we think there's around three thousand, four thousand just to these academies where where you have a training facility, you have a coach, you have an established network of students. That's one of the strategies. The other strategy is just going hard on YouTube, basically doing Kinsey Playbook. So we want to have 10 different channels on YouTube Shorts, where we're using AI-generated creators. And one of our spiky POVs is rather than talking about school, we talk about sports. Because parents, children, whatever, they want to into sports rather than figure out tools. So yeah, we're just thinking about like, you know, characters that we can use. We'd like to use characters obviously in the public domain. So we're thinking about like, you know, Theodore Roosevelt, Don Heisman, James Nassman, just using like AI generated videos of them. Another is just leaning on the coaches of TSA. So obviously TSA already has amazing coaches, Jamal, Brandon, helping them scale with AI video. So each of them have their own channels and we build brands around them that'll drive traffic to TSA. That's another, that's another avenue. And then the third thing we're going to be working on is we're going to be meeting with Garrett this week. So, another one of our spiky POVs is in terms of the video content we create on the TSA main channel, with most private schools, it's directed towards parents, right? They're trying to advertise it to parents, like, you know, here's our school safety officer, whatever. There's no competition. The videos are super boring. Instead, we want to create content that appeals towards kids, middle school kids, so that every kid in the country is like begging their parents, like, I want to move to Texas so I can go to a TSA. And that's what we want to work on doing in terms of long-form videos. And then also coming up with workshops where they have awesome onliners that translate into great thumbnails and great YouTube content that has high engagement. So that's sort of a high-level overview of the strategy.
+
+38:57 - Conference Room (K) - Speaker 4
+And the newsletters, too, right?
+
+38:58 - Conference Room (K) - Speaker 2
+And the newsletters, too. The newsletters are mainly for capturing email addresses. So obviously, having a list of email addresses is great because you're not limited by an algorithm. So building up these newsletters, we've hired writers. And so what are you going to have for August this year?
+
+39:24 - Unidentified Speaker
+What do you have two months?
+
+39:29 - Conference Room (K) - Speaker 2
+So for yeah, so for building the building the top of funnel building all these channels and stuff. Um, August is, is pretty ambitious. Instead, our, our strategy for that is full politics coaches, because we have a list of 3000 leads. We can, I mean, with just two full callers, we're booking like five meetings a day with coaches. So we can, we can scale that up. We're bringing on board to more, um, to mobile callers and scaling up that team to where we're booking, where we're doing like a couple hundred.
+
+40:04 - Conference Room (K) - Speaker 1
+Okay. Yeah.
+
+40:07 - Conference Room (K) - Speaker 2
+And these are with coaches with established paradigms.
+
+40:11 - Conference Room (K) - Speaker 1
+What is the content that you're going to use? That's going to give you the million.
+
+40:19 - Unidentified Speaker
+Millions of people in Texas watching your stuff.
+
+40:23 - Conference Room (K) - Speaker 1
+What is, what's the content that's going to get a billion channels? I'm doing shit, whatever that doesn't, whatever anybody can say, right? What is the, What is the, and sports, we're talking about sports, we already have 10,000 sports YouTube channels. What is the content, what's your point of view about the content that's going to get people to engage with YouTube?
+
+40:53 - Conference Room (K) - Speaker 2
+Well, part of what we're, I mean, in terms of, part of what we're using is just leaning on TSA's current content, just their current It's like they're at the ceiling with that person. Um, so turning that into an interesting sort of YouTube video that appeals towards kids, but sports gathering content has not got millions.
+
+41:16 - Conference Room (K) - Speaker 1
+Yes. It does not drive tons of engagement.
+
+41:19 - Conference Room (K) - Speaker 2
+I meant the actual, like the underlying, not the, not the format.
+
+41:23 - Conference Room (K) - Speaker 2
+I think the formatting is because, uh, sorry.
+
+41:25 - Conference Room (K) - Speaker 2
+Yeah. Uh, the formatting is wrong, but, uh, changing the format.
+
+41:29 - Conference Room (K) - Speaker 3
+Yeah. Yeah. So I think basically like the, Content is there, but it's just not shown the right way. So in terms of The selling trip We can Take so basically the content from the selling trip. We have all the videos. We have the videos We're gonna have a homeless videos, too So basically like that content somehow it's gonna get posted somewhere and it's not gonna get that much engagement but in our opinion like Um, really, um, captivating. Uh, there's, there's one of this. If we're creating videos that are really captivating, then that video should be, we took then we took 20 kids that never sold before. And then they just sell for three days across the Bahamas. And it's like that whole video, like that kind of thing. And then. That video is much more exciting, and then we create more of those. It's a summer right now, so we're not going to have as many opportunities to do it. So we have to do it really well the times that we do it. But I think that kind of content is also really good so that when coaches are pitching parents, they can include this type of content in their presentation so that the parents are seeing that kids doing their kids currently can't do and they're seeing them do that and then kids are also getting really excited when they're seeing those kids do something super fun and they're wanting to attend the school. So basically that kind of content has two, it kind of kills two birds with one stone in terms of creating like that amazing kind of catchy YouTube content like this is what we started with and this is the last result watch this to see what happened in between. Um, and then, uh, that kind of thing. And then with, uh, Gary, um, uh, working with us on some of this stuff, I think we have a good chance to like take his knowledge and make it, make our videos it and get to those thousands of people that we want to meet. So that's so It's more about the positioning of the content rather than where we're at.
+
+43:56 - Conference Room (K) - Speaker 1
+And what is the, and middle school is mostly what these are all going to be, and you're hitting middle school.
+
+44:04 - Conference Room (K) - Speaker 1
+And what is the message to a middle school kid that's going to be exciting and viral?
+
+44:11 - Conference Room (K) - Speaker 3
+It's the most fun school I've been to.
+
+44:14 - Conference Room (K) - Speaker 9
+That's all. Yeah, that's me.
+
+44:17 - Conference Room (K) - Speaker 1
+And how, what, what, when you're, what do they need to see? Right back to the thumbnails, right? What is it that you're like, this is what we want to show.
+
+44:29 - Conference Room (K) - Speaker 2
+It's that you're doing things at this school that you can't do anyways. So like, you know, we took 10 kids who've never sailed before and we sailed to Newport for credit or, um, you know, another idea of potential workshop is like, we had kids design a nutritional plan for fresh water or something like that. Like just things that, you know, are shocking to them that seeing that, oh, other kids.
+
+45:00 - Conference Room (K) - Speaker 3
+And then also one thing we talked about with Jamal is like having, um, them helping us out with, with, uh, workshops that are specifically made. For us to get really good content. And so we came up with ideas, we created an idea generator for workshops that we can create really good content. So those are some ideas that we had, but I think the main thing is just...
+
+45:27 - Conference Room (K) - Speaker 1
+And what is it, every time you get a coach to sign up, what content are you gonna generate? How's that gonna help you thrive? Across the system.
+
+45:38 - Conference Room (K) - Speaker 2
+So one idea we had is in terms of individual coaching, like having them give coaching tips, right? I mean, there's a lot, but at our scale, you can have a huge amount of content being produced. And then we're still thinking about either coaches having individual channels or having a TSA basketball tips, TSA football tips, whatever, different channels like that. And then just pulling in content from all of our different schools, and then aggregating them on the chat.
+
+46:13 - Conference Room (K) - Speaker 4
+And in addition to that, when the new coach school comes up, of course, have the local people come out to make sure those interviews happen so the local community is aware of what's going on.
+
+46:27 - Conference Room (K) - Speaker 1
+And how are you taking that? Local media making it bigger than local. You don't use local media for reach. Nobody fucking watches it. Right? It's just credibility. Right? Nobody watches ABC News, really. But the ABC News segment on your website or on Max McCorkel's Instagram gets 20 million views. Yeah, we haven't talked about this fully yet one option is Yeah, like Max McCorkel's going on her summer concert series So she's just literally going 25 cities and in Jalopnik, right? And in each city, she's going to the Alpha Micro School. The local news will be there. And some of them will actually have potential prospective parents who will be on the local news where they're like, you know, this is totally different. And fully committed to bringing this to Charlotte, North Carolina. You know, being a founding family, the interviewer is going to ask, you know, the reporter is going to be like, this is totally crazy. Like, hey, I have tutors and interview this mom, right, in the building and all this stuff. And then Max McCorkel will provide B-roll. Right for the what charlotte whatever then they'll go they'll talk to the local they're gonna talk to the newspaper or radio station whatever's there the local media and then they have a parent event right and so then she's been that you know and so that's like during the day then at night she'll get a couple hundred parents because of her social media Charlotte, North Carolina And they'll come and do the event and then after the event they can sign up for a shadow day Right, and then an elf guide comes and runs a shadow day She's literally gonna do 25 cities in 25 days She'll announce in August You know summer concerts But the and then the but the hype about it. It's just the rolling thunder You know the you know You're trying to build up around press. You're trying to create momentum. God, it's just a fucking constant, right? You're just like, oh my God, another city. Oh, it's another fricking news article. Oh, it's a different mom this time, right? It's not the same. It's new content that then is being generated, getting out. You have 1,200, right? You should be thinking right now it's August. It's whatever these local you're cold calling get up. You don't have you don't have press and wants to talk. Right? Yeah. But as you get this coach, it's a new story. Right? Like, oh my god, this coach who's been he's been doing this This facility, it's turning into a school, right? New school choice, dah, dah, dah. And then all of a sudden, and how many of those are you going to have by August, right? I don't know what your plan is right now, how many coaches are going to be signed up, right? But in July, if you could have, right, getting all those, getting as many lined up, right, where it's like, Parents need to be like, oh my God, all this stuff has happened. There's all these schools opening, right? All this change is happening around me, right? These kids, you know, you have the shadow, the sports stuff, you should, you know, you have the pay view there, whatever, during the shadow day, talking to the kids, you know, like, it's just, you know, Oh my God, I get to do this and this gets me school. This seems a lot better than my normal school, right? And your strength is your 1,200 microscopes. But it just has to feel you're everywhere. Like, Max McCorkel feels like Alpha's fucking everywhere now, right? It's just like, she can. She can announce it at a sitting, right? It's everywhere, right? You capture, that's what you do when you It's like Chatuchak Tea. They own the brand, right? Nobody uses fricking Claude clients, right? Nobody, right? It doesn't matter that they're fricking injured, it's way better. No one knows it, right? No one's ever heard of it, right? And that is what you have to capture is all this stuff, right? And that is what you have to do for Topp to own Topp. So, so your current stuff, you need to amp up on a, what is your, you know, what are you doing? That's going to drive Instagram, right? Every mom is on Instagram. How are you going to drive every sports dad? Are you going to reach and every mom it's like every Didn't day there's content that comes through that gets shared by all of us, right? Yeah Right and you you need to find those networks YouTube Okay, but the social media network of the mom groups Right, there's all these radical crazy-ass sports models Right. Yep And they need to be forwarding your stuff and like, Oh my God, I need this. Right. And some of its coaches being like, yes, I'm now doing this. Right. And it's just an endless, you know, when you think of the year, it's just an endless, I mean, you're gonna be doing a hundred. Right. You guys are doing a hundred a month. Right. Let's see. It's like another coach being like, this is what I'm doing. Yes, of course. Every middle school kid should be doing this. And it's another one, another fricking rural KVU. Oh, it's a tennis guy. You've got the soccer guy.
+
+53:39 - Conference Room (K) - Speaker 1
+It's a basketball guy.
+
+53:40 - Conference Room (K) - Speaker 1
+It's a football guy. You need to create this program of just this overwhelming, saturate the top of the funnel. Right. How many, you, you need a goal for using Right. Like to give you an example, I mean, you guys need to be like it. I mean, at a minimum, at a fucking minimum, you have to be like at what one of our high school kids. Right. Like Sloan Price, one high school got a billion views in the last four months. Right. A million followers and a billion views. So how many views are you going to get between now and August and then August to December? Right. A billion. Right. A million followers. They need, right, they need your build an audience goals to And the way to jumpstart all that that you can do is with, you know, the local media credibility, stories, coaches, right? You gotta, right? But that's it. That's every article about school in the next year should be about Texas sports. So, and as part of that, though, you have to understand, right? Like the kids who build their audience, they understand their audience and they know what content they want, how to feed them. Right. They're constantly experimenting. What, what causes sports moms to forward this to all their friends? Cause that's all Tik TOK. Right. Right. To get a billion views on Tik TOK or Twitter, you're like, what it causes people to forward. Right. The engagement out.
+
+55:40 - Conference Room (K) - Speaker 4
+We'll experiment with a lot of ways to feed the flame. Try to find the mom super connectors. I'll try, uh, you can like create controversy as well.
+
+55:49 - Conference Room (K) - Speaker 1
+There's a lot of tactics out there, but the core of it is you guys have to understand which content is right. Great content creators know what their audience wants. That's why they're great. Cause they build the content that they want. Yeah. McKinsey can look at a video and be like, I know my audience is going to want Right now, it's not always right. Like she posted a Katy Perry thing and everybody hated it. Well, people like Katy Perry, right, but whatever. But in general, you will know. You can't predict each individual video, but you could, right? Yeah, totally.
+
+56:26 - Conference Room (K) - Speaker 2
+I think part of that comes through iteration, just posting every day. Yeah. Correct.
+
+56:32 - Conference Room (K) - Speaker 1
+But that's where, back to your goals, your marketing thing has to be, Right. A billion views. A million followers. Right. You have to be you're not going to be able to get out because you're not going to have the top of funnel. Right. You're in the problem Jamal has, which is Jamal can't put 100 people in a room to listen to. They did. If there's 100 people in a room. Like Max McCorkel can fill Jamal would have Sports got to be full. Right. I got it.
+
+57:10 - Conference Room (K) - Speaker 5
+But I didn't do it.
+
+57:12 - Conference Room (K) - Speaker 5
+Other than that, I'll have to come down here. I'll live in a studio and make all of this stuff.
+
+57:21 - Conference Room (K) - Speaker 1
+Six hours in the classroom is crazy.
+
+57:24 - Conference Room (K) - Speaker 5
+School can be dangerous.
+
+57:25 - Conference Room (K) - Speaker 1
+All this kind of crap, I'll do that.
+
+57:29 - Conference Room (K) - Speaker 5
+Until you get your 15 soldier signed up, and you have this diverse tapestry, No, she can't do Sports Academy.
+
+57:40 - Conference Room (K) - Speaker 1
+Yeah, she can't do GT school.
+
+57:44 - Conference Room (K) - Speaker 5
+She just what's happening.
+
+57:47 - Conference Room (K) - Speaker 1
+She does alpha moms really well Right, that is her because she has domain expertise. She is not just none of GT She's right. And like the GT parents are like, this is awesome. Right. She's just, it's, you can only do your target. Right. Cause it's authentic. Anyway, that you got to get that for sports Academy and you have to own the top of funnel. You, you own, that is the asset you guys are building. Right. I mean, in the short term, you're, you're trying to jumpstart. Okay, they're the coaches and they have their people and stuff. But the asset you have to be able to do is I can fill a school. Yep. Right. And you're going to fill a school by being like, it's Texas Sports Academy. It's also important because if you control whoever controls students as all right, you control the students should have all the power. And if you don't have the power, the coaches are gonna tell you to fuck off on whatever standard try to impose or anything like that, because you're going to leverage, right? No, all that matters is if you're not sending it to them, you're sending it to the guy next to them. When you have 25 kids paying 15 grand, there's going to be a coach who will take them, right? There'll be a coach who will take them, right? And that needs to be your control. And you're like, no, I'm turning off your leads, right? I mean, that's what Shopify does on their ad if you don't follow their fricking, right, TOS. So anyway, that's, but you have to, that is the asset you're building. And because you're first mover and all these things, you guys get to be that person, right?
+
+59:45 - Conference Room (K) - Speaker 3
+So yes, that's a good, this is good because basically our focus will still be on the software, but that's not, the true asset, the true asset is the software. And so I think like, that's.
+
+1:00:01 - Conference Room (K) - Speaker 1
+The software enables the ability to own it, right? It's just like, it is like the two hour learning, right? The two hour learning to this point, people are like, they don't care about that next. Right. But it's what enables, it's what enables you have to, be able to compress the time, because you've got to free the rest of the day up, right? And the parents have to feel like, OK, the kids are learning, right? And all the power comes now because you have the, right? Last Sunday, I was reading what AI is saying about how great our schools are, right? It's literally like, there's no school. School now is like, there's no school in the United States who's good. There are three schools globally There's a special one in Russia for the best scientists, right? You're better than all the Singapore ones. There's this school in South Korea. And then there's a Chinese one, right? And those are the only ones that are as good as GT school. And if you keep up this GT school performance, they're going to be Fields Medal winners and Nobel laureates, right? Yeah, no, there's a 10 year old Ted talk when you show hers and she came in second. In the history and, you know, fourth in the spelling bee when she's fucking 10 years old, right? And academically, she's not even the best person at, forget GT sport, right? And you'll just have her content, right? And you're like, look at this, right? But the point of all that is that's what enables all the free time, right? And what enables the sports, you're like, oh my God, look at this great stuff. It reinforces your overall cycle of high standard. But yes, long term, schools are brands. Now, brands aren't built on slogans. They're built on product. No brand is built on slogans. It's built on product promises. Apple has a good brand because their fucking product's great. Their product fucking sucks. You wouldn't have a good brand. Everybody's like, oh, there's branding. It's not independent of the product. Alpha has a great brand now because we deliver a better product than every other private school. You guys have to deliver a better sports day, academics, life skills, love of school, sports, coach, than anything else. And it's going to be like, oh my god. And that's what will build your brand because people are like, oh my god, this is so much better than everything. Else.
+
+1:02:40 - Conference Room (K) - Speaker 9
+But yes, what you get is the leverage of just the concept.
+
+1:02:46 - Conference Room (K) - Speaker 1
+It's Texas Sports Academy, it's Texas Sports Academy, it's Texas Sports Academy, right? Because all, and that's why you, that brand, you're like Texas Sports Academy and whatever your little local guy is, right? Your coach. But in six months, you will every coach in the state if you do your job right, right? Because you'll have the power, because you're going to have all these parents who are like, well, I want to take sports academy. And you're going to generate that demand. You're going to have 25 kids in some school district. And you're going to be like, ooh, who am I giving them to?
+
+1:03:32 - Conference Room (K) - Speaker 2
+Yep.
+
+1:03:32 - Conference Room (K) - Speaker 1
+Right? Leaderboard. Huh? I said leaderboard. Yeah, you know, leaderboard, the best ones are and all that. So, but anyway, but you have to go own the top of the funnel, the brand and the top of the funnel, a billion views. So you got to work on that one in the uniqueness of your story gets you local press. You want to work on your reps every time you sign up a new person, right? They are content. Yep. Right. It is content. You are a content factory that you are then pumping to your you're building your distribution channel. Right. Which is your audience. Ready to Texas. Yep. Right. Every mom in Texas. We are building that. But that is and that's what social networks get you. Right. What is your Instagram? Right. It can't just be YouTube. Right. You know me. Moms don't watch YouTube.
+
+1:04:30 - Conference Room (K) - Speaker 2
+The shorts we're doing. Me on Instagram, Facebook. Yeah. Yeah.
+
+1:04:35 - Conference Room (K) - Speaker 1
+And so what is, and who is going to be your face on Instagram? Right. Yep. Who's going to be right. Your Tik TOK, your Instagram, right. It's going to be usually waking up saying billion views is a good little metric. And then, and you're driving all that traffic and hype and excitement, then you have to bring it down funk, which then means, yeah, I got to have an event, right? Got to have an event, right? And then, and your platform has to make it easy and have a brochure and flyer and track the people. And do all that stuff, right? But your PR brand content generation, right? The reason Alpha has all the brand positions is we are a content brand. Oh my God, edX. Right. Oh, look at that. Right. The Kindergarten, what I just saw on Twitter, they just posted this. Kindergartners had to go to a ranch. Build a fire, you know, five-year-old tried that, you know, all this stuff. I was like, holy shit, right. This is what. I want my kid to learn all that. Just every workshop is a content factory that no one's seen. There's no other school just spitting out all this content, and then we start doing our academic stuff. Like, oh my God, there's no school with this academics and all this stuff. There's the hook with the AI tutor, with no teachers that causes the press to be like, Bloomberg was down in Miami, and they just heard all the stuff, so he came to the school and did an hour. And then he's like, okay, I got to stay the whole day. And now they just called back, and they're like, okay, we're going to send a photographer and stuff. We're going to make a big story out of this. This is crazy. Because there's no other content like that. Bloomberg has never had a story about a school where there's no teachers, and the kids are, here's his academic performance, and the guy spent the day just like how they got on NBC News, whatever, earlier in the year. It's content that no one else has. And as soon as you talk about it in the newsroom, everybody's like, this can't be true. Is this true? And if it's true, fucking our audience only wants to hear it. And with sports in rural Texas, you're going to have that Right? And that's how you have to be working. If you're fighting to fill an event, you haven't done your time. What I like this list for it.
+
+1:08:07 - Conference Room (K) - Speaker 5
+Sorry, specific support.
+
+1:08:10 - Conference Room (K) - Speaker 4
+I'm thinking about, but the
+
+1:08:27 - Conference Room (K) - Speaker 1
+The thing you guys want to do is, you know, there's all the sports content, whatever the break of those are. But the thing that you have is you're going to have 1,200 coaches, 1,200 schools, a bazillion fucking kids, a bazillion moms and dads who, I mean, you are just, all you need to do is a testimonial from everybody who comes to the school, the mom, the dad, and the kid. Just get a testimonial for everyone. Why are you going to this crazy-ass school? And they're going to tell you because it's the most awesome thing ever. Right? Well, what would you tell another mom? What would you tell another dad?
+
+1:09:38 - Unidentified Speaker
+Do you think this should be the difference?
+
+1:09:42 - Unidentified Speaker
+Right?
+
+1:09:43 - Unidentified Speaker
+Right.
+
+1:09:43 - Conference Room (K) - Speaker 1
+And you'll have the aspect about vouchers. Right? We're going to apply to vouchers. You know, you'll have hype there. You have a totally different angle where every Texas rep who voted for vouchers, which is really high, will do a PR event with you. So there's hundreds more where they'll be there and bring the local press and, right, have a mom and congressman, you know, sitting there being like, this is it. This is great. I mean, you should just be sitting there saying, I'm going to have the greatest educational content by just creating that and just getting it out, right? And you don't, you know, back to the same thing. You're, you know, you'll have your equivalent of Byron, right? Byron is like Max McCorkel. He's like, we're 10 million views of Ben, right? And it's, and, And so you'll have your buy-in of all. And for whatever reason, they go viral. Everybody likes them. But that's, it's your over, part of how you're gonna convince parents, there's the logic and here's examples. And then there's just the, everybody's doing it. That's the part of education and branding part, right? Ivanka Trump came to school. Shit about it. She didn't analyze critically. She's like, fuck, everybody's talking about it. I got kids. I got to go. Bill Ackman is telling everybody in New York, there's a shadow day next week. You better be there. These people have no idea what the fuck Alpha is at all. They just know Bill Ackman told them they have to go and if he's going to go. He had just donated $15 million to a school. He's like, yeah, I'm taking my kids Right. And it's just, it's, they're not right. And that's the part you're going to get with your role in funder, just everything, right. It's that people on education want safety, right. They want to everybody's doing.
+
+1:12:00 - Unidentified Speaker
+Right.
+
+1:12:00 - Conference Room (K) - Speaker 1
+And that's the part you'll get that you'll be that causes the way Right. So. Yeah, and you should call it for. Oh, oh, three should be able to generate a marketing plan like this of just what are we going to do around PR and content generation? It's going to overwhelm. So you want to overwhelm social media with edgy, right? Where it's just constant. That's going to get people forward, right? Yeah. Look at this. We'll look at this. Look at this. It's going to, right. Right. You can, and then there's, themes you can do talk about other ones, which is like, You'll be able to do. Anyway, just overwhelmed. Like physical, are you gonna have like a bus tour? You go to every school district, right? Every school district, right back to your thing, you're doing a bus tour, you're having your events, like her concert series, right?
+
+1:13:58 - Unidentified Speaker
+But you guys are doing it.
+
+1:14:04 - Conference Room (K) - Speaker 1
+It generates, all that generates media and press. You're going to get some of your coaches on there. Right. That's really fun. One of my notes is to connect with Anna again.
+
+1:14:27 - Conference Room (K) - Speaker 4
+She has a formula as well that she's down to share.
+
+1:14:35 - Conference Room (K) - Speaker 1
+Yeah. No, she's graded. If you're generating you, you should just always think it's really media is easy. Do you have content that no one else has that the media companies audience wants?
+
+1:14:57 - Conference Room (K) - Speaker 9
+The answer is yes.
+
+1:15:00 - Conference Room (K) - Speaker 1
+You're all set. And education is one that has unlimited demand. Unique education has unlimited demand. McKinsey can call KU anytime and be like, hey, we're doing a cool workshop. You want to come fill this? Her problem much more is people are asking her for access. She's like, I can't. Sorry. We're too busy. Next year. Next year. You guys are going to have Right? Sports.
+
+1:15:31 - Conference Room (K) - Speaker 6
+What about, like, and back to creating surveys?
+
+1:15:36 - Conference Room (K) - Speaker 1
+Create your own news. You can commission a survey to be like, do you think kids can learn in two hours and play sports all afternoon? Think about it. Right? You can commission it and then be like, Here it is, 70% of frickin' families in Texas say, which school it should be. Right? Right, you have a whole angle of price point. It's just so cheap, relative, right? House is always really expensive. We're taking the same technology, frickin' everybody gets it. You don't wanna leave. With those who want sports, sports, that'll be a kicker later, right?
+
+1:16:35 - Unidentified Speaker
+post key.
+
+1:16:36 - Conference Room (K) - Speaker 2
+That was actually one of the selling points when I had a coach, because they researched our learning and they saw this model and they're like, Oh, $60,000 more than my phone call ever.
+
+1:16:57 - Conference Room (K) - Speaker 2
+They were happy hearing we got this and stuff.
+
+1:17:01 - Conference Room (K) - Speaker 1
+Yeah.
+
+1:17:01 - Conference Room (K) - Speaker 9
+No, you're at a great price point.
+
+1:17:04 - Unidentified Speaker
+Yeah.
+
+1:17:05 - Conference Room (K) - Speaker 1
+But yeah, put a volume mark and stuff, upper funnel page. Now, you then have to build a funnel and pull everybody through it and automate the whole onboarding process, the SIS, the event days, stuff. The winning thing that matters is, right? Can you drive traffic, right? This is like versus you versus Brandon and Primer and you know, the other platforms, right? Can you drive demand to your platform? And if you drive demand, you win. But you're not going to be able to scale and deliver high quality to 1,200 schools unless you have a really good platform.
+
+1:18:03 - Conference Room (K) - Speaker 9
+You can't just pitch it.
+
+1:18:06 - Unidentified Speaker
+Then it all falls apart.
+
+1:18:10 - Unidentified Speaker
+Okay.
+
+1:18:10 - Unidentified Speaker
+Yeah, so we'll get you that.
+
+1:18:14 - Unidentified Speaker
+Great.
+
+1:18:15 - Conference Room (K) - Speaker 1
+Let's do it.
+
+1:18:17 - Unidentified Speaker
+Anything else?
+
+1:18:18 - Conference Room (K) - Speaker 1
+For your meeting with Jason at the BOM tomorrow, he did send us some materials, but it was just invoices from the agency.
+
+1:18:32 - Conference Room (K) - Speaker 6
+So we'll send that to you, forward it to you. Um, just in case he says during the meeting that he gave us the budget, I don't perfect.
+
+1:18:47 - Conference Room (K) - Speaker 1
+I don't think that's the budget. That'll be good.
+
+1:18:51 - Conference Room (K) - Speaker 6
+Yeah. Just, just for context.
+
+1:18:53 - Conference Room (K) - Speaker 1
+And then, yeah, the whole thing we want, obviously on all the AI, you know, AI power as much of it as you can. Yep. All the marketing stuff. Yeah. Five markets. In the future. Yep. I assume like back to the just the flyer thing, you'll be able to have your flyer template in AI and then AI can modify it. If a coach is like this, right? Yes. I'm making that up. It's possible. Huh?
+
+1:19:33 - Conference Room (K) - Speaker 3
+Yeah, it's possible. If it's possible.
+
+1:19:38 - Conference Room (K) - Speaker 1
+If it's possible. If it's easy, you should do things that are easy, not too hard. Yeah, yeah, yeah. OK. All right.
+
+1:19:50 - Conference Room (K) - Speaker 9
+Who else?
+
+1:19:51 - Conference Room (K) - Speaker 1
+I'm sorry.
+
+1:19:52 - Conference Room (K) - Speaker 5
+Do you have anything for me?
+
+1:19:55 - Conference Room (K) - Speaker 1
+No, that's great. What do you guys have this week?
+
+1:20:01 - Conference Room (K) - Speaker 9
+What's better?
+
+1:20:03 - Conference Room (K) - Speaker 1
+Oh, okay.
+
+1:20:04 - Conference Room (K) - Speaker 5
+So that's what you want us to do. And then, yeah.
+
+1:20:10 - Conference Room (K) - Speaker 1
+Basically, set up those every day. Great. Great. What are you going to end it here? Enrollment for August.
+
+1:20:20 - Unidentified Speaker
+Yeah.
+
+1:20:20 - Conference Room (K) - Speaker 5
+Started in July with zero.
+
+1:20:23 - Conference Room (K) - Speaker 1
+21 plus, that's right now.
+
+1:20:26 - Conference Room (K) - Speaker 5
+Yep. So August 30th. Great.
+
+1:20:29 - Unidentified Speaker
+Perfect.
+
+1:20:30 - Conference Room (K) - Speaker 1
+And yes, to his point, you should use them all to generate tons of content.
+
+1:20:46 - Unidentified Speaker
+Cool.
+
+1:20:47 - Unidentified Speaker
+Let's do it.
+
+1:20:52 - Unidentified Speaker
+Yes.
+
+1:20:52 - Unidentified Speaker
+So on the wallet front, we're calling it Tiger Wallet.
+
+1:20:58 - Conference Room (K) - Speaker 7
+We're working on the app website and mobile app first. But in order to get around the conflict problem, we had to come up with a conventional solution. I emailed you about it. So basically the plan is Max and I are going to quit.
+
+1:21:25 - Conference Room (K) - Speaker 1
+Yeah. None of that matters right now. And so ignore all of that and go build your app. There's no conflict issue to that. You don't have any, there's no conflict issue.
+
+1:21:39 - Unidentified Speaker
+Don't just build the platform.
+
+1:21:42 - Conference Room (K) - Speaker 8
+That's kind of what we've done with the antivirus as well.
+
+1:21:47 - Conference Room (K) - Speaker 1
+Just build it all get it once you have it then you can do the legal structuring and everything later You gotta go build a great thing first And as you build it you'll get it'll educate you on where the value is what's ours Yeah, so right now we're focusing on zero fraud because in other states, specifically the reason why they failed was because they bought like random stuff, washing machines, very pricey cellos.
+
+1:22:29 - Conference Room (K) - Speaker 7
+So instead of, you know, having like very flashy, too many features or stuff, we're just going to try and reduce fraud using AI. That's what we're going to pitch to the state. Great.
+
+1:22:44 - Conference Room (K) - Speaker 8
+The other big reason they get locked out of contracts is they send locked bars in the right forms at the right time. So they're setting up alerts and channels just to watch the websites break, such and yet, since we've notified, new information comes out of the control.
+
+1:23:05 - Conference Room (K) - Speaker 1
+Yep. No, so I like, we have an AI-powered one that's going to make sure we're legally compliant massive fraud detection and were simple, you know, simple, clean transactions. Right.
+
+1:23:22 - Conference Room (K) - Speaker 9
+And that's it. That sounds great.
+
+1:23:26 - Conference Room (K) - Speaker 1
+But I would go build in the process.
+
+1:23:33 - Unidentified Speaker
+Definitely.
+
+1:23:33 - Unidentified Speaker
+Great.
+
+1:23:34 - Unidentified Speaker
+Great.
+
+1:23:35 - Conference Room (K) - Speaker 1
+Focusing on Texas first. Yes.
+
+1:23:41 - Conference Room (K) - Speaker 1
+and winning the Texas contract.
+
+1:23:45 - Conference Room (K) - Speaker 8
+Yes.
+
+1:23:46 - Conference Room (K) - Speaker 5
+There's all this politics to this as well, right?
+
+1:23:53 - Conference Room (K) - Speaker 1
+And there may be somebody who has all the political capital already. He would just contribute our product they're not an organization because they're going to win. Well, they're selecting five organizations and so, yeah, there's really three national players that are serious.
+
+1:24:17 - Conference Room (K) - Speaker 8
+There could be others that are still doing this right now, but yeah, I figured that out. Yeah, we have a high chance of winning because they're selecting.
+
+1:24:27 - Conference Room (K) - Speaker 7
+It's been five and if you divide it by five, it's like five please. So or maybe not. I don't know. Yeah. Yeah.
+
+1:24:39 - Conference Room (K) - Speaker 1
+All that matters on winning a government contracts is your relationships with the legislature. Right. Right. Or whoever the decision maker is. Yeah. So we'll see what more data. But there will be teams of people who are experts at winning these independent independent of their competence. Government is not a place, ever, where best product wins. Ever. Now, we're gonna build best product, but that is not.
+
+1:25:15 - Conference Room (K) - Speaker 8
+Yeah, from our research, it seems like the biggest hurdle for us is just getting our foot in the door, and that we make our products so good will be politically inefficient and go against a lot of people's wishes to get us out of where the parents thought us.
+
+1:25:40 - Conference Room (K) - Speaker 7
+We think it's so much easier, you know, so much less fraud.
+
+1:25:45 - Conference Room (K) - Speaker 1
+It is, I, we have to build the world's best product, blah, blah, blah. SpaceX is being scaled back even though it's 10X better than Wilfred. SpaceX doesn't win the most payloads to space Right SLS, I don't know if you guys follow but like SpaceX is like ten million dollars a launch, right? Hundred million on the top ends, right? The minimum launch for SLS is a billion and they keep winning How could that be? I'm just saying. I'm getting you ready for the government world. Our product is fucking 10 times better. It would be irresponsible for you to pay 10 times as much. And I'm like, welcome to government. We're also going to play on the Doge playbook.
+
+1:26:47 - Conference Room (K) - Speaker 7
+Government efficiency is number one. No, no, no.
+
+1:26:51 - Conference Room (K) - Speaker 1
+You're doing all the right things. And realize that politics matters. Should we come up with a lobbying strategy? Just build a great product first and then we'll worry about the bank. Once we know who the players are, then we can just figure out who you have to partner with to get it done. Is I'm funding the high-speed rail between Dallas and Houston, right? And there's a favored private rail company that's the Florida one that the Trump administration likes. We're like, OK, I guess we're going to merge our company with theirs because they have access, right? Independent of the fact that our high-speed rails tend times better than theirs. Blah, blah, blah. We own all the way and they don't own any, right? You're like, well, they have political relationships. Okay. Build a great app.
+
+1:28:07 - Conference Room (K) - Speaker 7
+That's a great next step. I guess building an audience. The first steps are just so basketball lists there.
+
+1:28:19 - Conference Room (K) - Speaker 1
+their vendors so we can just email all but like I'm unsure about what building an audience. Well do you expect family families to use your app?
+
+1:28:44 - Unidentified Speaker
+Yes.
+
+1:28:45 - Unidentified Speaker
+Okay.
+
+1:28:46 - Conference Room (K) - Speaker 1
+Then I would build an audience with the families you respect. I think it would be a strong landing page, a strong social media to just give us a validation, You're going to have to convince 100,000 plus parents that want to use your app. Are these deals exclusive with everybody? No.
+
+1:29:53 - Conference Room (K) - Speaker 7
+A parent can choose whichever wallet they want. And they're going to have five options to choose from But I imagine the state is going to show the parents their options. And they can choose whichever they want. And we're going to onboard the schools. And our main customer is the schools. So it's like $10,000 anyway for the ESAs. They're not going to have much money left, especially if they go to like ESW or something. They're not going to be able to buy cellos or washing machines anyway. So I guess we target the schools mainly, then parents, then just as a general ESW platform, raise awareness among students they want to join.
+
+1:30:47 - Unidentified Speaker
+Yeah.
+
+1:30:47 - Conference Room (K) - Speaker 1
+The part of class while you have side or whatever on the tiger wallet is what is, how are you going to convince consumers to use your words versus the other ones? And how are you going to reach them? Right. Like we're doing one, we're doing an experiment in Arizona right now. We have a charter school, private school that uses PSAs and the vouchers and fricking families just struggle to use ESAs. The charter school is so, like, Ivy runs it. She's like, I just sign everybody up for the charter school. And then once they're in my charter school, I spend a month educating them about ESAs and get them to switch over. But it's like this super long, super hard process. And it's weird for everybody. Super complicated, you know, if that's your thing, you somehow have to, the tech diff of Tiger Wallet is making it so it's consumer friendly and easy. It's like, oh my God, I totally know how to use this to buy my school stuff. But today, people are like, oh, I'd rather sign up for a charter school, like it's 10 to one or something. So a lot of your innovation has to come. There's, OK, here's our transaction stuff and all that. But you have to be like, we created a consumer brand that everybody's like, oh, wow, I'm going to use this to buy my educational stuff. One click, whatever that means. Whatever the one-click equivalent for ESA is.
+
+1:32:31 - Conference Room (K) - Speaker 7
+Yeah, the most common consumer complaint is that the money isn't transferred. To the vendor quickly enough, or they don't have it on their system, or they can't access specific educational material and stuff like that. So have that knowledge, and we're going to try and focus on that.
+
+1:32:53 - Conference Room (K) - Speaker 1
+Great. Those are people who already are using it. 90% of the people aren't even downloading it. Back to building an audience. How are you going to build huge consumer awareness? If you're going to win, how are you going to win versus the other ones? Versus, why don't you get a billion views? About ESAs, these awesome school choice things.
+
+1:33:20 - Conference Room (K) - Speaker 1
+Here's all the stuff.
+
+1:33:21 - Conference Room (K) - Speaker 7
+Do you mean before or after the parents actually decide to use ESAs? Before. They don't even know about them.
+
+1:33:27 - Conference Room (K) - Speaker 1
+How are they going to decide how to use them when they don't don't even know about. You're like way down in the funnel. You're like, you're like, how are you going to know? Look at this option. This is an awesome thing for you. They don't even know about how many homeschool families are in Texas. Okay.
+
+1:33:56 - Conference Room (K) - Speaker 8
+Which is how many millions?
+
+1:34:00 - Conference Room (K) - Speaker 1
+uh, I would say 65.5 million students.
+
+1:34:10 - Unidentified Speaker
+Yeah.
+
+1:34:11 - Conference Room (K) - Speaker 1
+How are you going to convince them to use ESS?
+
+1:34:25 - Unidentified Speaker
+To build awareness.
+
+1:34:29 - Conference Room (K) - Speaker 1
+Yes, there's an educational but there's also just here there's this new way the government's giving you fucking ten grand you want it Seems like an easy pitch seems like a really easy bit right all the things Building their qualification for right there They have their ESW form, right? What are you guys doing? That's the equivalent All right, the government's giving you 10 grand download my app I Don't know it seems like There's some angle there.
+
+1:35:25 - Conference Room (K) - Speaker 9
+I even spent a lot of time on it, but that's... Anyway, I build the transaction stuff first.
+
+1:35:32 - Conference Room (K) - Speaker 1
+That's all the things that matter, and VSAs aren't available anyway for a while, so you've got to look at all phase two. To win the contract, you have to have all the action itself and all that. And it's a non-trivial, you put a billion dollars through, right? It'll be billions, right? There'll be a federal, if the federal thing gets done, there's another five billion and it's going to affect what's going to be available as well. Same thing. Billion, million scholarships at 5,000 bucks each. And what are you putting in to check on qualifications? So they already laid out the requirements that we have to check for.
+
+1:36:37 - Conference Room (K) - Speaker 7
+We have to check the students and the parents and the schools. Yep. So we're going to.
+
+1:36:45 - Conference Room (K) - Speaker 1
+One of the things you're going to find is you're going to have to build a ton of integration code and get the data from school systems and all that other stuff. It's going to suck.
+
+1:36:59 - Unidentified Speaker
+Yeah.
+
+1:36:59 - Conference Room (K) - Speaker 1
+The problem's always going to be on the other side of your responsibility. And you're going to have to take over responsibility even though it's officially not yours. Or you'll never, right? I'm sure class wallets transaction system isn't like, oh, we just leave everything hanging out in queues, just sitting there forever, right? It's because the vendor they're supposed to ping is down, right?
+
+1:37:31 - Unidentified Speaker
+It's right.
+
+1:37:32 - Conference Room (K) - Speaker 1
+You have to take a system. The other people in your system suck. Anything else? Anybody else? The end.
+
+1:39:41 - Conference Room (K) - Speaker 1
+A handful of studios come in later this week.
+
+1:39:50 - Unidentified Speaker
+TexasSportsAcademy.com.
+
+1:39:51 - Conference Room (K) - Speaker 1
+What did you say you belong to? Do you by chance know what we do? TexasSportsAcademy.com. Yeah. Don't we use that website? What do we use?
+
+1:40:14 - Conference Room (K) - Speaker 4
+Oh.
+
+1:40:15 - Conference Room (K) - Speaker 1
+I don't know the answer to that. Arthur would know. And back to all the marketing stuff of whatever you're going to pull over, right? Just to be clear. Build your stuff, right? 90% of what they're doing is running ads. That's why you guys are going to be right. Just build your top funnel. And as a byproduct, they have 30 people after a year, you're going to pump in 25,000. It's just, it's just totally different. Right. And so just Build your system, and then you'll, as a side effect, build them. Now, you should listen to them, what they do, and see what good idea. You're like, oh, yeah, we should definitely do that. We should have events, whatever. Whether you have a brochure or email things, talk about, you don't, right? You'll have to figure out what is your scale. But all that matters is own the top of funnel, right? Dominate the top of funnel like McKinsey, right? And then have conversion event that people go to, right? That is school market. Build a brand where you're like, oh my God, everybody's gonna be talking about Texas SportsPet, right? Can you build a brand with local press and just an unlimited number for a ton of content generation. And then you drive people to events where they have to experience. And then they experience it, and they sign up. You just have an automated process to run that. And for you guys, you're just doing it at a scale that's bigger. Like Max McCorkel's running her 25th school concert series. So what Dimitri's built, and he's 25 shadow days 25 info sessions 25 shadow days to up spot right and sign up 650 people 25 times 25 right you guys are like okay well yeah got Forty times more than that to go.
+
+1:42:56 - Conference Room (K) - Speaker 9
+Right.
+
+1:42:56 - Conference Room (K) - Speaker 1
+So. You guys have to. So. Anyway. So yeah. And come up with your plan on that stuff. But I'm happy to iterate. Get Anna on the PR side. What's going to be exciting.
+
+1:43:14 - Unidentified Speaker
+Yeah.
+
+1:43:15 - Conference Room (K) - Speaker 8
+Yeah.
+
+1:43:15 - Conference Room (K) - Speaker 4
+Schools open up. Right, so right now there's that stopgap of TSA, school year's ending, so people don't have as much new content from them, but...
+
+1:43:28 - Conference Room (K) - Speaker 1
+Are they doing summer, do they have summer camps or anything? They have football programs and a lot of camps, yeah. Yeah, so they have to use camps and... Right. It's just, I'm here at TSA, blah, blah, blah. Talk to the kids. Because I assume the summer camps are gonna try to cross sell some of these kids to the TSA and so they'll do some two-hour learning Sometime and interview kids. What do you think?
+
+1:44:02 - Unidentified Speaker
+Right you think?
+
+1:44:03 - Conference Room (K) - Speaker 1
+No, we're going we're spending this week I Was working on alphas and I've sent two, this is my third, sort of the end of the third year, and I was just like, I write the letter of what I want to say, and then I just tell everybody, go get the content and fill it in, right? So, like, when Ackman was here, right, he was like, this is such bullshit about this, like, no vacation. I'd rather go to school on vacation." Like, that doesn't fit. I'm like, I totally got this. He's like, you know, and he's very aggressive, right? He's like, and he literally just walks over a kid. He's like, hey, sorry, what's your name? He's like, so I hear at this school, like, that you, like, you'd rather go to school than go on vacation. Is that true? And the kid's like, well, I mean, it sort of depends on the vacation. You know, I really like fishing, and my parents are bringing me fishing. And so, no, I'm going to go fishing instead of go to school. But like all the other vacations my parents do, yeah, I'd rather go to school. Right? And just filmed it. And it's great content right there. Right? And you're like, no, it wasn't being filmed, unfortunately. But that's great content. So back to our three commitments. We're like, love of school. Gabby is gonna go around this week, you know, before school's over. And she'll know the kids where she'll be like, you know, and you want one where it's both, not just, right? It's, oh, I love fishing and I do it and that's better, but everything else isn't, because that's credible, right? That's good, credible content. So she'll get, you know, five or six kids like that. And then my end of school year letter, it'll be like that. And then we're interviewing the high school kids, because two-thirds of our high school kids said, I don't want to do summer break. Will you stay open year round? Will you stay open over the summer? Because I don't want summer break at high school, which is insane. And you're just like, OK, we make a claim. The edgy point, in fact, to why we have great content, there is no school where the kids feel like, I'd rather go to school than go on vacation. There's no school in the country where they're like, I don't want to go on summer break. I want to keep going to school, right? Those are, that's the edgy content that no one else has, but it's anecdotal. Like Gabby, get on the bill, right? And then boom, I'll put it in my note, right? And we can create all this content. Like last year, like Michael and Susan Dell were like, we spent hours going through that email you sent and watching all the videos and everything. We just couldn't believe it. And so this is, like, each year, right, of all things. So it's, you know, it's an ad on the love of school. Those are our two bangers, which is, we used to highlight, like, 96% of our kids love school. I'm like, we're done with that. We are just highlighting vacation. Right? Because every school, all, right, the 96%, it's two, right? The edgy point is vacation. So use vacation for high school kids who don't want to go outside. Those two. Then our 2x learning, we did our map stuff again. So I've just been feeding all our maps results. And this week, our Texas Star results will go in, where I just feed it into Opus or O3. And I'm like, analyze this, give me deep academic insights, and compare to the best students in schools in the country, right? And then it just spits it out and it's just fucking insane. Like there's no school in the United States as good as GT school. Alpha school itself is, you know, the top elementary school I've ever seen country, you know, and we're just going to take clips from AI and be like AI, since we're an AI school, we're gonna use, here's what AI says about it, right? And it's just like crazy shit that nobody can believe. Like our Brownsville school, right? It's literally like, this would be considered the best school in New York City. And it's in the poorest, second poorest school district in the country, right? And they're like, you guys do things that no private, most private schools won't be allowing good kids. You actually make good kids. And it sees our data, like, let a kid who went from the seventh percentile to the 93rd in five standard deviations over normal performance, right? And so anyway, we're just all that kind of stuff. And then our VDR life skills are all just going through our best workshops, right? You know, all the coolest ones. We're just going to have, here's all the life skills, the second graders running their 5k, the kindergartners climbing the 40 foot rock wall, riding their bike five miles, right? We just take this content, you're like this content no one has, right? And that is what will be used basically that will drive the 25 McKinsey will send it to our alpha pair. We'll also send it to all the people, right? Who are on the mailing list of, hey, here's our alpha and here come to one of 25 McKinsey things, right? And Anna will make sure all the reporters in every city see this stuff, right? And they'll just watch it all. It's like the Bloomberg guy. You watch it and they're like, there's no, This content doesn't exist. They must be lying. And then they go and they're like, holy shit. I talked to him. Right. So anyway, that's what you need to back to when we talk about what's your video that convinces everybody, just get your content. Right. And you'll have to know what is the content that resonates, like Back to my mistake three years ago, two X learning. Everybody's going to love it. I just had content. I just filming all this two X learning.
+
+1:50:48 - Unidentified Speaker
+Right.
+
+1:50:48 - Conference Room (K) - Speaker 1
+And so that's what you'll have to figure out. It's just, you know, talking to you, you're figuring out what pitch works with coaches and then you have to figure out which pitch works with the parents and which pitch works with kids. It's just three pitches. You're gonna work and what gives that but but you guys should be like your expectations are out the top end Because they can't you should own right Texas Sports Academy and Sort of the reason I gave it to you guys. It's one of the best brands in history Right it is of sports brands for a school. Yeah, I mean I am Jesse shitty bear Texas Sports Academy, there's going to be a million kids going to Texas Sports. Right. That's everybody wants Texas Sports. Right. And the fact that it's Texas and not a nationwide one, you can just own Texas. Now, they'll also eat with Florida Sports Academy.
+
+1:51:57 - Unidentified Speaker
+But
+
+1:51:58 - Conference Room (K) - Speaker 1
+What parent of the five point five million parents, there's a million. Here's a list of schools, Texas Sports Company, which one do you want your kid to go to? And a year from now, you should get a million 20% of the market. Like I actually want my kid to go to Texas Sports Company. Why would I not? And the two hour learning, oh my God, my kid's learning a ton. It doesn't take it very long. He's using this advanced tech to do it. It's like self-driving cars, like Waymo's. Did you see that stat?
+
+1:52:39 - Unidentified Speaker
+Uber's fucked.
+
+1:52:40 - Conference Room (K) - Speaker 1
+It's over. That same concept of where you just see the end of it. Texas Sports Academy, a year from now, everybody's like, oh my god, normal school is F. Why would I ever send my kid to normal school? I can send them a text, what's good? So, create that image and brand. Now I just pulled up the chart of White Mounts. Yeah, right.
+
+1:53:10 - Conference Room (K) - Speaker 2
+Yeah, that was great.
+
+1:53:12 - Conference Room (K) - Speaker 1
+I mean, Lyft, the only thing Lyft could be bought by is like, like Amazon or DoorDash. Lyft could be bought by DoorDash. Because they need the bundle or something and their stock price is going to keep going down. So DoorDash, it's free. So we might as well have the bundle. And it gives you distribution where there's going to be all these other cars. And it's really going to be interesting. I actually don't know. Is this like winner take all and fricking Tesla's going to win it all? Because Amazon's got Zoox and there's like five or six. Players and you're like, is this going to be like large language models where you're like, yeah, there's five or six of them.
+
+1:54:03 - Unidentified Speaker
+Yeah.
+
+1:54:04 - Unidentified Speaker
+Right.
+
+1:54:04 - Conference Room (K) - Speaker 1
+That are in the game and lift in that case where there's five or six lift is actually bad because you already have distribution and we can jam your, if you're zooped, how are you going to get consumers? You're like, oh, well on top of left, right. But for Waymo and Tesla, they don't need Uber or Orlando, right?
+
+1:54:27 - Unidentified Speaker
+Those guys could extend.
+
+1:54:29 - Conference Room (K) - Speaker 2
+I think Tesla made the vision on the event too, so their cost per mile is significantly cheaper than everyone else.
+
+1:54:36 - Conference Room (K) - Speaker 1
+And that's your whole bet, is if, can Tesla do it? I don't know, we'll have to see. I mean, I have fricking, I have three Teslas, okay.
+
+1:54:47 - Conference Room (K) - Speaker 1
+Do you use FSD?
+
+1:54:48 - Conference Room (K) - Speaker 1
+Only, I only use FSD and I'm like, I also use Waymo's and I'm like, Waymo is better in Austin. It is not. Now I don't have, you know, they stopped giving updates to FSD basically to focus on the robo taxi. And so I'm sure, you know, it's getting better, but I, it is not like I can just click a fucking button on my Tesla and it gets me there. It is not. Versus Waymo, it totally does. I've never been stuck in Waymo. It totally works, but you know. No, my Tesla pulled over the other day. Because the screen is supposed to turn on and it was all blocked and stuff, so it just pulls over. It just sits there. Right? So, we'll have to see. I mean, they'll eventually get it. But it's, you know, and they have a cost structure at the end and all that stuff. Elon's for 10 years, he does a lot of great things, right?
+
+1:56:05 - Conference Room (K) - Speaker 2
+His biggest late project is FSD.
+
+1:56:08 - Conference Room (K) - Speaker 1
+Yeah. Right.
+
+1:56:10 - Conference Room (K) - Speaker 5
+And the roadster.
+
+1:56:11 - Conference Room (K) - Speaker 9
+Yeah.
+
+1:56:12 - Conference Room (K) - Speaker 1
+That's never. Right, but the FSD so but it went But yes, you have to it has to be like this two-hour learning every family in rural, Texas like this is like match and It enables my kids to play sports all afternoon. This is frickin awesome, right and back to your interview You have to create that, right?
+
+1:56:44 - Conference Room (K) - Speaker 2
+That image, right?
+
+1:56:45 - Conference Room (K) - Speaker 1
+And you're equipping these coaches. It's a revolutionary new way, right? That the kids are learning five to 10 times faster. And you should just be thinking about how are you going to own that top of the line, right? Own the media circuit, right? And the media circuit is to generate content for Instagram and TikTok, right? And you just have to be, I have to own the sports mom, the sports dad. How are you going to own that audience?
+
+1:57:25 - Conference Room (K) - Speaker 4
+I'm just going to put it into the coach's contract that they have to dedicate one day workshops to some sort of content piece. That can provide their school and that we can provide to them.
+
+1:57:39 - Conference Room (K) - Speaker 1
+Yeah, total.
+
+1:57:40 - Conference Room (K) - Speaker 4
+You can absolutely have that. It's a win-win. We give our brand, and then they get more visibility into their students and their school.
+
+1:57:49 - Conference Room (K) - Speaker 1
+Yeah. Yeah. No, you went back to coaching as part of your platform. You have to promote it, right? I mean, Amazon is giving an AI tool that's helping the product people make their pages look Right? And here's how you, right? Here's how your increase your searchability, right? All that stuff. So you guys have to be, here's how I make your school look awesome. You fill out this and on Mondays, right? Get content, right? You need an end ending stream of content. Yeah. Right. And who, you know how they rank on the leaderboard, the ones who do the best, Most content, I don't know about this, right? I mean, how many young persons, right? And you're just, and these coaches can totally, right?
+
+1:58:43 - Conference Room (K) - Speaker 2
+What?
+
+1:58:43 - Conference Room (K) - Speaker 9
+Yeah, it sounds familiar.
+
+1:58:46 - Conference Room (K) - Speaker 1
+Yeah. And so, right, you just wanna.
+
+1:58:50 - Conference Room (K) - Speaker 2
+Have you thought about incentivizing the guides to sort of become influencers I've tried.
+
+1:58:58 - Conference Room (K) - Speaker 1
+So a year ago we totally tried to create a program and the guys just don't want to do it. I wasn't able to convince them. The threshold of the work they had to do was above their willingness to do it. You know, and now with Jamal, Jamal will film stuff, right? But all the other work in building it, right, is not woodworking. So you should, filming, right, everybody wants to film, right? That's easy. And your platform has to do the hard stuff. But we took, you know, We took exactly what our build an audience program was for our high school kids, because they're high school kids. And the guides were basically like, oh, I'm sort of interested.
+
+2:00:04 - Conference Room (K) - Speaker 5
+OK, never mind.
+
+2:00:06 - Unidentified Speaker
+Yes.
+
+2:00:06 - Conference Room (K) - Speaker 4
+Yeah, it would get interesting with the sports academies with NIL. And if we end up doing sports academies for high school age as well, currently not doing that given it's not NCAA accredited with the academic curriculum. That gives even more incentive for the coach to listen. Yeah.
+
+2:00:25 - Conference Room (K) - Speaker 1
+Totally. No. And in fact, you're like, that's a great example of a workshop in middle school. I'm going to help you figure out how you're going to be able to build your audience. So you're ready for it. Yeah. Right. Middle and high school, right. Right. With Mr. Beasts with Garrett, right. You'd be like, I don't, I don't know. There's two parts. One is to have them build just a curriculum for sports cap workshop, right? Imagine if you could go to all the coaches and all the kids, you're like, this was built by one of Mr. B Scott team. Yeah. And it's how to get ready for the NIA. There you go. Right. That's it. And that's available on fricking your platform on Texas sports Canada. Platform. And coaches be like, Alright, kids, anybody wants to do it? Right? We don't have to practice tricking all day and eat. You can just do your workshop. Right? All right. And if there is back to the marketing and stuff if there's a good by marketing person on Twitter or something that You want to hire to help you with the stuff?
+
+2:02:25 - Conference Room (K) - Speaker 3
+feel free nice because To ensure we accomplish this, we need to find people who have done this and get them to consult us.
+
+2:02:38 - Conference Room (K) - Speaker 1
+Yeah. Like Boring Marketer is one of them. Yeah. No, I mean, that's how we got, like a year ago, sort of pre-Gauntlet, right? We were just reaching out to all the builders, right? Can you educate us? Can we hire you? Can we do this project? Just trying to figure it out.
+
+2:03:24 - Conference Room (K) - Speaker 3
+Wait, so what came out of that?
+
+2:03:26 - Conference Room (K) - Speaker 1
+I'm talking about Schumer. We hired a bunch of them to do a bunch of projects. Oh, nice. Yeah, so Schumer is...
+
+2:03:35 - Conference Room (K) - Speaker 6
+We were actually just like, OK, he was going to build.
+
+2:03:39 - Conference Room (K) - Speaker 1
+He was going to try to help us build. I don't know if you remember the big fiasco he went through where he tried to do the post-train reasoning model. We were like, okay, we're gonna hire you and You're gonna build we're gonna do an academic LLM where you train it for incept content he's like great ready to go and Then that whole thing happened. He's like, oh my god. I gotta go. Oh Fixing, yeah, that's what I put myself into. But New Yorkers talk to them every month about trying to see and stuff. You know, there's, you know, some of them are like, oh, I don't care about making money, I just do stuff. Others, the Deep Writer team is totally always willing to do whatever projects we'd like, A lot of them, as they're trying to build a business, we're like, okay, well, this and we'll give you 50 grand or a hundred grand sort of bounce kind of thing like so for our our voucher program was a Schumer or the Deep Writer guy this is some of the builders I can't remember but our voucher team we were getting three and four to pay for our piece to respond to I think it was actually Schumer did this we're like can you build a RFP responder because his first thing was a writing. Yeah, right, right. He had his writing app So we heard that's how we got it. And then he actually built an RFP responder for us And then we were gonna do more we're gonna build an L So, but yeah, but you should totally get the back to the marketing budget and stuff you should oh you should go totally higher go figure out what takes to hire the vibe marketers, right? Because not only that, you also get the other part on. And Twitter's not your perfect audience, obviously. That's not where all your sports moms and dads are. But the vibe marketers are like, oh, I'm totally doing this thing for a tech sports guy. Look at this shit. You can get momentum around it. You know the other guy you're gonna be able to use is it this is all Twitter stuff though. It's like steel bloom Right Stanford baseball player. Yeah, he's got New York Times best-selling book out He's a huge alpha fan. He works with our He works with Austin Scott my daughter He's gonna be here. Oh, you should totally he's coming here for his book tour in a month And you guys should totally be like do some sports baseball content around it You know, there's there's something He totally would be want to do or you can beat him Well, it's here. We're gonna set a bunch out people to his event as well and He was actually the one who introduced me to Bill Ackerman. Does he have a new book coming out? No, he just published it. It's still in the bestseller. It's five types of love. Yeah. So he's still hyping his five types of love. OK, gotcha. That's it. You've got to go on these book tours, right? You've got to go in person. It's a podcast. It's an in-person shit. Yeah, it's a podcast tour. And you've got to go in person. It's exactly what you guys need. You need to get a fucking bus and just be cruising around. Thing, right? In person, it matters. You got to generate the hype. I mean, it's just there's it's how freaking music and everybody makes money, right? Generate the hype. I got my album release and then I got to go all my concert tours. Right. I mean, how long was Taylor Swift doing a freaking concert after the release of her? Right. And then, you know, book tours, same thing. You got to just go, go, go. So. Yeah you'll have your launch and then you're. But that's you know every school district you're like OK we're going to the school district and we have our 10 coaches have an event have press their shadow day, you know, or event that you're able to pull to the next one, right? Like McKinsey has for 25 where it's I got family showing up. I got building so families the building press will come interview on which generates content that just keeps beating it on a daily cycle, right? And if you're a parent, you're gonna be in the feed and you're like, oh my God, another city, another set of parents doing this. Why am I not going to one of these schools? I'm missing out, right? And then you drop in some other content, which is, oh, look what AI said. We have the best elementary school in the world for kindergarten and first grade. And then you drop in our Stanford Dean. We have our podcast that she did with us done Throwing that in God, you know, you're spilling just like oh shit There is no school one. There's you're competing with like fucking the local private school st. Stephens Yeah, I don't know fucking bitch. I can't paint going on all this stuff There's it's gonna be the same with you each coach. Yeah the round rock coach Kate the freaking Texas Blitz. I have 1,200 coaches, not one.
+
+2:09:49 - Conference Room (K) - Speaker 1
+Yeah, that's one thing we notice is how boring school counseling is.
+
+2:09:55 - Conference Room (K) - Speaker 3
+It's catered towards parents, but it's catered towards someone who's very boring.
+
+2:10:01 - Conference Room (K) - Speaker 3
+Right? Well, because they don't have any marketing budget.
+
+2:10:06 - Conference Room (K) - Speaker 1
+The best schools have a wait list. Right? Because you just send your kid school. So they all have a wait list. So they do no marketing and they don't have any, right? And so they can't, this is the whole thing, like for the alpha business plan, right? We're going to be able to go into every city and take over the spot as the best private school. These schools have been there for 50 years and we're like, boom, right? Economies of scale marketing. No, you have economies of scale marketing and it's not about the cost. It's about the quality, the message. No one has a message. It's like, oh, my God. The same way they can't do two-hour learning. They can't afford to build two-hour learning. They can't afford to build the marketing machine, hire the talent, and they don't even have the content. I mean, even if they did, though, the only thing you ever see is freaking the normal, oh, here's our prom and our football game It's the same retread shit that every school has. They don't see freaking these fifth graders sailing to the Bahamas. And you're like, are they going to die? You're like, oh my God, are they going to make it? Their kindergarten is on 40-foot rock walls. And moms are like, I would never allow my daughter to do that. But then they hear the audio where this kid's like, I know I can. I know I can. One more, right? And then the parents are like, okay. Just great content. Look at what AI said about this.
+
+2:11:53 - Unidentified Speaker
+We had a escape room.
+
+2:11:56 - Conference Room (K) - Speaker 1
+The Twitter one came up. We had an escape room. Mic them all up. And it's, you know, one of the kids, it's like, we're doing escape room. And it's actually to learn teamwork. Because, you know, when you're in escape room, you're all stressed, you get mad at each other. In order to pass this, they mic us up and 90% of our comments have to be positive and uplifting to the team. It's going to be a challenge, right? They go in and they finish with three seconds left, right? They talk about it and parents are that that's, I want my kid to do that. I want my kid to learn how to create a fire when they're five. I want them to sail to the Bahamas. Be like, Oh my God, I hope they don't drop. So right now. Yeah, right now. So all right.
+
+2:12:55 - Conference Room (K) - Speaker 1
+All right.
+
+2:12:56 - Conference Room (K) - Speaker 1
+Well, Oh, the other part is I'm going to be shaking up the market.
+
+2:13:08 - Unidentified Speaker
+So you'll hear some stuff.
+
+2:13:12 - Conference Room (K) - Speaker 1
+And so just back to whatever like Sports Academy is doing. Right. It's like that. We're at the rate of all the spend for like 30 kids a year. We need to completely redo it. We just need to blow it up. It's not on track enough to get to hundreds.
+
+2:13:42 - Unidentified Speaker
+So we're going to shift it over.
+
+2:13:46 - Conference Room (K) - Speaker 1
+And Alpha's all focused on the expansions, which is a different team than the central marketing So it'll be big, so you'll hear lots of points. That's why I'm like, just get access to whatever you need. Because it's going to be turmoil happening in the market.
+
+2:14:18 - Conference Room (K) - Speaker 5
+Sometimes it's cool as it's going.
+
+2:14:22 - Unidentified Speaker
+Right.
+
+2:14:23 - Conference Room (K) - Speaker 1
+Let's do it. Do you have a goal for August?
+
+2:14:27 - Conference Room (K) - Speaker 3
+We want to have at least five.
+
+2:14:30 - Conference Room (K) - Speaker 4
+Five scholarships for 100 students. Five schools. And are they all going to be in the Austin area?
+
+2:14:37 - Conference Room (K) - Speaker 3
+We're hoping a few in the Austin area tomorrow to fill up the Carrollton location.
+
+2:14:43 - Conference Room (K) - Speaker 2
+We'd like to get some more along this year too.
+
+2:14:47 - Conference Room (K) - Speaker 2
+long as there's one.
+
+2:15:05 - Conference Room (K) - Speaker 1
+All right.

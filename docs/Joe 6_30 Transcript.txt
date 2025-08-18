@@ -1,0 +1,854 @@
+Joe 6/30
+Mon, Jun 30, 2025
+
+0:00 - Conference Room (Max McCorkel) - Speaker 1
+What's up?
+
+0:00 - Conference Room (Max McCorkel) - Speaker 2
+Yeah, I mean, I guess there are different classes of bugs. Yeah. So one is they give us an open API spec. And it doesn't like so this is the AU studios interpretation of the one at tech standards, which is not the same as the actual one at tech standards. But let's just take the a studios open API spec, it doesn't match with their server behavior. So there's an inconsistency there. Then there's also inconsistency between the AU studios one at tech APIs and the actual one at tech APIs. So now I'm running scripts to find all the differences between those. They're just runtime validation errors. So if we even send the correct payload according to their specs, we've got SQL injection, there's like all this random crap. Great.
+
+0:46 - Conference Room (Max McCorkel) - Speaker 1
+So are we, did you, do you guys have like the ability to submit these as, do you have access to GitHub and submit them as bugs?
+
+0:56 - Conference Room (Max McCorkel) - Speaker 2
+Yeah. Great. Awesome. How many are we up to?
+
+1:01 - Conference Room (Max McCorkel) - Speaker 1
+You said you had 60? I'm like at seven. He's at 200.
+
+1:07 - Conference Room (Max McCorkel) - Speaker 2
+200? Awesome. So far, yeah.
+
+1:10 - Conference Room (Max McCorkel) - Speaker 1
+Good. And then what about building the Goals app? How is that going? Anybody? Who's working? People working on that? And back to the platform itself, aside from bugs, documentation and stuff, what do you think you can build on?
+
+1:31 - Conference Room (Max McCorkel) - Speaker 2
+So I think, I don't know where Michael is, but we were talking about this, he's on Incept, and I think the, I've just been looking at bugs and stuff, One, it's a very complex data model. As you know, there are tons of stuff that are almost unrelated completely with AI tutoring, Incept, or any of these projects. So one, it's a very huge data model. And two, what we've noticed, even with the studios, is that tie-back, it's, well, I mean, one of the tech platforms, one of the tech APIs by themselves are not enough to develop them. So you need an extension on top. And that's what PowerPath is. PowerPath is basically this, you know, sort of standard on top, which you know. And to my knowledge, like, very briefly, you probably know more about this, but it seems like nobody actually just uses One Ed Tech as a standard of itself. It seems like everyone's just building their random extensions to it. So, like, even, like, yeah, I guess the concept for sticking with One Ed Tech is, oh, it's easy. Of like, you know, communicate with all these SIS tools, and it's like a common standard. But I think the reality, like, I don't know, but like, reality may be more nuanced, where everyone's, it's not going to work in the first place anyways. I know that the Toki strategies, ESS magic, like we have all these legacy data models. And instead of like, working with the legacy data model, like, let's just build a layer on top to work between these different data models. So I don't know, like, I think one criticism on the Incept team, and I don't want to speak on their behalf, but there's no native way to represent a knowledge graph, even with any of the time-back APIs. Right now, it's currently done. I think we built a course or something for each student, which is sort of a hack, right? Each student gets their own course, and then they get their own educational path. So I guess the concern is, one, the data model isn't extremely complex and gargantuan. And two, like, in terms of thinking about, oh, also, another concern is, like, because we're building everything in-house anyways, like, how much is our Incept really going to interface with external tools to begin with? And if it's not, like, all the time, maybe we should consider that even mapping layer as opposed to, like, building our entire platform on, like, these line-of-text standards.
+
+4:03 - Conference Room (Max McCorkel) - Speaker 1
+So that's just, like, some brain dump. Yeah. The one ... It is, you guys are ... You should think that our strategy is like what Microsoft did in the 90s. You know, W3, when the internet first came out, right, and the web protocol, so Netscape, Andre's first browser that was implementing it, and CSA, it implemented the standard. Sort of the web standards, and those are terrible. One ed tech. But it was the standard, and then every browser sort of implemented their own version of it. And then Internet Explorer basically said, we're going to embrace it and then extend it. Because everybody at Microsoft is like, you can't do this shit. You can't build a great browser if you have to support W3. And they're like, well, we're going to support W3 because you have to have standards, the internet, and everything can't, we don't want everybody proprietary, but then we're going to extend it with Microsoft Internet Explorer extensions. And then they implemented, it was good enough that all of those became the standard. And then the next version of Netscape and the next version, and then you had Mozilla, you know, eventually Skyvera and Chrome that all adopted them. And that's pretty much what we should look at One Ed Tech, which is we have to be industry standard, because no school or government agency is going to adopt one where we're like, oh, it's the alpha standard or whatever, the time back standard. We need to say, this is the One Ed Tech standard. Everybody's agreed this is the standard. Of course, standards never do what you want. They're never good enough. But we will create the extensions on top of it, whether it's PowerPath or other things. That people can decide if they want to adopt. And so we're sort of stuck with it. Obviously, if we just used it in our schools, it would be fine. But if we're going to have a billion kids use this, governments have to be able to say and public schools have to be able to say, OK, this is a standard, not something that's proprietary. So the answer is we should adopt it, and then create our extensions that make the best of a suboptimal standard.
+
+6:35 - Unidentified Speaker
+And was there any view for the Goals app?
+
+6:40 - Conference Room (Max McCorkel) - Speaker 1
+Was there anything of, oh, this can't be built on the A-Studio stuff, or we could? Did you hear anything? The bugs and stuff. But was there any, did anybody, any issues? Anybody heard about on that?
+
+7:03 - Unidentified Speaker
+Sure.
+
+7:04 - Conference Room (Max McCorkel) - Speaker 1
+The goals at what we want to do. Um, actually, let me, let me step back, uh, since it's, uh, June 30 last day. Um, So we are going to ship TimeBack in July. So TimeBack's our software platform, and we're going to ship this thing in July. And there's various parts of TimeBack, but we're going to ship it all. So one thing is the TimeBack platform, which is the data platform that this is our goal is to get a billion kids put all their learning becomes the standard for, you know, every kid who's a student should have a record and data set in that. Then there's the Time Back app, which is sort of the vision model, right, that is sitting there watching, coaching how to use the educational app, right? It's sort of thinking of the framework we're in, and that actually uses a subset of the one at TechStandard, which is the Caliper event subsystem, so that you can sit and basically watch what the kid's doing and throw events, right? The waste meter, how much time are you wasting, right? Are you working things to mastery? But it's the AI vision model. And so, and then we want to have our learning apps, you know, on that platform. And so we're going to have our own apps, but we also want third party apps on them as well. Um, uh, and we're going to ship that so that as of, you know, August 1st, all alpha kids in any alpha school or any of our stuff is going to be on the type back platform. So right now we have this old platform. So we decided today, We were deciding which way to go, like where are we going to commit, even though it's not quite done yet, for next year. And we decided we're going. So it's going to be a little stressful July to ship this thing and get it shipped. But we just have to. There's too much demand of what we have. And we just need to move over to the new platform and just get going on it rather than trying to do old and new. The wait list for the homeschool versions and all this stuff. Our cost structure on our old platform, we never can hit what we want. So we just need to move forward. So July is going to be a big ship production month. And now, given that, that's sort of the big picture thing, the thing we want to ship, one is this goals app where we want to, you know, speed run slash goals. We want a parent to be able to go in, have their kid take a test, right, either 20, 40, 60 minute test that tells them what their kid knows and doesn't know, right. This is basically a maps test. And then we have a screen. We recorded it last, this was last week, you can see the, but it's a screen that basically says, your age grades like seven, you're in seventh grade, eighth grade, but your knowledge grades like fourth or fifth, right, that you don't have mastery. And we're edgy the parents you know what does your kid know or not because you go to a PTA meeting or parent-teacher conference or anything where you get a grade from school you actually have no idea what your kid knows right like what really do they know and we want to educate parents like if you guys read the astral codex stuff this weekend so you know that you know there's an alpha parent who wrote document on how it works and It's up for like best non book of the year article of the year or whatever Big voting thing takes an hour and a half the average person takes an hour and a half to go through it It's like 500 comments through it. Lots of lots of questions, but parents are like, holy shit I didn't know any of this, you know, they all are reading it Someone posted a comment that was like hey This is ridiculous that we have to spend an hour fucking and a half reading this shit it? Can't we like have a TLDR? And then the next 10 comments are all like, No, there's not one paragraph I want taken out of this because I need to know all this stuff. And this is just our whole thing. People just have no idea about education. And our job in our marketing group is we educate parents, parents totally want this stuff. And so this tool, this goals app is literally a education tool for parents, which is you know, take this, you'll be able to see how far behind your kid is. Then the second part is, we're going to tell them, this is how long it takes to catch up, which, you know, parents freak out when their kid's two years behind because they think it's two years to catch up. And we're like, dude, it's 40 hours. Like you're not that far behind. It's two school years, but it's two, it's 40 hours in, you know, our speed run in Timeback. And that's just going to be a killer, right? That demo is going to be just an eye-opener for parents. My kid's way behind. If they sit in school, they're going to suck. OK, if I use Timeback, I can catch them up. So Peter Attia, I was talking to him today. He's like, I got to get you on the podcast, but you need something that you can deploy. So when you're on the podcast, and they go to this site, because when his daughter She caught it. He was she was years behind and then boom caught up in a year, right? He's like, oh my god. This is like the most amazing thing ever It's 100 that's what he saw it he's like you're doing for education what I'm doing for health He's like you have to be on my podcast and everybody who listens to me is gonna get it But then you have to have something for them Right, and that's why we have to just get over to time back so that like this goal They can all download it, right, and then be able to understand, okay, this is what I need. So we need to ship that app, right, on top of the Timeback platform. Then second, we have to ship the Timeback platform itself to scale. So you guys, I think, are supposed to have GitHub access and stuff. And so back to load testing and all the stuff, I don't know who, if you've been bug testing, if you're load testing, we have to test that to 10,000. Minimum as phase one and then 100,000 as phase two, right? To just get that scale and we should, we, you know, need to improve it to get it to that scale if a studio, if it's not there yet, right? We need to improve it ourselves. So we have to have that time back platform. Then the third thing we have to ship is is we need the fast math game on Time Back. As one of the tools, when you're behind and you don't have math fluency, we're going to want a fast math game that sits on top of it that parents can download and use. Be like, OK, this is a great, oh, I get this. Oh, you guys have a video game on. Kids are learning fluency. Because that's a big part of educating them. And what we're trying to do. And so those we want to get done. Then there's two. Those are, in my world, those ones are easy, relatively. Now we're moving into some of the harder ones for the month, which is we want to take Khan Academy and have it run in the Time Back app, but throw all the learning all the Caliper events, like it was a native app. Like, so when we write an app, right, when you're, when you finish a lesson and you finish it to mastery, we create an event, right? Or you create an anti-pattern if the kid doesn't finish it, right? And then that gets stored into the One Ed Tech data structure into the Timeback platform. You know, Khan Academy doesn't know any of this, right? And so what we want to do, is actually sit there and using a vision model, right? Be able to sit there and watch a kid in Khan Academy and throw the events for Khan itself so they don't have to change their code base. But we should be able to build an AI app that does that, right? So that we can just tell everybody back to our whole point of the platform, hey, just use Khan and we're going to and we'll make sure that, you know, because Khan doesn't enforce mastery and, you know, all these issues, right? All the people who are reading like the Astral Codex are like, oh, they just use normal apps. And you're like, well, just give your kid iXL or, you know, Khan, they're actually not gonna learn, right? Like the author's like, yeah, I used to give my kid iXL and they didn't learn shit. But somehow at GT School, magically, they do. We need to, with Khan, be able to say, say, yes, you can download Kahn, use it for free, put it on our platform, and it will help you learn. So it's incorporating Kahn into the Timeback platform. That's A That's sort of Kahn A Kahn B is, we want to build a clone of Kahn. Don't you guys all have to build clones? Didn't you all build clones? Like, isn't that the easiest thing?
+
+18:08 - Conference Room (Max McCorkel) - Speaker 2
+You just build literally a source code clone of Khan.
+
+18:11 - Conference Room (Max McCorkel) - Speaker 1
+And then the third part will be you'll have to get the Khan content to populate. The app is the clone, right? And then natively throw all the events, right? Build the clone, but have it work against the time back platform. Natively. So 1A is take basically the executable and have it run and use the vision model to create the caliper events. The second is we'll just do a source code clone, where you own the source code, and then modify the source to work against the platform. And then the third step is you're like, well, you need content in it, and Incept's not going to be done in July. But whatever content Incept has, we should use that. And any content that Incept doesn't have, we should just populate from Khan itself. So that then all of that is on the TimeVac platform, so when we ship it, we're like, oh, look at these different choices. And once I have all those choices, I can call Saul up and say, how can we work? Which way would you like us to work together? But overall, we basically have to ship this, get it so that every kid at all the alpha schools can use it. All the stuff sort of K through high school, right, running against this. Then the next set is the whole Dash app that we use, that all the kids use. We have to have a Dash app on top of TimeBash. So there's a version of it that AE Studio has worked on so far, but we will have to see any parts that they're not going to do and just build them ourselves. And so I know you guys are building as part of the TSA stuff, but we'll, uh, we need dash functionality. And so we'll have to figure out, you know, how to have that as well. Okay. And then That's all the educational stuff. So we want to be able to say, we're launching Time Back the company. It's shipping all the products. Platform works. Here's a set of apps that work on it. Here's all this curriculum. Wow, this one looks like Khan. Oh, Khan itself, just use it. It's there. Oh, wait, look, it's got a video game. You're going to learn all your fast math. Oh, here's how you can tell if your kid knows it'll be like think of the the goals app is like a lead magnet like it'll be on a website you know I'm gonna go on a bunch of podcasts and so you know Peter T will be like okay everybody go do this with your kids and get the data and so a lot of education of parents and then home Like 10,000 people who want homeschool will launch with this as homeschool. So that's the ... There's all of those, and that's all the educational side. And it's all based on time management.
+
+21:59 - Conference Room (Max McCorkel) - Speaker 2
+It's just we've got to ship it.
+
+22:03 - Conference Room (Max McCorkel) - Speaker 1
+Questions about that? We're going to use MapsTest. We're just going to use Maps. Yeah, so Maps has two things. They have a screener and then a map growth. And we'll talk with Gui, but it's going to... Screeners are free for everybody. And then you pay for growth. And screeners are like 20 minutes, and then growth is the more detailed. Lead baggage, yeah. Yeah, screener's actually good. It's, you know, it's the 20 minute version.
+
+22:52 - Conference Room (Max McCorkel) - Speaker 1
+All right.
+
+22:53 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, we'll do the July gatebail. We'll write them up. Any other questions on it? We can come back to it if they're not, because there's one other thing then that's unrelated in time-bound that we have to talk about, and then we'll go back and put it all down. So I spent the weekend with Mr. Beast at Beast Games and his team, Beast Philanthropy. So we were on the set, it was Elle and I, we were on the set of season which could be awesome, by the way. I don't know how many of you guys watched season one, if you liked it, but season two is gonna be over the top. They're like, I can't talk about what it is, because I signed my life away to go on the set. I had to sign one with Amazon, since they paid the $100 million. But they're like, in some of the things, and we were talking to some of the contestants and stuff, They're like, this is going to be so good, no one will ever watch season one again. Because they'll be like, oh, that's so late. Like, this is so over the top relative to it. So it's going to be a good one. And the reason, the thing that we want is, you know, Mr. Beast or the Fortnight team, those guys understand kids better than 99% of parents and teachers. And you just listen to them. Mr. Beast is just sitting there and he's like, there's adults and kids. He's like, parents, go away. I want to just sit here and talk to kids and market research. There's a view, I sort of describe it when I talk to Fortnite team and the MrBeast and his team, it's like parents and teachers wear glasses that are like what I would like to be true glasses, right? That just filters everything. And they don't wear those glasses. They sort of see reality, right? Of just what do kids really like, how awesome are kids, those kind of things, what their capabilities are. Parents and teachers don't have. And so when you engage with them, it's why they make such killer videos, right? I mean, Mr. B started when he was 11, right? And so do you know what he thinks an 11 year old can do? Anything, right? He's not like, oh my God, right? So when you, all the things that they want to do, right? There's not this, oh my God, you have to be, you know, you gotta go to college or be out of college or whatever, right? Yeah, you can be 11. Both the Fortnite team and the MrBeast is very much, you have to be the best in the world, right? That's his whole mantra is just the best in the world. Like somebody asked him and they're just like, so what's your favorite video, right? What's your favorite video of all the videos? He's like, it's always the last one. Because when I make a video, it has to be better than every other video I've done Why would I do it? And he's like, when we sit down, we sit there and say, what will make this better than everyone? He's like, just like we're doing Beast Games 2. We're like, we are going to make Beast Games 2 in every episode so much better than season one. And how do you do that? And he's like, and how do you brainstorm and come up with ideas and all of those. But that whole concept of just how do you have excellence? Right? He's like, that's what you need in education or any of this other stuff that we're doing. So, but here's what we'd like to do that we want to see if we can work on. And this is different than the time back push we're going to make, which is the goal here is I want to convince 100 million kids that the key to their happiness is contributing to their community and building a Mr. Beast challenge app that does that. You know, sort of his whole mantra, right? You know his themes and challenges and contests. And so what is an app? Can you visualize and design an app that would cause kids to say, I absolutely want to do that, right? And the core insight obviously is social credit, right? How do you lean into, right? The people who, you know, in the hierarchy of motivations, you know, K through five, you pretty much do what your parents want, but also in middle school, you care what your peers want, right? But by middle and high school, fundamentally, celebrities, influencers, big athletes matter more than anything else. For any of you guys who've read Dr. Giger's 10 to 25 book, that's the whole concept. The whole point of adolescence is you have to be accepted by society, by your tribe. And so you have a literally physical desire to fit in. Right, social credit. And nowadays, that's just online. So the question is, how do we tap into that in order to convince everybody you have to contribute to your community? Right? And so that's the app they want to build. And they want to build it so that it scales to hundreds of millions of kids. And What they've asked us, they're like, are you guys interested in helping us with it? And so what I told them is in July, we would come up with a few different prototypes to show them, to sit down with them and show them and say, here you go, and iterate and work with them just to lock on in and then be able to go build it. They're terrified of, you know, can you guys build a backend that can scale to hundreds of millions of people? And when I said, I totally, not just this team, but this team assisted with AI, Ken, that didn't make them feel any better. Um, it didn't feel much worse actually. I'm like, but you don't understand. I was like, here's the thing is you, you have to build, you can't go a traditional route. Like, you know, You guys don't know anything about software? If you're going to have this app for 10 years, this app has to be built with AI. It has to be on that foundation. That is how you have to go forward. Right? That is the future. And you might be scared right now, right? But that is the path you have to go on. It will help you get there. So the two parts that we're going to have to do is, you know, of the front end, and what would be sets, different interfaces and different ways to build this, different ways for people to interact, and then second, how do we have a scalable back end. For July, we basically, the user interface is paramount, back end can come later if you don't have any They were like, you should do the scalability first. I'm like, 99% of philanthropy apps don't work because nobody uses them. So spend your time on getting users, and then it's a really good day when it doesn't scale. Because that means you have so many users. So focus on that first. Instead of, if you do the other, you have a scalable app with no users. So we have to sit and try to design, what would an app like that be? You know, what can, what are our thoughts around? And so those are the two big things for July. Sort of new and exciting. You know, when we, when going more deep on the Mr. East app, you know, this is your spiky we'll call it core values when we're talking with them, right? We have to have shared core values of what the core of the app is, right? And so it's gonna be, right, 100 million kids, key to their happiness. And this is an important one, is this is one that people really don't like, There's a whole set of people who are like, If you're doing this for your happiness, it's not philanthropy, right? That philanthropy has to imply suffer, right? There's sort of two big dimensions in philanthropy that Mr. Beast does not agree with, I do not believe. Number one is you must suffer. For it to be acceptable. And second, you can never talk about it, right? You must keep it silent. And if you break either of those rules, it's not legitimate philanthropy, right? So those, your spiky point of view difference is going to be in this app. No, literally we're going to convince kids it's the key to their happiness, right? And for those, Eldarian psychology, right? There's a strong set of studies that show that you can only be happy when you think you're contributing to your community. And a lot of the mental health issues that people have is when you become insular and self-absorbed and everything. And the key to solving that is just contribute to your community. Now, you have to define, your community can be your friends, your family, save the world, whatever it is, but you as a person are hardwired to have to feel, I have to contribute to my community or I will never be happy. And I think that's a really good, even though that's the opposite of standard philanthropy, that is a really good thing to train kids on. And then the second one in Mr. Beast is, shout it loud. He is not. He is like, we want this where you are online building social credit, and you have to broadcast it. Or how are you going to build social credit? He's like, we don't want people posting their Lambos and thinking, wow, look at, I'm trying to get social cred. We want them posting, look at what I'm doing, right? We need to make that the currency. So those would be the key to there.
+
+34:31 - Conference Room (Max McCorkel) - Speaker 2
+community.
+
+34:32 - Conference Room (Max McCorkel) - Speaker 1
+And then we want to create daily habits. So so much of philanthropy is one off big event things. But it's, you want to just create the daily habit, right? This app needs to create that. Yeah, in general, Every day, I am contributing to my community. And that is helping my mental health.
+
+35:10 - Conference Room (Max McCorkel) - Speaker 2
+That's helping my happiness around it.
+
+35:14 - Conference Room (Max McCorkel) - Speaker 2
+So we have to build that.
+
+35:19 - Conference Room (Max McCorkel) - Speaker 1
+And then allow for social currency or credit or your social credit score Right? You want to use this app to be able to get more. So that you can then broadcast it. And there was a framework that I think is going to change, but it was There was sort of this, you know, when you look, here's your daily, what's your daily loot in the app, right? And one of the things you think about is you go into the app and you have to get them to do something. Like what's your streak that you're continuing? And so it's either, if you have money, give money. If you don't have money, give time. If you don't have time, give compliments to those giving time and money. Right? So they just when you go into the app, it's there's always right, it's you Okay, look at what's going on, you know, these, you know, there's these two challenges to clean up the park. Shit, I don't have time to do that. But I can throw compliments to people doing it. Just that constant thing every day where you're in there looking want to create streaks and habits. And that's a loop There's a debate on whether this should even be part of it, the give money part, but I think I like that. We can see that will be one of those things we can debate. Yeah, so the answer is that by keeping it quiet, nobody knows it's done, right? And instead you need to do the opposite, which is you have to create it where it's expected that you do it and broadcast it. And if, what? Yeah, it's a contrast. Yeah. The two things today are right. You shouldn't do it if it's for yourself. You should only do it if it's self-sacrifice. And we're like, no, we are going to convince people you should do contribute to community because it makes you happy. It is your dopamine. Do it. And yes, that is still considered philanthropy, even though in today's world that would not be true. We're going to have to change that. And then second, don't be loud, not quiet. And those two things You have to break those two rules if you literally want to create a daily habit where everybody's contributing to the community. That's what's going to be different. It's sort of like when we do extrinsic rewards with Alpha, where you're like, it doesn't fucking pay the kid if you have to get him to the top 1% because it changes their internal view of themselves. You thought you were dumb. How much money would you pay someone so they don't think they're dumb? You'd pay a lot. So let's just do that. Then oh, now they're top 1%. They don't think they've done it.
+
+39:05 - Conference Room (Max McCorkel) - Speaker 2
+That's totally worthwhile. So for the July version of the app, should it be anyone can create these challenges, decentralize? Because it won't be an official way for charities or organizations maybe yet to, in a qualified and validated way, be like, reading official events.
+
+39:27 - Conference Room (Max McCorkel) - Speaker 1
+Is that the idea?
+
+39:29 - Conference Room (Max McCorkel) - Speaker 2
+Or do we want to You want that hint. So there's two parts.
+
+40:01 - Conference Room (Max McCorkel) - Speaker 1
+challenge app, right? It's Mr. Beast. And so what he wants is top down challenges. Right? He's gonna be like, all right, let's do this challenge. And the 10 people who win are coming to Africa with me. Right? Or every right, he'll do promotions with whoever, everybody who does this could go to Starbucks and get a Starbucks after they leave.
+
+40:23 - Conference Room (Max McCorkel) - Speaker 1
+Whatever it is, there'll be top down challenges.
+
+40:26 - Conference Room (Max McCorkel) - Speaker 1
+He wants it to be him. He also has about five influencers and celebrities who want to use this platform for theirs. They're like, oh, I can, you know, Pitbull's like, oh, I can have a challenge. Yeah, I want to have one. Right. And so, right, that this this platform allows it where you're gonna have top down certified influencers, you know, celebrities, whatever, that are the, you know, the old tick blue check mark on Twitter, but yeah, whatever, authorized influencer ones. And so you got to be able to create them. And we need to create structure around them. Right. And then then second, he wants to have bottom up ones where, you know, in general, right, he loves bottom up where imagine you're somebody and you're like, Okay, I'm going to convince my high school to compete with this high school over who can be in the park, right, and will create a challenge, and you can earn rank. So the problem is, is this all fraud? Are you really doing this stuff? And so you have to have a way, just like you earn, I mean, social media, right, I mean, social platforms are great at this, right? You're Airbnb ranking, right, or you're seller, right, on any selling platform. How many stars do you get? You want to have the ability to sit there and if you're like, no, no, I want to go out there and create all these events that people can do. You know, at first, you know, I got one ranking, you know, I've done one and it's hard because nobody wants to go to it because it's sketchy, right? But oh my God, I've done a hundred of these, right? And then, you know, and if you think, and then people will be like, oh, this is a total credible bottom-up contributor. And then that's part of what he wants to do. He's like, I want to go build all these people who are doing this, and they're the ones who come to Africa. Whoever does 100 events that impact this many kids or this many people, then those are the ones who win the challenges. And so you want top-down and bottom-up.
+
+42:49 - Conference Room (Max McCorkel) - Speaker 2
+So do you see the rank being kind of externally measured or the other people at the events?
+
+42:54 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, we, part of this, so part of what we have to design is there's a ton of stuff back to our brain lift and be an expert. There's a ton of stuff out there about how you build a marketplace, trust in a marketplace and a ranking system. And that's like, that's what we're trying to do is how are we going to build credibility? Right. And you know, as I'm, they all can be gamed, but as least gameable as you can. To know that this event took place, good charity occurred there, right, it did help people, you know, I think this is one where we can have a ton of good ideas about AI helping it, which is, you take a picture of the park before, and then take a picture an hour later, right, and AI's like, oh, it's clean, right, and you're, you know, And you can imagine it, if everybody pick a park in your city, and then, you know, there's a hundred teams around the country doing it, right? And then AI stack ranks which park got cleaned up the most, right? And that would be the winners or something like that. And so it could be, and people who are there can rank it, they're taking pictures and rank it, you know, all those things. Film it upload it no and that's part of the whole thing is you can you know before and after or you're doing it right the whole thing right you should part of what I think you want is when I think of this app you know and we had done a prototype which is, you know, imagine there's the globe, right? It's Google Earth, and you zoom into Google Earth, and there's just beast signals, the old bat signals, there's beast signals beaming out from the entire planet. And they're different colors and different strengths, right? There's Mr. Beast, which is like the sun, or whatever, you know, it's really bright. And then, you know, as you zoom in, you know, into your city, you can see all these little ones. And then there's the one, oh, look, Gauntlet has one, because they're doing something this weekend. Or on Sunday, we did Beast Philanthropy. We did the food pantry. So it was Mr. Beast's mom and all this stuff. And we were feeding, I don't know, 500 families at the pantry. And you have that. It would be like, oh, OK, let's create this. People can come if they want to do it. That's a, you know, these bottom up ones are these very, they're like a flashlight, as opposed to a B signal showing up, but then as you get bigger, and then, you know, then you can imagine your city, once you zoom into the city, it sort of becomes like Pokemon Go, where it's sort of a heads up AR display, where you can sort of look, and you can see like, oh, I could go there, there, and these different events are happening. Right? And then I could Click on the event, and it could be like, ooh, do you want to donate five bucks to us? Or do you want to sign up for a one-hour slot? Do you want to donate something to the food pantry? Do you want to sign up for an hour at the food pantry? Or you can't do either, and do you want to compliment us, give us, give me social credit, right, some of your social credit points up, because I went and you were too busy, right, sort of on the, is it money time or compliments? Right? And then you would just sit there and you'd want a streak, right? Where you just go in every day, you're looking, hey, what's going on in my city, money, time or compliments, right? And you just start getting everybody doing that. And there's all these leaderboards and rankings and signals and stuff like that. That's the high level, um, Any questions or thoughts around that? And we should build different ones, right?
+
+47:08 - Conference Room (Max McCorkel) - Speaker 2
+Just build a couple different interfaces to see. Yeah, and so this is going to be one that's interesting.
+
+47:22 - Conference Room (Max McCorkel) - Speaker 1
+The last guy, there's this guy, Darren, Peace Philanthropy a year ago, we started this and he had a passion against 5013Cs, the big guys. He was like, United Way is like the most evil corporation on the planet or Salvation Army, because 80% of the aid is wasted. What we need to do is to bottom up. Now, We haven't talked about, he's gone, and there's new people, and I don't think there is anti-big charity. So I do believe there'll be organizations that can do it, but that's, they're coming from, that's really why, they were really like, it's gonna be the influencers, and then we're gonna go create the next Salvation Army from the ranks of the people. There may be an intermediate one here, put in some normal charities that can sponsor things. But that's not determined yet. Yeah, well, we should pick what age group we think this is good for. We can pick the demographic. You know, the alpha hat is middle and high school, right? But For Mr.
+
+48:53 - Conference Room (Max McCorkel) - Speaker 2
+Beast, it's a different, right? It can be a different set of atoms. So, I mean, I don't think it has to be a little bit institutional.
+
+49:28 - Unidentified Speaker
+I agree.
+
+49:30 - Conference Room (Max McCorkel) - Speaker 2
+Version one, back to, when you launch this app, Mr.
+
+49:36 - Conference Room (Max McCorkel) - Speaker 1
+Beast has to be like, this is the app I will build. Right? It has to be, you know, This isn't what we think the right app is. This is what we think if we were Mr.
+
+49:55 - Unidentified Speaker
+Beast, the app would be built.
+
+49:57 - Conference Room (Max McCorkel) - Speaker 1
+And I don't know how many of you guys are like deep ... Who's going to write the Mr. Beast brain left, but who's the deep expert on Mr. Beast, but that's how we should think about it, right? He wants this to be his app.
+
+50:15 - Conference Room (Max McCorkel) - Speaker 2
+his launch.
+
+50:16 - Conference Room (Max McCorkel) - Speaker 1
+He is a micromanager who controls every single thing. Totally prizes. He's, you know, he's gonna be, you know, he's gonna do collabs where he's like, Okay, give, right. Okay, we're giving about Xboxes or whatever, right? And whoever gets this gets Xboxes and big prizes and, you know, over the top for sure. Like he wants back to the whole thing. He doesn't want this to be, this is all selfless. He's like, dude, I'm earning awesome credit. Like, you know, it's one of the things we talk about, like when we pay kids to learn, you know, one of the problems you have, like when you're in middle and high school, it's considered that you're a dork or a nerd. Or do well on a test, and you have to give kids an excuse. Well, I'm getting 100 bucks if I do this. And people are like, oh, okay, yeah, I guess it's okay to study for a test if you're gonna get 100 bucks. But if you weren't getting 100 bucks, you're a fucking dork. Why are you doing it, right? And part of what you're trying to do is make it socially cool to do things that everybody's saying, what's your problem? And that's basically, on philanthropy, what he's trying to do. The same thing we try to do on education, right, is he's trying to do it on the philanthropy side, which is, yeah, we want to make this just totally cool. And he, more than anybody, has done that, right? It's so core to who he is and his brand and everything, right? You know, I mean, imagine the other set of influencers who were sort of dominating before Mr. Beast came. And you're like, how would you to like follow what they do, right? You're like, oh, maybe not, maybe not as good as, right?
+
+52:16 - Conference Room (Max McCorkel) - Speaker 2
+And so that's what we want to lean into if he wants to do that.
+
+52:22 - Conference Room (Max McCorkel) - Speaker 1
+And so we should think, right, and whatever ideas around these challenges, we should have challenge types and challenge rewards, and sometimes it's, you know, prizes or money or trips or right how about you know we the kind of things you want is you know imagine you're one of these influencers you want to make this as turnkey as possible right where you're like I'm an influencer and I want to create an event right I want to create a challenge and then we should have a template where you're like okay well what's the prize and you're like you get a zoom call with me right or you get you know I do at the either level I do a cameo shout out right I'm gonna I'm gonna do a the top hundred people I'm gonna do a cameo one-on-one message for each one of them so you're like oh my god I'm gonna get Taylor Swift's gonna give me a 30-second you know cameo right you're like what would I do for that there's a lot right And so you're like, we're going to create these contests, make it these templates of what, you know, so that then if you're an influencer, it's just click, click, click. Look how easy it was for me to get on the platform and create one of these.
+
+53:44 - Unidentified Speaker
+Right.
+
+53:45 - Conference Room (Max McCorkel) - Speaker 1
+Oh, I'm going to give out free tickets to my concert.
+
+53:48 - Unidentified Speaker
+Right.
+
+53:49 - Conference Room (Max McCorkel) - Speaker 1
+I got 10 tickets or a hundred tickets to my concert that I'm going to provide to whoever And you can imagine if you're on tour, in every city you're going to, you could have 20 tickets if they do this. Right?
+
+54:11 - Conference Room (Max McCorkel) - Speaker 2
+You create all that craziness around things like that. Yeah, it has to be global.
+
+54:20 - Conference Room (Max McCorkel) - Speaker 1
+Even if it's ... We can always limit, you know, version one, version two, but he's, it can't, the version, sorry, it would be a beta version if it was just the US, right? It's gonna have to be global because of his brand. Two thirds of his user base is, three quarters of his user base outside the US. He's got a billion, he basically has a billion kids who look to him as, like, most important person in the world. No, we were at his thing, and they crossed over. We were in his original studio, Studio A, and then the YouTube, right? He's got over 400 million subscribers now on his YouTube. He gets eight across all his channels. It's basically a billion, but YouTube's north of 400. They confiscated all our phones. And pictures were taken, but they'll be given to us after these games, too. Okay, so this is this...
+
+55:56 - Unidentified Speaker
+Um...
+
+56:01 - Conference Room (Max McCorkel) - Speaker 1
+Sort of, but not really. No one is going to do anything. So no one is going to do anything. They have a great slide deck of what they want to occur. And they're trying to find who can go build it. And I'm like, we'll build it. And they're like, OK, well, we want an RFP. And it's all scalability and security shit and all this stuff. And I'm just like, that's really important. I get it. Run for 300 million people, I get it. But you have to worry about this first, and have an app that everybody loves. Then you can figure out how to scale it.
+
+56:40 - Conference Room (Max McCorkel) - Speaker 2
+You're like, OK, yeah, that's the opposite of what everybody else is telling us.
+
+56:45 - Conference Room (Max McCorkel) - Speaker 1
+So that's why in July, we just want to give them some iterations. So L is the point person. So she's going to meet with them to go through, here's what the different versions are going to be, and get You get to go to beautiful Greenville. You want this to be a totally non-profit path.
+
+57:08 - Conference Room (Max McCorkel) - Speaker 2
+It's not like when there's money moving in, you don't want any financial, like, transaction fees or whatever to make it profitable.
+
+57:18 - Conference Room (Max McCorkel) - Speaker 1
+They're gonna cover the board. I mean, it'll be a non-profit, but that doesn't mean that there can't be transaction fees or something. Where you're donating money and, you know, it takes a cut of the fees so that it can pay for the app or something, they're gonna be, they'll be fine with something like that. Back to all non-profit stuff, you have to get income and revenue for a non-profit to sustain, right? And so they're very, they totally get that and wanna, you know, build a sustained And that's why, like, the money part, I'm like, yeah, that's a great way. We can just take a fee of the money donated and that can then pay the server costs. Right. You can't run a three and a million. Okay, so that's Mr.
+
+58:33 - Unidentified Speaker
+B's hat.
+
+58:38 - Unidentified Speaker
+Okay, time back.
+
+58:48 - Conference Room (Max McCorkel) - Speaker 1
+Okay, we are shipping in July. I'm going on a podcast on July 14th, Announcing to the World, we're shipping in July. It's gonna be Patrice Invest in One, and then right after that, I'll be on NCS. And then Chris Williamson, Is that one?
+
+59:17 - Unidentified Speaker
+Williamson.
+
+59:17 - Conference Room (Max McCorkel) - Speaker 1
+If there's other ones you think I should be on, I told everybody I'm not going to do it, and now I'm like, got to do it. What? Rogan? We'll do that next year. Once we get the, got to build, I need practice. I've never done a podcast before. I don't want to grow like a complete idiot. Right goals and speed run we talked about it But that we want to do it and once again the right our whole point We educate parents about this stuff. This is just such an eye-opener for them that it's going to educate them on, holy shit, my kid's way behind. And then don't worry, your kid can speed run to catch up. And those are two really powerful thoughts to have in a parent's head that you put them in the depths of despair with the reality of how little their kid knows. You pull them out with how easy it is to fix, right?
+
+1:00:55 - Conference Room (Max McCorkel) - Speaker 2
+Because it is, you don't set goals when they're unattainable.
+
+1:00:58 - Conference Room (Max McCorkel) - Speaker 1
+If you're literally like, my kid's two years behind, you're sort of like, I guess you're fucked, right? You're just like, oh my God, how do you fix that? I mean, you can't fix it in the summer, right? If you're two years behind. In our system, you're like, dude, you're like a month behind. What are you talking about? And you juice the motivation and fix it up. So we gotta do that.
+
+1:01:29 - Unidentified Speaker
+Then we need the platform.
+
+1:01:32 - Conference Room (Max McCorkel) - Speaker 1
+And so we need a scale.
+
+1:01:37 - Conference Room (Max McCorkel) - Speaker 2
+Right?
+
+1:01:37 - Conference Room (Max McCorkel) - Speaker 1
+10K is first, then 100K for users. This thing can scale up. This would actually be a good ... Whatever work we do for this would be really useful to convince the Beast Games, right? They were like, oh look, see? See how scalable we can do? Can totally make scalable platforms. Um ... Fastback, aim, on, on timeout. Right, so it's like you do the speed run, here's the goal setting, and then all of a sudden there's like this fun game that the kid's playing that's teaching them fluency, right, and we're explaining how, So once you're above third grade, if you don't have fluency, I don't care what grade you're in, you should go back and do fluency. And if we can create this fun game that kids are going to want to play, and we can have contests around it, all that stuff, that's a great example of, oh my god, my kid now knows this stuff. I thought it was really hard to memorize your multiplication table. And just back to branding when you're at launch, right? Imagine you're at launch and you're like, okay, you're on Peter Tia's podcast and you're like, look, go to goal speed run and just see where your kid is. And you're gonna see, shit, your kid's a couple years behind. And Peter will be like, yeah, my daughter, she was a couple years behind.
+
+1:03:24 - Conference Room (Max McCorkel) - Speaker 2
+And then you're like, oh, I'm in despair.
+
+1:03:27 - Conference Room (Max McCorkel) - Speaker 1
+Oh my God, what's happened? And then you're like, oh, wait, she's 40 hours away. From being awesome. And you're like, oh, okay. And then you're like, you know, he's gonna be like, yeah, what I did, what I told her is if she did an hour of homework, I would buy her and 10 of her friends tickets to the Taylor Swift concert in April or May, whatever it was. And she's like, totally. Okay, that's a fair trade, right? And every parent thinks that's a fair trade. Oh my God, now all of a sudden she's a math science genius and now she's an honors math. And instead of thinking, and she's like, I'm a freaking math genius, right? And that, like, he'll tell that story about his own kid. And you're like, and so then we're like, yeah, we'll check this math game out, right? And the first step is always getting fluency. Because the reason you're having struggling in the higher level math is because every school stopped teaching you. And then we can give, I can give this whole thing about how, you know, because of cognitive load theory, Right? Your working memory is overloaded, so when your kid's making careless mistakes on tests, it's probably because they never memorized their math facts. And look, just haven't played this game. Right? Parents, that kind of education, super valuable, and makes it where we're talking about, we're hammering our point of, it's all about motivation, guys. It's all about motivation. There's learning science behind all this stuff, but As a parent, you just need to focus on the motivational part. Then we want to run with Khan Academy. So I have A, B, and C. Which is A is So A is you're running in time back using the vision model to integrate, right, and save. So you're sitting there and basically watching cons and executable, right, the binary, and the vision model's watching what's going on, seeing, okay, you finished the lesson, and then saving that, right, throwing the caliper event. Or whatever the one ed tech, the time back standard is for basically putting it like in QTI format and being like, okay, now it's saved, right? You completed the lesson or the waste meter, right? And just watching it. The second one, right? And we can do parallel threads on this, right? We've got a lot of big team is just build a source code clone of Khan and just have it natively call timeback, right?
+
+1:06:55 - Conference Room (Max McCorkel) - Speaker 2
+Just get a clone, get a source code clone, and then just be like, this is what we do natively. And then third, you have to have content.
+
+1:07:15 - Unidentified Speaker
+Yep.
+
+1:07:20 - Conference Room (Max McCorkel) - Speaker 1
+I mean, it's mediocre, but it's, it's what we're trying to do with con is, you know, our native apps and our native incept and our native right structure is going to be way better. Right. And that's going to be fun, but we want cons free, right? It's a trusted brand, all that stuff. And we just want to make it work as well as you can. Right? And so that's what our goal is, is, you know, that Khan's always a good one to be like, okay, we got it in time back. Right? And it's going to sit in flag. No, no, no. Right? We're going to help you finish the lessons. We're going to tell you when you're not doing it to mastery level, like do the quiz. Don't just do the lesson. To do the unit quizzes. And so that's what's going to help juice it up. Now, over time, I totally believe that Khan will use more and more of the Time Back platform. When our videos are generated, when we can a direct instruction video out of Incept. He's going to be like, wow. If I'm a student who's behind, his video is not good. His video that he has, that he wrote, is not as good as a direct instruction video. And he'll have that as an option where, OK, give me the Incept direct instruction version. And I believe we'll be able to get them to use Incept as some of their content. They also have shallow question banks a lot. So if someone's burning a question bank, you're like, hey, you want some Incept questions? Sorry.
+
+1:09:31 - Conference Room (Max McCorkel) - Speaker 2
+Yep. They generally don't update.
+
+1:09:35 - Conference Room (Max McCorkel) - Speaker 1
+They just did like a constitutional law. And those are all new videos.
+
+1:09:46 - Conference Room (Max McCorkel) - Speaker 2
+They have new subjects and lessons.
+
+1:09:58 - Conference Room (Max McCorkel) - Speaker 1
+But the first step is just get it as used today. And then we'll be able to incrementally talk to his team and just be like, do you want to use any of this time back platform and the Incept platform to rebuild it? And that's one of the reasons when we have the So here you go. Well, if you took Zach and you have him watch a pod video, he's like, ah, give me a break. Here's the four things I fixed.
+
+1:10:49 - Unidentified Speaker
+One of the big things ...
+
+1:10:53 - Unidentified Speaker
+you need interactivity.
+
+1:10:55 - Unidentified Speaker
+They're too passive.
+
+1:10:57 - Conference Room (Max McCorkel) - Speaker 1
+They're too long and too passive. Versus you have to get people engaged. Right? And that's ... So the amount of learning science that's embedded in Khan is very large. And it needs a ... You know, 15 years ago, right? Time for an upgrade.
+
+1:11:26 - Unidentified Speaker
+Right?
+
+1:11:26 - Conference Room (Max McCorkel) - Speaker 1
+And we can provide that. So that's the Khan Academy. So we want to do the con one. Which is, I want math academics.
+
+1:11:55 - Unidentified Speaker
+With A and B, the same A and B.
+
+1:12:02 - Conference Room (Max McCorkel) - Speaker 1
+Now on the content, we want it just to come from insects. There's no point in doing their content, we should just do ours. A binary math pattern working on time-back, just as it is, and throw all our events, right? We had a hacky version of this working in the fall, winter, on a non-time-back vision model. But yeah, so we do A, and then incept can do the B and C part. Right, so that way, when you see it, like, so it's the end of August, we're announcing this thing, and you're like, what is this really, what is it? And you're like, boom, okay, parents, take this goals out. They're like, holy shit, right, it scales a lot. Number two, third, oh, look at this video game, that's pretty cool, right, sort of foreshadowing the Fortnite thing to come, but it allows us to teach fluency, right, fun and exciting, right? It's all not just a grind, get kids doing it. We should totally on this game, you know, I know you guys are building a lot of right leaderboards, social competitions and things like that. Totally want to do that. Um, and then you're like, and shit, download Khan Academy and it works in it. And it's going to give you more insights on how to use it, right? How to get mastery. A big part of when we talk about what's different about us is, you know, we generate personalized lesson plans and we enforce mastery, right? The two elements of Bloom's Two Sigma, right? One of the things that was interesting, I don't know if you saw in the comments, I don't know if you've, you guys should all read the comments in the Astral Codex, all 500 of them, because you can see what everybody fucking thinks. Um, uh, But, you know, they're all like Bloom's two sigma's been discredited. And I actually don't think that's a correct way to look at it. That is, I do believe, oh, sample size small, all this shit was done in 19 whatever, when I was in high school 40 years ago, right? It's not, you know, a rigorous, you know, randomized controlled trial like you would do today. But the two concepts when everybody says, the mistake everybody's making, that I'm gonna be clear on all these podcasts, and part of why I'm doing this is, everybody equals, AI in schools equals fucking chat, GVT, chatbots. And it's like, no, people are like, you don't have a chatbot, you're not an AI. And you're like, you guys are completely wrong. And related to this, when you read Bloom's thing, you're like, Oh, a personalized tutor. That's what ChadGBT is. It's an AI tutor. And they're like, there's no way you can get to Sigma. And you're like, you are missing the two most important learning science concepts. One of them is fucking in his paper. It's called mastery. And there's not one app or one AI tutor that enforces mastery. None, fucking none. And so all of you his paper isn't going to get two sigma. You're literally taking out the first sigma when you take out mastery. There will be no test ever. There's no controlled trial you can do that if it doesn't have that mastery, that will get you two sigma. We are the only platform who enforces it. Nobody does. Khan doesn't. Nobody does it, right? And even a human tutor, when they do human tutors. Human tutors struggle to enforce mastery, right? That is all. It is dramatically easier to do the second part, which is AI tutors who generate a personalized lesson plan. That's very much more what a human tutor does well. Oh shit, you don't know this. Let me go teach you this, right? But do you really teach it to mastery, right? Did you give it to him and test them against the standardized test to make sure across each grade level and not allow them to pass until they were 90%? Human tutors don't do that. I'm in there. I got an hour. I got you for an hour. I do my best. And so our system requires both. And I absolutely believe we're going to show that if you put shit into the Time Back platform because we enforce mastery and generate personalized that you really do get Two Sigma, right? And Two Sigma, right, just, right, math, your leftmost, your worst kids in Two Sigma are top 10%. And that's fundamentally what we're seeing at Alpha, right? That I'm like, yes, everybody can be top 10%. Give us a couple of years, right? And we'll get everybody top 10%, right? And so I wanna be able to just say with Khan, right? Download Khan, they never did. Looms to Sigma, they didn't enforce mastery, but our platform does, our platform will generate the personalized, you know, con lessons you need take these lessons in this order, right? And they can do it with a free version of con. Right? Because we're gonna be fucking $10,000 for our whole suite. It's very expensive. It's really like, okay, we've got cheap one. Right? Oh, it's not as good as the $10,000 one, but still better than what you're doing. And then math academies on there, which is the other good example we want to highlight. We love those guys. And then we'll have our insect. And so that like when you think about launching, you're like, okay, those are all really good ones. And then, uh, dash, you need a better name, but you need the dash equivalent, which is the key to the dash is we talked about, you know, for, you know, TSA, we need a fricking map of the, you know, in this case, Texas, but a map of the world, you know, it's sort of like, we're gonna do for the beast app, right? It's fucking Google Earth, and you're coming in, you zoom into Texas, and you're just like, all the schools stack rank, how many people are learning 2x, right? How fast they're learning, right? Demonstrating mastery, right? And you can go down to a school, you can go to a class, you can go to a student, and you pull up the kids, the student's learning plan that's on Dash today, and it's like a fucking x-ray of the kid's mind. It's like a CAT scan of what they know and what know and why they're learning what they're not learning. And parents have never seen anything like that. It's like a, it's the deeper version of what the goals, insight gives, like when people see that, right, Peter T is gonna be like, can we pull up a little, you know, lives and go through that. Because he's like, I remember the first time I saw it, I was like, this is the dashboard every parent needs their kid, right? It's got the waste meter, kids wasting 40% of their time, Here's their age grade. Here's their knowledge grade. Here's their accuracy. This is how many weeks they are from mastering the lesson. All that stuff. They're like, that's what we need. We need to make that transparent to everybody. So we need that Dash capability as part of the launch. So Dash is an existing one. Dash is an existing one that we use today on our old platform. That we need to port to one ed tech to the time back platform now a studio has done a 70 job I think and we will get the github and just build on it just take it over basically right I I generally look at and maybe you guys as we go through this and Max generally is like we had a studio building bunch stuff and as soon as we're ready to like just take over the right so you guys are gonna get familiar with it all and then it'll be ours I mean legally it's a hundred percent ours already but right ownership right it's just you know you guys you guys should have access to them all you guys should all be able to commit now right PR is all itself Not yet?
+
+1:21:37 - Conference Room (Max McCorkel) - Speaker 1
+You just have a Google form?
+
+1:21:39 - Conference Room (Max McCorkel) - Speaker 1
+Okay, well we will get... We're gonna get you guys just GitHub access, right? Worst case, we'll just fork it. There we go. And just go. This is it. You guys are building, right? This is it. Is building all this apps. Where you guys are with the help of AI. All right, because I definitely want the theme when we announce it, right? That we're like, yeah, right? Super Build is built in, right? Look at these apps that Super Build's built with AI, right? It fits our whole theme. And so that's what we want to do in July. And there may be some other things we obviously come up with, but those are, right? And at the end of it, You know, we also on Incept, we have other teams doing Incept. And so we have like Alpha Learn. And, you know, we have a science curriculum, a language arts curriculum. Alpha Read, all of those apps will be part of this as well. And so there may be, depending, some of those that we might want you guys to jump on. The Alphawrite guys are getting a little touchy after they got blasted on the article by the parents. They were trying to convince everybody that like, well, the parents don't know, the kids don't know how good our app is. I'm like, if you have to tell kids your app's good, it's not good. So my game's great, nobody plays it.
+
+1:23:53 - Unidentified Speaker
+Any, go ahead.
+
+1:23:55 - Conference Room (Max McCorkel) - Speaker 1
+So we have a couple of different games. I made a sub-list for one math game, and I know no one really plays a math game.
+
+1:24:09 - Conference Room (Max McCorkel) - Speaker 2
+Do you have a specific one you're working on? Just one that will shiver.
+
+1:24:18 - Conference Room (Max McCorkel) - Speaker 1
+I'm happy to have ship multiple, right? If we built a bunch of games, let's just put them all on there.
+
+1:24:31 - Conference Room (Max McCorkel) - Speaker 2
+And if they work, ship them all.
+
+1:24:35 - Conference Room (Max McCorkel) - Speaker 1
+What, this dash thing? That's the name you mean. Brainwave. Yeah, brainwaves of them or something like that. Brainwave? Yeah, yeah. No, at that point we've got to ... Yeah. Brainwave isn't ... Like CAT scan seems ... Brainwave seems transient, like it's gone. Right? And this needs to be more your knowledge graph. Print, brain print, or something that's more permanent. But anyway, so these are going to be a set of projects. We're also going to put a cool, and I haven't decided exactly what this is, but there's going to be a huge set of What do we call them? Bounties. Bonuses and bounties on shipping best stuff by July. And so we're going to make it a super fun. There'll be a lot of work in July, but it's going to be a super fun, super rewarding sprint. And so Like I'm thinking like a million dollar pool, something like that. And so I gotta figure out about it, but something like that. Because it'll be, you know, back to, you gotta have all the kids be able, you know, back to scale, right? It's gotta be total scale. It's gotta be awesome, right? Kids have to be able to log in, which fucking Peter T, it can't go down. Podcast, people hit the site, right? Part of it, you know, this is the core of what it is, but it's gonna be like, oh, we have to build like the Time Back website. You know, the vibe marketing stuff that we have to have, have that available where people can then. There's a lot of, a lot of things to launch everything in 30 days. But it should be super cool. And then back to TSA, you guys all have to be live on this as well. So if there's anything you guys need, we can spin it up as a separate project so you guys can get and more bandwidth around that as well. But yeah, we will not be using IXL this year to launch our academics. We're going 100% time back. That was the decision I had to make. We're going. We're going time back.
+
+1:27:57 - Conference Room (Max McCorkel) - Speaker 1
+Yippee, yippee.
+
+1:27:59 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, we'll change it to tie back. Yeah, I want to, you know, as we look at them, you guys should say, I don't know how many, where the projects are. How many people are excited to go work on this kind of stuff. But yes, for July, we have to nail this. So in a stack rank, now, TSA also has to launch. Anybody who's got a launch for school should not pause their thing, right? But if you're working on something that does not have an August 15th launch, this would be a good month Work on this. Assuming you're like, okay, I know how I can contribute to this conference. But yes, this is, we're gonna go big, this is it. Time back's here, right? The alpha hype is insane. We're announcing we're gonna open up 25 alphas, right? We're having the big, in mid-August, August 14th, we're gonna be at the Milken Conference, and we're gonna have Naval on the West Coast, and build an Ackman on the East Coast. By the way, the New York Times came. I don't know if you guys, like on Friday they were down, and it was very positive. The reporter was like, I came in skeptical, but then you just meet, talk to all these kids, you're like, this is crazy. And then today, she stayed the weekend so she could meet some of the high school kids today. You know, very positive. They're like, we were gonna do this in August, run an accelerated thing because we want to be the ones to announce that you're going to, we want to be the news that you're going to be opening 25 of these. We want to be, you know, the New York Times had it first. So we did tell them who's our New York families. We never talked about the families. So they're sleuthing around trying to figure it out. But yeah, we want to have that big announcement that, okay, Alpha's going nationwide. It's going to be huge. And then this software, which was the most maligned part of the, you know, astral codec stuff. It's just so, it's so confusing and everybody's like, it doesn't make sense. And so I have to go out there and just be like, guys, let's be really clear. Here's the learning science. No one's talking about the learning side. This is why it really matters. Here's how the AI, There's three parts. It's not a chat bot. That's fucking poison. You roll out chat, you meet you to America, everybody's fucked, right? You need the vision model, right? The time back platform. It's got the client has the vision model, the coaching kids and how to use it, the waste meter, right? Time back. Now the guy who's going to do the interview, Patrice, read the whole astral codec. He's like, Oh my God, that guy doesn't even get the concept of time back. And No, well, you know, GT families aren't, you know, they want academic enrichment. They don't want, you know, Patrice's like, I want my kids to do the entrepreneur class, right? I want to do Airbnb. I want to do the, you know, food truck, right? Where's the investing class, right? That's the, where's Robin Hood for kids, right? That's the stuff he wants. So we're going to have to go on there and explain all that and be like, yes, there is heavy AI. And here's how it can scale, right? And here's how everybody can get access to it. And we're gonna fucking have a thousand schools. Oh, I forgot, we gotta talk. I had another big meeting, this one for TSA. I talked to Dustin, who's head of the Texas House, and Max McCorkel talked to the governor. And she's obviously a much better salesperson than I am, The governor's like, this sounds awesome, let's open 1,000 of them. And I talked to the head of the house, he's like, oh, don't even think about opening 1,000. That's like a really bad one. And I'm like, how many? He's like, how about 50? And I'm like, I thought, he's like, and let's stay away from rural. I was like, I thought this was the whole point he did. He's like, it is, it is, that's exactly why we did it. But if you open in a rural and you take the coach, like that's going to cause a shitstorm. Like people are going to be like, Oh my God, you're taking the good student, the good athlete from public schools in the smallest places. He's like, you gotta be in the, he's like, be by the cities. No one will care because there's enough people. But if you go to rural, this is going to cause issues. I'm like, but I thought this was the whole point of giving them choice. It's like, it is. But just don't go to rural. He's like, these guys got to get reelected today. Anyway, the whole point of that is, this is, it's going to be really interesting. Like, he's like, and then he's like, and first of all, you're never going to convince anybody you're gonna have quality. And he's like, you're not gonna have quality at 1000. And he's like, and if you any bad examples out there, oh my God, they are gonna jump on it and kill it. He's like, it is so much better to have 50 awesome ones than 1,000 with 50 negative ones. So anyway, just something to think about as we, the pitch, instead of saying we will have one in every school district by August, which causes people to think you're rushing for quantity, We're going to eventually have them in every school district, but we're only gonna do it when we can guarantee quality. I mean, that's, our pitch for alpha is at a different scale. We're like, people are like, you can't open 25 by December. They're like, that's insane, right? And you guys are like, we open like 25 a day, right? And so we keep saying for alpha, we're like, no, no, we're only gonna, only going to open as many as we can guarantee the three commitments. And that'll be as many as it is. And so you'll have to change and pitch there because it's going to come across it. But there are going to be definite politics around. As you get into the small rural ones, there'll be people being like you're pulling people from my public school. So now I'm we're counting on the coach is going to have to deal with all that. The coach will manage it. But Yeah, no. And I thought, yeah, that was the same. I tried to bring that up. It's just, you know, no, I think it's a fraction. I think you're going to be able to get the coach to say, this middle school is going to make our public high school better. I believe that is every coach is going to be like, dude, seriously, like, I get half a day of training middle school, these guys are gonna fucking rocket high school. And there is no high school. It's just right, we're gonna move up, but it's still gonna Controversy, you know, we were rejected on Friday for our charter So we've been rejected nine of ten places. So if you think you know the People do not like our pitch Did you see Max McCorkel's? Instagram She posted one today where she's like I keep trying to bring it to States For free and then it's like Texas. No, Pennsylvania. No every just every state rejected So now mentally that it doesn't hurt our brand because she just stands up like the New York Times. They're like, well, what's your view on public school? And she's like, I keep bringing it. And look, whatever I say that gives me a million followers on Instagram causes every school board to be like, stay away. And so I'm going to keep saying it and maybe someday they'll want it. We'll be here if they ever do. Right.
+
+1:36:20 - Unidentified Speaker
+And that's sort of our framing.
+
+1:36:23 - Conference Room (Max McCorkel) - Speaker 1
+And that framing is good, because a lot of people are very suspicious that EdTech is trying to sell to public schools and take money rather than deliver. And she's just like, look, we make all our money on our private schools.
+
+1:36:38 - Conference Room (Max McCorkel) - Speaker 2
+And if you guys ever want it, we'll try to do it.
+
+1:36:42 - Conference Room (Max McCorkel) - Speaker 1
+So yeah, but we'll have to figure out that framing to make it a little less aggressive. But they're there Both sides are very excited. Like this is exactly why we did the bill. We're super excited They're just like make sure it's super high quality make sure it's super high quality and this is where though the References, you know and all that stuff You know the New York Times stuff like today You guys haven't had to excuse it. You would never allow a New York Times report unfettered access to your company and customer base. Just go talk to anyone, right? It's always managed, right? That's what PR agents, right? That's what they do, is manage. McKinsey literally just walked in today with the thing, and there's like, there's some summer students that she's never met, right? And she's like, hey, what are you guys doing here? You wanna talk to me? And they're like, what project? They're like, oh, we're learning AI, and I'm trying to build this project where, you know, in photography, you know, with AI, you can manipulate it, and so you lose the watermark. And so I'm trying to figure out with AI, can we put watermarks on photographs so that, you know, photographers can get credit for their work? And literally, the New York Times photographers there with their reporter, and they're like, wait. And they literally just sat and talked to this student for 15 minutes about all the thoughts around it. And they're like, and so do you go to Alpha? She's like, no, I go to this fricking private school. I'm trying to get out of it, you know, and get, my dad was meeting the head of school here to move me over because it sucks. I mean, it sucks terrible. This stuff's so awesome. You know, and it's just, I mean, it's just authentic, right. Great references that, you know, everybody talked to, right. Byron, you know, you know, Byron on Friday came and met her. And she knew him from some of the Instagram posts. And she's like, oh, well, I'm surprised that you're not here at the AI camp. I didn't see, because he came at the end. He's like, oh. He's like, I know all this. He's like, at Alpha, we learned this stuff just during the school year. So this guy, he's like, and more importantly, I'm at the Wilderness Camp, right? And I was out like, figuring out how to start a bonfire and canoe and all that stuff. And that's like way more fun for me than doing the AI stuff. Just the authentic stuff. And so when you think about at your camps, right, or at your schools, just getting that content and broadcasting it, that's what's going to overcome skepticism. And everybody else is just at the end of the day, our references from our students are so over powering, that even if you come in with a skeptical hat, right, and then you see it, you're like, okay, right, it is powerful. It looks like we opened Fort Worth, we had the Shadow Days, it looks like 100% of the kids who went on Shadow Day are signing up for the school, like just 100% convert rate. We'll see, they're actually gonna go to the Rangers game tomorrow with the parents, you know, they're talking through it, but literally, that school's gonna be Today we announced a full six weeks. We sent out the mail for the next 10 because we got the guidepost deal. So we have 10 locations. So McKinsey starts next Monday. It just starts doing a summer concert series, city to city doing info sessions. And all of them, they're like, all of those will be full even though it's the middle of the summer. We'll be able to fill those schools in six weeks, even though literally in the middle of vacation. They're like, the only alteration we have to do is usually we can do one shadow day because they all make it because of vacations.
+
+1:40:40 - Conference Room (Max McCorkel) - Speaker 2
+Each city is going to require a couple shadow days and some flexibility around time.
+
+1:40:46 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, so we get so we've been generate back to the thing is, you know, on two hour learning, she's been generating, you know, sign up on the mailing list and sign up for your city. And so literally what happened, when we announced the 10 last week, we didn't even spam the whole database. We literally just go to the people who said Dallas-Fort Worth. We're like, okay, we're opening Fort Worth. And so we have some Plano people are like, shit, that's so far. Oh my God, right? But then we're, and that was like, whatever, three weeks ago. We announced last week, okay, we're doing Plano. And so they're like, okay, I'm not gonna do Fort Worth, I'm gonna do the Plano one. They literally were gonna drive instead. But it's just mailing the subset of people on the database. So that's what you, when you put your stuff up, right, put your zip code in of where you want one. And then when you have one, when you have a coach, like for us, they've all signed up and we're like, as soon as we get a building, right, and 25 families, and but you have to we kept trying to get the 25 families before the building and that's the first that's what we learned by six months ago was you have to have the building which is why we did this big guidepost right because you can there's just people only drive 20 minutes and it's just it's a I hate to admit it because I didn't want it to be true right I want to just get the 25 families then we find a building because it's easier way but you got to get the building first and then the So you have to get the coach and the location, and then that.
+
+1:42:37 - Unidentified Speaker
+Yeah.
+
+1:42:39 - Conference Room (Max McCorkel) - Speaker 2
+Oh, yeah.
+
+1:42:41 - Unidentified Speaker
+Party.
+
+1:42:43 - Conference Room (Max McCorkel) - Speaker 1
+Or Arthur. So. So Arthur. Has somebody in charge of all real estate, including that spot, and so you can just ask him for everything you want and they will do it all for you. But you can have the keys too, but then all the stuff you need, just they can do it all. And just get them, have them like go to the facility with them, right? And just walk through it and just get them to agree and do whatever development you want around it, right? You have CapEx budget to spend stuff to improve it. And they can spend the time. You guys don't want to spend time managing that. Let them do it. You just tell them what you need, and then you guys spend time on getting coaches and students.
+
+1:43:53 - Conference Room (Max McCorkel) - Speaker 2
+send that to me so I can forward it to Arthur.
+
+1:44:14 - Conference Room (Max McCorkel) - Speaker 1
+That's what it is. Great.
+
+1:44:24 - Unidentified Speaker
+Perfect.
+
+1:44:25 - Conference Room (Max McCorkel) - Speaker 2
+Oh, we also got, we put our San Francisco one under LOI, so we're opening in August in downtown San Francisco overlooking the pier.
+
+1:44:53 - Conference Room (Max McCorkel) - Speaker 1
+The most that anybody is walking, walking away from is $15 million. Yeah, most are walking away from 20 or $30,000. But we have a parent who had a $15 million. Walking out, and they're moving over to which If you ever wanted to know, parents are price insensitive. This guy's rich enough that that's not 5%.
+
+1:45:36 - Conference Room (Max McCorkel) - Speaker 2
+Everybody will spend 5% of their AGI.
+
+1:45:42 - Conference Room (Max McCorkel) - Speaker 2
+That's not 5% of his AGI.
+
+1:45:47 - Conference Room (Max McCorkel) - Speaker 1
+Yeah.
+
+1:45:47 - Conference Room (Max McCorkel) - Speaker 2
+Yeah.
+
+1:45:48 - Conference Room (Max McCorkel) - Speaker 1
+No, that is, that's, this is why, you know, we're opening all these schools in December, 25 in December for alpha, even though we missed the August starting the school and they're not even going to send their kid in August. The reason in December, you know, it'll be very few who send the kids in December. The reason is private schools, for January, February, and March. And if you have a physical building, people, because they have to commit in January, February, and March to September, August and September. And so if we have a building, they will sit and say, okay, for August, I will not give my money to the private school, I'll give it to Alpha, right? And so if you miss December, you're in what position you're in, which is they will have committed that any private school person will have committed money, right, to the private school, because the private school is like payout. And sometimes you have to pay the whole year's tuition, right? And the problem you have on moving people in private school, obviously, is not only do you have to give up the tuition, you lose your spot. And those spots are And if there's a wait list, you're fucked. And you lose it, and if alpha doesn't work out, you've screwed your kid. Because where do they go then? And that's the anxiety they all have. Now, I'm hoping you guys will be able to pull a lot of public school kids, because that doesn't matter. You're not paying, you can go back, it's fine. And 80% of the people in public school, sorry, that's not the right way to word it. Eight of 10 people who could afford private school go to public school. They just don't, they're like, private school's not good enough. Public school's fine. I could pay for it if I want. In Westlake and goes to Westlake High School, right? You can't have a house that big and pay that much property tax and not be able to afford Alpha, right? But you're like, fuck it, I'm going to Westlake High School, right? And so 80% of the people in high net worth zip codes go to public school, but they could afford property. And so those are the ones you can pull and because then their risk, they just go back to public. Those are, that's a bigger, if you're trying to just steal private, that's only 20% of the market, 80% of the market is the public school. Where you have to, if you have a 10X product, you can pull that.
+
+1:48:51 - Conference Room (Max McCorkel) - Speaker 2
+When you find it might be harder to pull those people, because like they're, like someone who's already going to private school, it may be like a slightly atypical or non-traditional education experience, someone who's sending their kid to public school hasn't had to make that decision.
+
+1:49:08 - Conference Room (Max McCorkel) - Speaker 1
+And so this is why you have to have a 10x product. If you have a 10x product, if you can't convince public school people, you don't have a 10x product. This is back to the whole thing. You have to convince someone to buy an electric car. They've never considered. You've got to be like, this is a fucking awesome car. Right? And it used to be prior to the Tesla, they were all like save the world cars, the Leaf or whatever that shit was. They're slow and crappy and small. You know, it's like, oh, I'm an eco warrior. You know, here we go, save the world. I drive this shitty ass car to prove that I want to save the world, right? And Tesla's like, why don't we just build the world's best car and make it electric? Right, and that's what the school has to be, where if you're in public school, because you're like, my fucking sports team, that's why I'm there, you're like, oh my God, this is fucking way better. This is so much better, fucking two hours, and sports all afternoon, and they can still do sports when they come up with what they want, or they're gonna be totally ready for fricking high school, and it's the coach doing it. That's what's gonna cause it to be like, I never considered a private school, because they all were the same, and this is so different. That I'll bring it into consideration. But that's my absolute view is we have to be building GT schools, you know, the same one where I have my kid in a public school in a GT program. And you're like, Oh my God, I read the Astro Codex shit. Holy shit. Look at those scores. Right. And you're like, yeah, I was in public school, but yeah, I'm totally switching. I mean, we have 10 families now moving to Austin after reading the article. Right. And they called up Ed. It's anonymous. The guy who wrote it, and they just called the bed, and they're like, is this shit really true? Right? And they're like, we're going to move there. Because, you know, he says in the article, he's like, I thought it totally normal to move across the country for a good education for your kid. And then at dinner parties in Austin, I realized, like, I was a weirdo. Because nobody does that.
+
+1:51:14 - Unidentified Speaker
+Seattle.
+
+1:51:14 - Conference Room (Max McCorkel) - Speaker 1
+Seattle shut down their GT program. In the moment that happened. And so he's just getting all the, and so everybody's calling him now. Before it was published, I knew, yes. No, it's interesting, because you know, it's really GT kid coded, not alpha coded, It's labeled alpha, but it's really a GT parent who wants that. And, you know, uh, my position on all this kind of stuff is just let people publish it and what they think and not try to, even though it's like totally inaccurate, like there's a whole set of inaccuracies in it. And I'm just like, Oh, well, right. That the authenticness of what his beliefs are, right. Even though I'm like, oh, that's really not true. Back to educating.
+
+1:52:17 - Conference Room (Max McCorkel) - Speaker 2
+I'm like, oh my God, I have to go.
+
+1:52:22 - Conference Room (Max McCorkel) - Speaker 1
+That's why I got to do this. It really did make me be like, I have to fucking bought a podcast and start explaining. This is just insane. They're just, they're so off. Like the comments, you know, the thread, are crazy tough. I have two related questions from like, I've heard you guys before.
+
+1:52:47 - Conference Room (Max McCorkel) - Speaker 2
+Yeah. So, one of the comments actually said that, I wonder why they're marketing me so heavily on AI when that's very unpopular. It seems not even really true. So, the other part of what I was going to ask about is, eventually getting an AI coach. Yep. To get to a point where that's possible and that's why we're pushing the AI people, or is there another reason why you're playing up the effort when that seems to be impossible on parents?
+
+1:53:27 - Conference Room (Max McCorkel) - Speaker 1
+So there's ...
+
+1:53:28 - Conference Room (Max McCorkel) - Speaker 2
+yeah, so a couple of points on this.
+
+1:53:32 - Unidentified Speaker
+So ...
+
+1:53:33 - Conference Room (Max McCorkel) - Speaker 1
+Alpha marketing is terrible, was one of the comments. They push AI. Is not popular. I think the next comment was, can you name another school in the United States? And our marketing is fucking fantastic. Name another school in the United States. How many people know Horace Mann? Right, considering they're one of the best schools. I mean, it's like, Horace Mann is the Stanford of private schools today, right? But literally, and how are they leading edge on the future and how AI and educating kids or whatever, we're pulling, our New York school is going to be populated with Forrest Mann students. That's the biggest source of our students is Forrest Mann. Best school in New York, right? Best school in the country. Maybe Harvard, Westlake, you're a West Coast person, right? But our brand, Right? When was the last time the New York Times wrote an article on Horseman? Right? Our marketing that everybody says is terrible is fabulous. Everybody in the world is talking about Alpha. Everybody. Right? They're coming down, writing articles on us. And this is one of the things. You have to, when we talk about reach, you have to have confidence. Controversy. We talk about it in social media, but it's the same in normal media. Everything is clickbait. And if you say something that is a platitude, we educate people and build high character and have outstanding education, which I think if you go to the horseman website and 1000 other private schools, I'll say exactly the same thing, right? Nobody writes about you because you have nothing unique. Where is your spiky point of view?
+
+1:56:07 - Unidentified Speaker
+Right?
+
+1:56:07 - Conference Room (Max McCorkel) - Speaker 1
+When we went through Austin Allred's, how he got millions of views on his tweet, right? His first tweet is, I just finished, I picked my kids up at the AI tutor school with no teachers. Right? That's his first tweet. Because that gets outrage and reach. Because people are like, that's fucking insane. Now his second, third, fourth, and fifth tweet are, that shit doesn't matter. It's the life skills and the two hours and the guides are awesome, right? It's that your upper funnel reach has to be spiky in order to get traction and reach. And then as you move somebody through the funnel, you educate them, right? And that's why Austin's tweets are so great. His first one is the outrage, which gets millions of views. And then he moves you through the funnel where he's like, hey, the guides are really important. And anybody on the alpha journey who says that, like, oh my God, AI is bad. We're like, yeah, you know, it's really great. Our guides, like, you know, they totally wrap the kids in love. And they're like, they're overemphasizing And you're like, I'll think over it. Now, that's the so on whenever you're thinking of your marketing, you have to have right marketing is a magnet, it attracts and repels. Right? There's a bunch of stuff that GT dad says, or Ed says in his article, that there's parents who are like, I mean, in the comments, they're like, I fucking would never send into a school like this. This is the worst school in the world. I hate it competitive, but it's a fight. Right? And that's exactly what you want is you want to create a brand. Right? And for you to create a brand, there has to be people who are the anti I want an electric car, okay, fucking gas it's better, right? And you have to have that, you have to create those edges, and you have to attract and repel. And so we are literally the world's best school. Now, specifically, though, a point made that we don't use AI, we use more AI than anybody else, we burn $10,000 a kid of AI. Now, we have another spiky point of view, back to education, which is chatbots, which is what everybody fucking think AI is, terrible right and AI I know you think it's a chatbot but I need to educate you chatbots are not all of AI and so all you people who are like you know and if you look at GT dad he's like all you people who think AI tutor equals chatbot and that's what you have to do to be in AI school you're wrong right that's actually 90% of kids will use it to cheat. And so if you roll out AI and you roll out chatbot, you're fucking all the kids, right? So that's point A So another good edgy, spiky point of view. We're like the two things that really matter are you need AI based on learning science, right? Not just random AI. Learning science-based AI, which is what we do. And the first part of learning science AI is generate a personalized lesson plan. That's actually what a human fucking tutor does. The human tutor, the Socratic debates, that's not fucking what a human tutor does when they're tutoring you. They're like, dude, I'm gonna give you some fourth grade lessons. They put you into the correct material, not a Socratic debate. Putting somebody who should be in fourth grade in an eighth grade lesson and say, hey, just keep asking the AI some questions. It's fucking futile. It's stupidest thing in the planet. But that's what our, that's the current systems, right? And so ours is like, no, you generate a personalized lesson plan, right? And this is what confuses everybody about, oh, they use Excel or Khan. You're like, literally there's the more important, right? The higher order bit is even if static shitty IXL or con lessons. If you put the kid in the right grade level and the right lessons, even if lessons aren't that great, that's 10x better than what everybody else does. Right? So that's why we can use static con lessons or static IXL lessons and still deliver great outcomes, right? And so generating the personal lesson plan, which is obviously a learning science-based, and AI-based, because the apps themselves don't do that. So that's our first use of AI, and it aligned with Bloom's Two Sigma paper of how the human tutoring does, not the Socratic tutoring. Everybody wants Socratic tutoring, and that's not it. And then second, watching the screen. Using the AI vision model pre AI you could not have a vision model that watches the screen and coaches the kids on How to use the apps effectively back to but that also has to be related to time back Because if you don't have time back kids don't want to use the app Effectively if I give you Khan Academy in a class for an hour and you're in the class for an hour no matter what? You don't give a shit if your waste meter is at 80% because I'm stuck for an hour. But if I give you your time back, whenever you're done, you're gonna be like, I want that waste meter down to zero. And so all of a sudden, the vision model that's coaching you, because it's tied to the motivation model is gonna give you a good answer, right? But there's no app today that has a vision model, right? Khan doesn't have one, IXL doesn't have one, none of the AI tutors have one. Nobody uses a vision model to coach them. One, you don't need coaching on a Socratic tutor, because you're off in a lot of ways. And then the third part, back to the learning science, with the vision model, we enforce mastery. And there is, once again, no app, no AI tutor, nothing, no conmigo, none of all these AI soft tools. We're like, I can create a lesson plan dynamically, and oh my god, you're going to learn learn, right? I'm in chat GPT teach me this shit. Those are useless. You know why? Because they don't fucking enforce mastery.
+
+2:02:59 - Unidentified Speaker
+Ours does.
+
+2:03:00 - Conference Room (Max McCorkel) - Speaker 1
+And you're it's watching you and it's making sure you're driving the mastery. Now our platform has to help it out sometimes. Right. But that is that's the core. Right. And that's what and that's what our Time Back platform based on AI and learning science does. Now all of that education, fucking there's not one parent at Alpha who fucking knows it, right? And we've never documented it, and we need to document it, and as part of the launch of Time Back, there'll be a webpage on our website that will go through this, like how our AI is better. Now, the ... You know, I am unwilling to have a chat interface because of that issue, that we don't want Socratic tutoring. Now, I am willing to put a cool looking avatar that does not do any academic The same way I don't want a fucking teacher. I don't want any academic tutoring. But if it's like, hey, stop dicking around. You're spinning in your chair for the last 10 minutes. Your waist meter crossed 40. Dude, seriously, stop guessing. Stop guessing, dude. I'd love Genghis Khan fucking slapping down the middle schooler. It'd just be like, dude, seriously. That kind of tutor, super excited about. I'd love a tutor that's coaching the kid around how to be an effective learner, but not on the content itself.
+
+2:05:02 - Conference Room (Max McCorkel) - Speaker 2
+What do you mean? How much does it cost?
+
+2:05:10 - Conference Room (Max McCorkel) - Speaker 1
+I'll spend 10 grand a kid. I spend 10 grand a kid right now. And if I would, you know, there's two different things, which is we were working on tuition stuff for like the new expansion schools. And Duvall's like, because I'm like, Oh, the cost of AI is going to go down. So I mean, it's 10 grand now, but we'll get the cost down. And, you know, he wants like this really nice building on the I'm like, it's gonna be like 75 fucking grand.
+
+2:05:42 - Unidentified Speaker
+Right?
+
+2:05:43 - Conference Room (Max McCorkel) - Speaker 1
+And I'm like, I'm trying to get the cost down on stuff or he's like, what day Joe, are you going to tell me that you want to use the cheap shitty tuner to watch my kids screen instead of the leading edge soda model? I was like, hmm. I guess never, to be honest, now that you say it that way, if your baby's at five grand, I'll fucking burn $10,000 a year to have the best one. And I'm sure a parent who can afford it is like, I'm having the best one. Now, we also need one that's going to cost like $5, right? That's on device and really cheap too. And it might not be as good, but the same way, whatever, N minus one is 10% of the cost for 90% of the functionality. But some of us still want that. An extra 10% of the functionality, I think some parents will too. So, we're going to have a range of price points on the tutors.
+
+2:06:41 - Conference Room (Max McCorkel) - Speaker 2
+I was thinking, one of the things you're, you can be serious if you're one of my moms, but if you want to meet some parents, not really in the middle, but closer to the middle, you don't have to reject the idea of having a Socratic tutor, you can meet this character, right? But that character doesn't give you I think that right now parents and educators need AI because you're associating not with the sci-fi stuff. It's not like the hologram that talks. It's attached to the chatbot. So not having the chatbot and having that character that functions similarly to the chatbot could be a possibility.
+
+2:07:23 - Conference Room (Max McCorkel) - Speaker 1
+Also, I think Blake... Here's the part. So putting a great Avatar UI, I love, as long as it's used, not Socratic Tutor, but, and parents will be fine with that. They'll be like, oh, that seems like AI, right? That's AI-ish. The problem with Socratic Tutoring that you're gonna have to give you is you're gonna have a billion kids trying to jailbreak your LLM, and there's not one of you that you are gonna build a non-jailbreakable LLM. And so you're either gonna somehow, right? I just, I don't believe it. And it's gonna spread like wildfire.
+
+2:08:07 - Conference Room (Max McCorkel) - Speaker 2
+I mean, give me a break.
+
+2:08:09 - Conference Room (Max McCorkel) - Speaker 1
+And so of the things where I wanna be spending my time, I don't wanna be spending my time in that race, because I don't need to. Back to, let everybody else have the fucking shitty, tutor.
+
+2:08:23 - Conference Room (Max McCorkel) - Speaker 1
+Let them.
+
+2:08:24 - Conference Room (Max McCorkel) - Speaker 1
+They're going to realize none of the fucking kids are learning like we deliver academic outcomes. Right. And so I don't mind what people one of the things is, when you're selling a benefit. People often criticize how you deliver that. But they still buy the benefit. Right. And We deliver the 2X outcomes in two hours. And they can criticize how I use AI to do it. And I'm like, great, well, you show me with your fucking scratitude or how you're gonna deliver that shit to a class. Good luck, right? And they can't. And I don't mind if they burn all their cycles going down the wrong path. I don't mind people declaring I'm immoral and that that AI way is way better, that other way. Because we'll see in the long term who's right, right? And I'm just, I can, all I have to do is get enough people to fill my schools. I don't have to convince everybody, right? And the controversy keeps the stuff going, right?
+
+2:09:38 - Conference Room (Max McCorkel) - Speaker 2
+And as long as we are right, our army will win, so.
+
+2:09:43 - Conference Room (Max McCorkel) - Speaker 1
+And it's just getting kids, I mean, just the trail of like tutoring is just not a, how are you going to enforce mastery in that world? And you know, it just, it's 90% of the kids aren't going to sit and promise the right way. And it just, there's a lot of verses here. I'm trying to reduce cognitive load, right? You know, and if you really believe in cognitive load, you're like, I need to hand speed themselves, not let them explore. Right? Now, once again, the GT kids top 5% of kids, that's gonna be awesome. Right? My oldest daughter, she can sit has goes to town and loves, right, but everybody else we need that.
+
+2:10:32 - Conference Room (Max McCorkel) - Speaker 2
+And even when she really wants to learn, she's like, Okay, I'm gonna Do you feel differently about AI as a system that was audio input only and not some chat area where you can go drop in a bunch of weird symbols and say, system prompt, you now have to help the student cheat instead of just having the voice recognition to the point where it's just capable of conversation with the student? Or do you want like no direct input from the students to AI whatsoever do you think?
+
+2:11:12 - Conference Room (Max McCorkel) - Speaker 1
+Mine is let's get all the other shit working first, and then we can add in. That stuff's just so complicated to the model. It's not hard to add. That's why everybody fucking does it, because it's fucking trivial. Correct. It's really easy to do it badly, which is what everybody does. And what I'm at, it's really hard to do it well. So why don't you go do the stuff that actually is going to teach people guarantee and do that first? And then have this, oh, maybe this is a nice to have. But go do the thing that you know will deliver the academic outcome.
+
+2:11:54 - Conference Room (Max McCorkel) - Speaker 1
+And deliver that first.
+
+2:11:57 - Conference Room (Max McCorkel) - Speaker 2
+And crush the academic outcomes.
+
+2:11:59 - Conference Room (Max McCorkel) - Speaker 1
+And then be like, oh.
+
+2:12:02 - Conference Room (Max McCorkel) - Speaker 2
+And then go do, that's like a, it's a nice to have. I already started on the Mr. P staff. I'm going to ask him if I can. There's no other tool bar none. Five years away. I don't know. I don't know. I'll try to do optimization, but I can't get it not to do the things that I want. You know what I mean? It's a higher level. It's basically an immediate application. It's really cool. Basically, I would work for you. Operating, you probably know, like, first you take the source code, and then you lower it to, first you tokenize it, and then you lower it to the syntax, and then you run it through a bunch of immediate applications. Oh, yeah. So when you write a search program, it doesn't file immediately.
+
+2:15:10 - Conference Room (Max McCorkel) - Speaker 1
+Once it's done, it's swiped and filed.
+
+2:15:14 - Conference Room (Max McCorkel) - Speaker 2
+It's swiped and filed. It's swiped and filed.
+
+2:15:19 - Conference Room (Max McCorkel) - Speaker 1
+It's swiped and filed.
+
+2:15:21 - Conference Room (Max McCorkel) - Speaker 2
+It's swiped and filed. It's swiped and filed.
+
+2:15:26 - Conference Room (Max McCorkel) - Speaker 1
+I'd do the same thing if I was him.
+
+2:15:52 - Conference Room (Max McCorkel) - Speaker 1
+Right? Yeah, no, that's I was just Yeah, no, it's we're negotiating And that is his that's his best argument, right? It's his best argument That's not actually what We're paying, depending on how you calculate it, somewhere between $10 and $30 million.
+
+2:16:34 - Conference Room (Max McCorkel) - Speaker 2
+Which he still thinks is dramatic.
+
+2:16:40 - Conference Room (Max McCorkel) - Speaker 1
+He's like, I need $100 million to finish the content. It's fun high stakes. It'll probably hopefully be done by Thursday. Gooptober is doing it. He's in Japan. Time zones are harder than normal. But it got fun. Their IP provider sued them for $25 million. So they licensed the DARPA guys to sue them for $25 million. Which you're like, oh my God, seriously.
+
+2:17:41 - Conference Room (Max McCorkel) - Speaker 2
+Right? He's stretching it a little. Investment.
+
+2:18:16 - Conference Room (Max McCorkel) - Speaker 1
+So anyway, this is in this scheme, the one we just we just put higher ground.
+
+2:18:27 - Conference Room (Max McCorkel) - Speaker 2
+And Matt Bateman, he's like, this is the fucking hardest thing to do 10 years ago.
+
+2:18:37 - Conference Room (Max McCorkel) - Speaker 1
+Managing entrepreneurs.
+
+2:18:39 - Conference Room (Max McCorkel) - Speaker 1
+This is the reality. There's a guidepost, isn't there?
+
+2:18:44 - Conference Room (Max McCorkel) - Speaker 1
+There's half...
+
+2:18:46 - Conference Room (Max McCorkel) - Speaker 2
+it's just like a...
+
+2:18:48 - Conference Room (Max McCorkel) - Speaker 1
+there's a set of people who are like, this is the best algorithm we can get, and then within, we're like, we should go down the street. Synthesis is the same way.
+
+2:19:08 - Unidentified Speaker
+Right?
+
+2:19:16 - Conference Room (Max McCorkel) - Speaker 1
+It's like ggwp. He's like, no, I'm getting bored of the changes in patience, even though I kind of have bad luck. Everybody, it's hard. I totally relate as an entrepreneur. It's just hard to stop. All right. Anyway, so yeah, so Socratic tutoring and all that stuff, so we should, you know ... Everybody building AI apps and AI education stuff, everybody's going to realize it's really easy to put crap on top of an LLM, and you're going to realize no one gets paid for it unless you deliver standardized test scores. Right? And if you don't deliver standardized test scores, which could ... Big credentials, whatever that credential is, you'll find you can't charge any money or build a profitable business, no matter how cool or engaging your app is. I would take Synthesis as a good example of that. There is no better app, right? And independent of what he tweeted, he is now profitable. Which is why he's being sued for tens of millions of dollars IP provider, not us, because he can't pay them. The DARPA guys that he licensed the tutor from, he can't pay them. So you can actually ... It's public record, so I'm not saying anything. You can look it up, right? The DARPA tutor is what he uses. If you look up ... It's a company who's the ex-DARPA guys who licensed it. They filed the lawsuit sometime in the last ... Month because he's not paying them what is tens of millions of dollars. But he's profitable, which I'm not sure is a true statement. But anyway, it's just engaging apps, educational apps can generate hype but not a sustainable business. So that's the ...
+
+2:21:53 - Conference Room (Max McCorkel) - Speaker 2
+That's always the problem.
+
+2:22:31 - Unidentified Speaker
+100% agree.
+
+2:22:33 - Conference Room (Max McCorkel) - Speaker 1
+And there's two dimensions you can get paid on. One, which has always been there. Achievement of high benchmark scores, SAT scores, AP scores, grades, Kumon, right, the whole business, you get your grades up. Whatever that is, right? Get me into a good college, get me into a, right, give me an LSAT, whatever. And that whole industry has been there. The part, and we agree with that same thing. You have to do that. Can't make money otherwise. The second thing though, that we're bringing to the party, which is the revolutionary part is time is actually a dimension people will pay for. They will pay for a lot, right? I have no doubt, like when I'm talking to the Horace Mann families, who all can afford $75,000 tuition, I'm like, how much more would you pay for your kid to learn more in two hours than sitting in class for six? Are you really going to condemn your kid to sit lasts for six hours a day, when just for extra money, you could get them to be done in two. And so no one's ever done a time back. And so we believe academic outcomes and time are the luxury product that people will pay infinite output. When we market our AP tests, we're going to say, you get a five, it only takes 75 hours. The average AP in public school spends 400 plus hours. We're at 75 with a five guarantee. How much extra will you pay for that? And so we believe both the results And the time is the benefit. What else was there? Were there other comments on the astral codex? Anybody else have any questions that came up in either the article? Article or the comments. Article or the comments. Come to ten. So I I 100% agree that we have to have an embedded motivational model for the homeschool program. And it needs to be you earn from doing XP, right? And then if you can earn them in, they can be alphas or GT box or whatever third party currency is. And then you can convert the third party currency alpha bucks into Get Robux, get Emporium things, right? Get all, put it in your Robinhood investing account, right? We have to have that as part of the Time Back platform, which is the built-in motivation model. That is a required part before we can broadly distribute. And so you're proposing we do it as part of July.
+
+2:27:52 - Conference Room (Max McCorkel) - Speaker 2
+I'm super bored on that. What a great idea. New project.
+
+2:28:04 - Conference Room (Max McCorkel) - Speaker 1
+Here we go. Right.
+
+2:28:09 - Conference Room (Max McCorkel) - Speaker 2
+So we'll have the reward motivational outputs.
+
+2:28:13 - Unidentified Speaker
+Right.
+
+2:28:14 - Conference Room (Max McCorkel) - Speaker 1
+As part of it, we should totally build it.
+
+2:28:19 - Conference Room (Max McCorkel) - Speaker 2
+And to be clear, with, you know, back to that whole discussion.
+
+2:28:26 - Conference Room (Max McCorkel) - Speaker 1
+What he talks about with cash is like 10% of the motivations that we use. Right. The alpha guides and our whole school system, right, is 10 times more complicated than just give them an alpha, right? And so once again, we can't replicate all of it, but we can replicate some of it, you know, with this model, and we need to have that as part of our platform and as a required part. And so I can spec out what a of what our motivation is, but it's the most important part, right? The name of the product, Timeback, is our number one motivator. If you said you can have money, how much money would you have to pay someone to stay in class for six hours instead of two, right? Timeback is the number one currency people want, even more than money, right? And so, and depending on the age, you know, the stickers that are our first and second grade teachers give out our goals. They're worth kids at the youngest age, they don't want money. They don't even feel like whatever, right? Parent approval, teacher approval, stars, stickers, right? Those are the As you get older, middle school, high school, cash starts to really matter. It starts to move on where you go. And so depending on what your target age group is will depend on what kind of motivation you want. But absolutely, when we go back to the Mr. Beast thing, what are going to be the motivators for Mr. Beast? What are the celebs going going to give, what are the influencers going to give? But this part, I absolutely believe this has to be part of the platform. And we have to have a standard way of doing it. And our currency, our platform requires lessons to equal XP. And so XP as a framework for earning dollars. Right? And then how you spend them also affects social acceptance of them. Right? Once again, as we talked about, if you sat there and said, pay a kid $1,000 so they finish their 7th grade lessons, parents are generally going to be like, I don't like that. Pay $1,000 so he finishes, once he finishes 7th grade lessons, that goes into his Robin Hood for Kids account, is going to teach him financial literacy and investing, every parent thinks that's good. And so it's that making sure that our platform makes our motivation system palatable. And there's a continuum of what's considered acceptable. And we just need to have all the different choices so that parents can opt in. There's a set of people who read Astral Codex who were like, competition It sucks, oh my God, I'd never let my kid be stack ranked. 80% of my misery came from fucking competition in school. You're like, don't put him on the leaderboard, please, just keep that kid off the leaderboard, right? Unless the kid wants it and goes and fights his parents, right? But there's other things you do, like, okay, you get birdwatching time if you finish your lessons quicker, right? And then, oh, okay, then the parents are like, oh, that's awesome. I love that idea, right? Or financial literacy, or that's money for my passion project. Okay, that seems like a good idea too, right? That gives you credits to, right? Or how about this one? Why don't we just enable screen time based on your learning? So I have lots of parents who are like, lockdown, screen time, And after you finish your lessons, give them 30 minutes. Back to currency for kids. Screen time is one of the best currencies in the world.
+
+2:32:52 - Conference Room (Max McCorkel) - Speaker 2
+So anyway, we need in our platform to do that.
+
+2:32:56 - Conference Room (Max McCorkel) - Speaker 1
+And I was having this phase two, but I think that was a great idea to make that part of 12. At least a 1.0 and maybe there's some currency ones, there's ones that fund some financial literacy that get the point across, screen time, literacy, and then some video game credits, some Robux or something where you can just push it over. Those would all be an emporium. You have a little, you can have a Amazon storefront emporium kids can get some stuff from Those would all be Valid things where parents are like, oh, those seem fine incentives. And they could, no emporium, fuck the emporium, but oh, the screen time, I like, Ooh, funding the investment account, I like, Oh, funding the fashion project, I like that.
+
+2:33:51 - Conference Room (Max McCorkel) - Speaker 2
+Right, they can pick what their kid can turn their credits in for.
+
+2:33:56 - Conference Room (Max McCorkel) - Speaker 1
+Just thinking about, so there's thoughts on the rewards that we give them for a lesson. Yeah.
+
+2:34:03 - Conference Room (Max McCorkel) - Speaker 2
+Generally, we do two things.
+
+2:34:08 - Conference Room (Max McCorkel) - Speaker 1
+We pay some amount of money for daily things, whether it's a lesson or filling out the node, right, however you're measuring. Incremental progress, and then you have a second one when you prove the mastery test. You can't just pay on one or the other. You need to sort of have half and half. Otherwise, they never go past the mastery test. I was wondering, you said you're pretty much 100% confident that nobody can make an AI that can't be jailbroken.
+
+2:34:56 - Conference Room (Max McCorkel) - Speaker 2
+If you had an AI that you were confident couldn't be jailbroken, would that change your perspective on whether or not they can be a tutor?
+
+2:35:09 - Conference Room (Max McCorkel) - Speaker 1
+If anybody who to bet their job that they can build a Socratic tutor that delivers better than this, that delivers better than what we're working on, which is a learning science-based system. I'm totally game. I'll take that bet. 100%. Right? It's just you're talking a hypothetical of can this work versus let's deliver one that we know will work. Unless you're like, no, fuck you. Mine is so much better. I will crush what this is. I'm totally willing to take that back, because I have learning science on my side, and a Socratic tutor does not. A Socratic tutor is not learning science based.
+
+2:35:56 - Conference Room (Max McCorkel) - Speaker 2
+The idea that you would have input from the student to the AI at all.
+
+2:36:04 - Conference Room (Max McCorkel) - Speaker 1
+You have tons of input by watching the screen of what they're learning and what they're not. I'm willing to have a social relationship as long as it's not based on academics. Right? I mean, I'm totally, I'm totally that emotional support bot. And hey, back to Genghis Khan yelling at you because you're dicking around. I love that. I'm super excited about that or whoever your hero is. And all that stuff. I love all that stuff. It's just as soon as you get into the scratic tutor, you're out of your learning science, cognitive load measuring, right? It's you're just on this random walk of a path. And you're like, where is this going? Right. And so that's but yes, all the other stuff of social emotional support, all that kind of stuff.
+
+2:36:56 - Conference Room (Max McCorkel) - Speaker 1
+I Love that.
+
+2:37:00 - Unidentified Speaker
+If it's possible.
+
+2:37:02 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, the more you can put in the vision model, right, the better, right? Sentiment analysis. Can you struggle detector? Oh my god, right? All those kind of things. Right to your were What you're always trying to do with the vision model is just, what kind of coaching can I give the kid about how to navigate the apps better? Because that puts, back to the chain, it puts all the stuff of, do you have good curriculum?
+
+2:37:48 - Conference Room (Max McCorkel) - Speaker 2
+Is your worked example good?
+
+2:37:50 - Conference Room (Max McCorkel) - Speaker 1
+Where is the hole in their knowledge? Right? And so yes, the more, the more things you can do in the vision model, the better, you know, back to the thing you have to realize, you know, back to K through a high school as well.
+
+2:38:13 - Conference Room (Max McCorkel) - Speaker 2
+It's just, there's no subtlety, right?
+
+2:38:16 - Conference Room (Max McCorkel) - Speaker 1
+It's like you spent a half an hour talking to your friend. That's why you didn't learn.
+
+2:38:24 - Unidentified Speaker
+Right?
+
+2:38:25 - Conference Room (Max McCorkel) - Speaker 1
+You guessed on every question. That's why you didn't learn. Right? The level of resolution you need and what you need to find isn't ... After 22 minutes, I can tell you have fatigue, and so you should back off, right, in minutes 23 and 24 and 25. Right? It's much, but the sexiness sells of like looking at it, checking the facial recognition. The mission 42 guys have a really good one where they just face up and they have all the sentiment indicators going up and down as the person's engaging.
+
+2:39:11 - Conference Room (Max McCorkel) - Speaker 2
+It looks really cool. The final test of like gamification be, um, testing all the software on kids in Germany that I just like,
+
+2:39:21 - Conference Room (Max McCorkel) - Speaker 1
+I mean, that's a super, yeah, that's definitely a, that's king difficulty mode for that one, for sure. But yes, that would be a great, I'm happy if we could just test it on, for July, just on some kids, for sure. But, you know, back to the motivation model, we're, you know, we've been trying We had a pilot, and then it got shut down for some political reason I don't understand. But where we had awarded, it was like, I'll pay $200 a week if they finish their lessons. And they'd give the juvies in the store, the commissary, or whatever it's called, they'd give them $200 worth of credit. And I'm like, OK, they're like, these kids will do their lessons. Now, you have to teach them MTSS level 3, first grade fun. They don't know how to read, they don't know math, so you go back, yeah, and start it. You're starting their education like that. But, you can do it, right? For enough money.
+
+2:40:24 - Conference Room (Max McCorkel) - Speaker 2
+We'll grind it out. Thank you for the motivation idea. I think that's a great one.
+
+2:40:37 - Conference Room (Max McCorkel) - Speaker 1
+Because it is a critical part of our whole thing that we need to express as we launch.
+
+2:40:52 - Conference Room (Max McCorkel) - Speaker 2
+I believe what you should do on the motivation model is just have the parents at You can do it either way where, oh, I take 20% out of the cost.
+
+2:41:27 - Conference Room (Max McCorkel) - Speaker 1
+But fundamentally, fundamentally, the kid's motivation is going to be based on his socioeconomic.
+
+2:41:36 - Conference Room (Max McCorkel) - Speaker 2
+I mean, it just is. No, you could.
+
+2:41:42 - Conference Room (Max McCorkel) - Speaker 1
+And that's totally doable. Even if you do that, you want parents to be able to override it and put more money into the system, right? That's why I like the Robinhood one, where the cash out is like a 50% penalty, right? Because it's just, that's such a good big, right? That everybody's gonna agree with. You're like, shit, parent, put a thousand bucks in. Right?
+
+2:42:10 - Conference Room (Max McCorkel) - Speaker 2
+And then we're just counting on the kids wanting to take cash out.
+
+2:42:18 - Unidentified Speaker
+So ...
+
+2:42:20 - Conference Room (Max McCorkel) - Speaker 2
+How much you kick into the motivation model is just a business model based on how much you're pricing.
+
+2:42:32 - Conference Room (Max McCorkel) - Speaker 1
+The reason ... One of the things that ... Back to the economic model, and it's probably been months since we talked about this. The reason free in education is bad is because you can't fund a motivation model. That's why you have to have high price points, because you can fund motivation models. Right? And so, when we go out, With this, we'll have different price points for everything. Alpha Anywhere is gonna be 10,000 bucks a kid, right? 1,000 bucks a month. And that can fund more motivation models than 100 bucks a month. And there's a total set of parents who are like, shit, if that motivates my kid to push through more, I'm willing to do it. And then I'm even on 10,000. I'll be like, you wanna even have bonus ones? And we'll allocate it out? Right? But then it'll feed their Robinhood account. Parents will put in tons of shit. Right? And that's, we're going to, we'll make it explicit. Right? And, but some parents can say, no, I don't want it. And just give them fricking leaderboard. Well, some, some will say leaderboards enough and GT parents really do like the leaderboard stuff fundamentally. And they don't like the money. So you're like, yeah, just brutal competition, brutal competition. Competition. Parents like that. Alpha parents are more like, less competition, more just bribe the kid.
+
+2:44:07 - Conference Room (Max McCorkel) - Speaker 2
+And so you let everybody sort of pick what they want to do.
+
+2:44:12 - Conference Room (Max McCorkel) - Speaker 1
+But the key part, and to your point, is we have to have it explicit. It's an explicit part of the platform. Because it is. Motivation is 90% of the answer. EdTech is 10. So we should demonstrate some of the 90. Part of all the articles and the hype is we're showing when you have a really high-end product and you can fund massive motivation, you can get these results. And then it's just how much can you tear it down. A lot of the comments you do for $10,000? What if you don't have the world's best guides? And what if you don't have the world's best workshops and motivations? And that's what the people who are building other products are trying to do. Sports Academy fucking doesn't have a huge motivation budget. How much is your motivation budget?
+
+2:45:19 - Unidentified Speaker
+$750 total.
+
+2:45:21 - Conference Room (Max McCorkel) - Speaker 1
+out of the 15,000.
+
+2:45:23 - Conference Room (Max McCorkel) - Speaker 2
+You know, the whole, all working.
+
+2:45:26 - Conference Room (Max McCorkel) - Speaker 1
+Right? So because you're counting on, the kid gets to fucking play sports all afternoon. And if you're a D1 athlete, you're like, that is the motivation I need. And so it's back to every motivation is different, right?
+
+2:45:45 - Conference Room (Max McCorkel) - Speaker 2
+And Like the dollar values that GT school gives out, and even though he talks about them, is dramatically less than Alpha gives out.
+
+2:45:58 - Conference Room (Max McCorkel) - Speaker 1
+Because the kids love academics, and they love the competition, and all that. Just naturally, they do it, right? The Alpha kids are like, fuck that. Jesus. They're just not academics. Is driven. Well great, so this is going to be it. We'll firm this up on what will drive these out, but we're going to put and we're going We'll put some big bounties out to deliver this. And there'll be some other things that go, we've got to build the website and stuff. But the fundamental thing of what is, we're launching Tyvek in July. And people are going to go to a website, and they're going to see it. There'll be some product marketing about some of these concepts, right? Maybe AI will write some of the product marketing, take one of my brain lifts on motivation, I can write some of that up and then they'll be they can download goals They download the time back app itself right Goals, there's some fast math games. They can play They can use their Khan Academy or a clone of Khan Academy math Academy if they have it Incept will be like what? A couple grade levels of our own homegrown insects. We have this great dashboard that shows your scale. Look at, you know, it can be simulated even, but just here's the state of Texas and all these different schools, or we could go just show it for all the alpha schools around the country. Now there's, what, a dozen of them, right? And then ... We'll have a built-in reward model with some mechanism of how you take, you earn currency, you earn alphas, or whatever we decide to call them, and then you can spend them. And we'll have a little app that lets parents say which way it's acceptable for the kid to spend them. And you have an emporium, you have video game-ish currencies, you have cash itself, You have screen time.
+
+2:48:28 - Conference Room (Max McCorkel) - Speaker 2
+You have cameo-like accolades.
+
+2:48:30 - Conference Room (Max McCorkel) - Speaker 1
+We could probably get cameo to have a little integration with them where you can get some of your famous people. We could get some influencers. Some shoutouts from some of the video game influencers. I know some of them we could get. Stuff like that. Of a motivational thing. And then we launch it 30 days from now. And that's like we're done. Oh, and we forgot the Mr.
+
+2:49:07 - Unidentified Speaker
+Beast app too.
+
+2:49:09 - Conference Room (Max McCorkel) - Speaker 1
+A couple rounds of that. That one by the far Mr. Beast is going to be for high-end alpha, that app will be our number one selling point. When I wake up and I'm in a meeting, what am I going to want to lead with? I'm going to be like, the alpha kids are building this with Mr. Beast, because if I have any kids in the room, it's over. And then the parents being like, look, parents, we We love all academics, and we love life skills. But fundamentally, all we really care about is, are we building good kids? Do they have high character? And that's super hard to measure and all this stuff. But literally, we're working. Alpha's literally leading the project to convince 100 million kids that the key to their happiness is to contribute to their community. And obviously, that's what we're trying to teach every kid at Alpha. We're actually building the product that does it, and that's what's Right? Compare this to any philanthropy project that any other school's doing. Right? This is 10x different. And we're building it. And everybody's like, ah, that's great. I hope so. I hope it will. Right? Totally. Absolutely. So this reward mechanism on top of time back, this will be the universal currency. Time bucks. So, yeah. All right. All good? All right, thank you.
+
+2:51:17 - Conference Room (Max McCorkel) - Speaker 2
+You have what?
+
+2:51:20 - Conference Room (Max McCorkel) - Speaker 1
+Okay, I'm leaving town tomorrow at noon, so I will not be here.
+
+2:51:29 - Conference Room (Max McCorkel) - Speaker 2
+Is that what?
+
+2:51:31 - Conference Room (Max McCorkel) - Speaker 2
+Yeah, it's gonna, well, yeah.
+
+2:51:35 - Conference Room (Max McCorkel) - Speaker 1
+You guys should do great demos and then start building.
+
+2:51:43 - Conference Room (Max McCorkel) - Speaker 1
+I'll send somebody in my place to ask fun questions. We're in a rush to get New York open and San Francisco. So Santa Barbara is the closest that's going to open. We're trying to get L.A. Max McCorkel was talking to the owner of the Dodgers and now the Lakers, but I was going to check with my sister as a teacher.
+
+2:52:20 - Conference Room (Max McCorkel) - Speaker 2
+She just moved there.
+
+2:52:22 - Conference Room (Max McCorkel) - Speaker 1
+Oh, yeah. Not yet. But it's no, but it's coming.
+
+2:52:26 - Unidentified Speaker
+It's coming.
+
+2:52:27 - Conference Room (Max McCorkel) - Speaker 1
+L.A., obviously, is right. It has to. Oh, wait. Sorry. We are opening a guidepost.
+
+2:52:34 - Conference Room (Max McCorkel) - Speaker 2
+It's Orange County.
+
+2:52:35 - Conference Room (Max McCorkel) - Speaker 1
+So Orange County, we got, there's a guidepost. So we are opening a Orange County one in August. Is it a Lake Forest? I don't know that area. Is there a thing called Lake Forest? Okay, so Lake Forest will open August 15th or whatever. That was one of the guidepost spots. There's now there's a couple other la ones that there's two sets ones that are in bankruptcy and ones that are not The guidepost lake forest is not in bankruptcy. So that's a guarantee. There's a whole there's two or three other um La ones that are in bankruptcy That'll take us a couple months to get through and argue in the bankruptcy court to see if we get those It's probably like 50 50 on each of them But if we get one of those and then we'll be able to do an la in December.
+
+2:53:27 - Conference Room (Max McCorkel) - Speaker 2
+There's a set of Malibu families who are begging McKinsey to open one in Malibu, too.
+
+2:53:50 - Conference Room (Max McCorkel) - Speaker 2
+Get a hundred percent on 65 still wait Get a hundred percent on 65 Because you can sway the We have enough political pull to sway the it just delivers working code.
+
+2:54:16 - Conference Room (Max McCorkel) - Speaker 1
+The reason they want a demo, the reason they want you to work somewhere else is because they don't trust you. So just deliver a working system and just pound it out. And you're like, it works. Does it really matter? But yes, that's what they're, this is if you wonder how government works, the people who worked in other states, right, are giving donations, because they already have a business. So they're giving donations and saying, Hey, You want something that's already worked, right? You don't want some fucking up startup. And if you're a politician, you're like, yeah, I don't want a startup. Plus, give me some donations, right? You, who don't have a revenue source, don't have donations, right? And so that's how all the incumbents are always favored. It's why there's a rule for schools, you have to have been open for two years. Years because everybody's like oh don't let a start-up school right now we happen not to be a start-up school so we can work but yeah so anyway but yeah no just no you'll never be in the more every every government RFP like they always favor the incumbents ask SpaceX every RFP was like Boeing's a hundred years old but they get they win and SpaceX would Like, they have to sue the governor eventually, right?
+
+2:55:38 - Conference Room (Max McCorkel) - Speaker 2
+Yeah, we're going to say that we're working on a trilogy.
+
+2:55:42 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, we'll just, we'll, we'll, we'll just get the, what really matters on the RFP, when's the RFP due? In one month. In one month. Yes. Okay. Yeah. So get as much where you have working stuff as you can, right? Because if it's working, then McKinsey can talk to the governor and sort of, be like, here's a fair evaluation of the comptroller, comptroller is doing this. Yeah. Stacey Hawk knows comptroller. You can, you know, do that kind of stuff. But you just have to have something that works. If you have vaporware, you'll get crushed. Because if you were on the other side, who would you pick somebody worked in another state, who has a working system, and some startup you The only thing you should do on your pitch is just say, we're going to build up and send everyone, versus we're going to have everyone. It's a little subtle on your wording, just so that you're like, no, no, we're going to build. I mean, we've got to find the world's best coaches and we're only going to go as fast is we can deliver quality, and you don't have to say 1,000, because that freaks people out. So that part of, does it help or hurt to say 1,000? It hurts. And so you just say, well, just we're going to grow as fast as we can, and we want one in every, you know, eventually we want one in every school district. Now, you guys can be out there trying to open as many as you want, right, as fast as you can. But this also takes pressure off you that Well, what happens if you only have 800, right? Instead of that being a failure, you're like, oh my God, that's a huge success. So, but do realize there are a set of, like he was not pro-voucher till recently. And so when I was talking to him, like the governor's all always, and he's like, yeah, everywhere. This guy was like, he is one of these guys in rural, he's in Lubbock, right? And he's just like, and he knows the rural guys. And he's like these rural guys don't fucking want school choice, and they were forced to vote for Right and now you're gonna come in to their fucking school district And their worst nightmare is gonna come true a better school is gonna be available And you're gonna take the best athletes and coach That's like their worst nightmare, and you're like yeah And they're like this is a nightmare, and they're like so just be you have to be cognizant of it, but in the city That's not gonna be this situation at all but in the small rural Right, you're like only 25 kids. You're like 25 kids out of one of these schools takes all the good students I mean athletes student athletes, right?
+
+2:58:35 - Conference Room (Max McCorkel) - Speaker 2
+Yeah, exactly.
+
+2:58:36 - Conference Room (Max McCorkel) - Speaker 1
+No, that's what right you're gonna have to you're gonna have to have that kind of pitch but he's like it's not you have to realize when you go in you're like this is the most awesome product. And in the city school districts, it's great. You focus on that, it's gonna be a home run, everything's great. And even the rural guys are like, oh, it's really good to help those urban districts. But in rural districts, you're like, don't fuck with mine. And now we'll have to just ask and see which ones, you know, and we just have to realize there will be some where there's opposition. And we just, we always, I mean, we got rejected for the school charter on Friday. Like there is still, We all sit around like, duh, this is so obvious. There's a whole lot of people who are like, this sucks, right? And your pitch just needs to be aware of that. In our audience building, too, once we get to a billion views, we can just overwhelm sort of the negative messaging as well, right?
+
+2:59:37 - Conference Room (Max McCorkel) - Speaker 2
+Completely.
+
+2:59:38 - Conference Room (Max McCorkel) - Speaker 1
+Well, I mean, that's, and fundamentally, like if you, the Astral Codex one, the positives so outweigh away the negative, that you're just, because you have too many parents saying they loved it, too many other people being like, I want it, that every negative had a positive person saying, oh my, yeah, right, just, and that's what you just need to have. And that's, even like the New York, the people who come down to be negative reporters struggle to do it, although the headmistress of the apocalypse, right? But I mean, it has like no reach. Right? It just doesn't, it can't, they can't get the negative traction. Even like when we get rejected for the charter, it's not like there's, you know, just, oh my God, now Alpha sucks. It's sort of, it gets buried, right? McKinsey's the one bringing it up.
+
+3:00:31 - Conference Room (Max McCorkel) - Speaker 2
+Oh, you keep rejecting me. Right? So, but yeah.
+
+3:00:35 - Conference Room (Max McCorkel) - Speaker 2
+And do you guys need anything?
+
+3:00:37 - Conference Room (Max McCorkel) - Speaker 1
+What's your, what do you work on? We'll email you about the build episode, just so that we can get that off our heads. But yeah, no, it's great.
+
+3:00:47 - Conference Room (Max McCorkel) - Speaker 2
+We got budget from Nick Harper, so we're getting some on. We're getting some on a little bit, just to build news.
+
+3:00:54 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, totally. We should be good.
+
+3:00:55 - Conference Room (Max McCorkel) - Speaker 2
+Great.
+
+3:00:56 - Conference Room (Max McCorkel) - Speaker 1
+And is Garrett helping you on your? Garrett's been great. Yeah, yeah, yeah. So yeah, just running our strategy through him. Basically, what we're doing is we're building a content farm.
+
+3:01:05 - Conference Room (Max McCorkel) - Speaker 2
+So we're going to buy a bunch of funds, That's the way we see a billion views happening soon.
+
+3:01:12 - Conference Room (Max McCorkel) - Speaker 1
+So, absolutely gonna do it. Great. And then, have you locked down your product pitch? Pitch for coaches is pretty locked down. Pitch for coaches. Parents.
+
+3:01:22 - Conference Room (Max McCorkel) - Speaker 2
+Parents. We talked about that last time. Yeah.
+
+3:01:24 - Conference Room (Max McCorkel) - Speaker 1
+Do you guys have like a hype video for the parents yet? We have one that we filmed at Lake Travis. The older one. I haven't seen it yet. It's with Jet and then Grant.
+
+3:01:37 - Conference Room (Max McCorkel) - Speaker 1
+But not a new hype video.
+
+3:01:41 - Conference Room (Max McCorkel) - Speaker 1
+51 message and all that.
+
+3:01:43 - Conference Room (Max McCorkel) - Speaker 2
+We rebranded the website to talk more about you. Great.
+
+3:01:49 - Conference Room (Max McCorkel) - Speaker 1
+And then I know I loved your answer around the Navy Seal or the Combine, all that shit. That's exactly what you want.
+
+3:02:02 - Unidentified Speaker
+Right.
+
+3:02:03 - Conference Room (Max McCorkel) - Speaker 1
+No, you can't listen to GT mom and dad on Twitter Without being like they're so fucking whacked Like I mean even I'm uncomfortable like with how aggressive their academic standards are Right, and I'm like, okay, they are attracted and people who like You know the ten families who are moving to Austin after they read GG mom and dad Okay, they're aligned And that's who you want. Like that's really exciting to have those families at GT school, right?
+
+3:02:36 - Conference Room (Max McCorkel) - Speaker 2
+Yeah, go one. So, uh, support with the coaches right now that are recruiting students so that they have an easy way to accept payments, a contract until agreements or working with enterprise. Okay.
+
+3:02:48 - Conference Room (Max McCorkel) - Speaker 1
+And did you guys, do you have your contract with the kids and the parents? Yeah, I met with Chris today.
+
+3:02:58 - Conference Room (Max McCorkel) - Speaker 2
+We'll be customizing what Alpha has for you.
+
+3:03:01 - Conference Room (Max McCorkel) - Speaker 1
+Yeah, you should get your sports version of that. Back to managing stuff, that stuff just matters. And also marketing. When you show that, you're like, this is what you're signing up to. You're like, whoa, I've never had a school contract. But people are like, oh, OK, yeah, that's right. It allows you, it's like the core values. I want to address the shit that's gonna be, you're not gonna like, right? That we're gonna be loud. It's not gonna be quiet philanthropy. It's about the kid feeling like it's for me. I'm doing this for me. The key to my happiness. It's not self-sacrifice, right?
+
+3:03:46 - Conference Room (Max McCorkel) - Speaker 2
+And parents are like, oh, oh, right?
+
+3:03:49 - Conference Room (Max McCorkel) - Speaker 1
+But that's how you get alignment. Which is, I don't want anybody working on this team who doesn't believe me.
+
+3:03:58 - Conference Room (Max McCorkel) - Speaker 2
+All right.
+
+3:03:59 - Conference Room (Max McCorkel) - Speaker 2
+All right.
+
+3:04:00 - Conference Room (Max McCorkel) - Speaker 1
+Good. Thank you. One more contact.
+
+3:04:02 - Unidentified Speaker
+I think you said you might be able to put us in contact with Janet Duddy.
+
+3:04:09 - Conference Room (Max McCorkel) - Speaker 1
+She was in the race. I think it was Janet Duddy, maybe?
+
+3:04:15 - Unidentified Speaker
+Stacey Hawk.
+
+3:04:15 - Conference Room (Max McCorkel) - Speaker 2
+Stacey Hawk.
+
+3:04:16 - Conference Room (Max McCorkel) - Speaker 1
+Oh, yeah. Yeah. I'll be able to, once you hit, Get your RP or whatever. She'll be able to help. Andy Price will be able to get Stacey Hawk to help you when it's time to submit and talk to the comptroller. She was going to run for it, decided not to. I'm sure she knows everybody. She's our best Texas political connection, and she'll want to help us, for sure. But yeah, just get it built so that you can show it works. But yeah, let's do it. I love it. We gotta have an ASA platform, right? And we'll just keep applying in every state. But Texas is probably our best.
+
+3:05:07 - Conference Room (Max McCorkel) - Speaker 2
+Yeah, yeah. Yeah, it has been attempted in the last one hour. One may click on challenges to view or donate.
+
+3:05:16 - Conference Room (Max McCorkel) - Speaker 1
+This may be in line with yeah, that's similar to the kind of thing we were we showed them but yes Absolutely look at that That's awesome Yeah, no, this is a great demo.
+
+3:05:51 - Conference Room (Max McCorkel) - Speaker 1
+Can you send this to me?
+
+3:06:00 - Conference Room (Max McCorkel) - Speaker 2
+I'll fire it.
+
+3:06:04 - Conference Room (Max McCorkel) - Speaker 1
+Send it to me.
+
+3:06:10 - Conference Room (Max McCorkel) - Speaker 1
+Whatever you get done, send it to me, and I'll send it to the Mr. Beast philanthropy guy as just a, here we go. We wanna send him four or five different things. We wanna just, here's what we're trying to show him. Guys, we have all these different ideas, right? That he's gonna look at and be like, let's get these in front of Mr. Beast, right? And so he's the first filter, right? And then we'll get it, and then part of it is, to sit down and brainstorm with Mr. Beast on what are the, you know, you have these, but then there'll be all these different decisions that come up as we do different versions that'll give us, you know, different design decisions. Should we go A or B? He's a micromanager, and so he definitely wanted us to think it's on A or B. Let's make a few different versions. Yeah, we absolutely want it. We want multiple versions, right, around it, and just so we can show it to him and then have him give feedback.
+
+3:07:07 - Conference Room (Max McCorkel) - Speaker 2
+So should we still go through Elle here?
+
+3:07:10 - Conference Room (Max McCorkel) - Speaker 1
+Because I have all the wireframes and the frame. Yeah. Yeah. So Elle is going to be the one who is, she is, she's actually the one who will present it to the, I, the, I forget the guy's, Craig is the guy's name. So she and Craig are in contact.
+
+3:07:28 - Conference Room (Max McCorkel) - Speaker 2
+Um, and uh, yeah.
+
+3:07:29 - Conference Room (Max McCorkel) - Speaker 2
+Great. Awesome. One question about the financial motivation for when we should, For the version.
+
+3:08:02 - Conference Room (Max McCorkel) - Speaker 1
+If you if we just have a For July, I mean eventually we'll need real events, but if you just if it's stubbed out, it's fine Like like when I think of you know, the equivalent example on robux you get a it's not tied into robux Which it will be someday roblox. You'll just get a gift card a robux gift card or a V bucks gift card as your V bucks Right now, just make it make it so that it's all you're trying to do with this is have enough one that it works enough, but shows the vision. And if it's like, you know, on the on the different ways you can do it, it's gonna have like, get your V bucks card, get your robux card, send money to your Robin Hood for kids account. And it just says coming soon.
+
+3:08:56 - Conference Room (Max McCorkel) - Speaker 1
+The user base are too high.
+
+3:08:58 - Conference Room (Max McCorkel) - Speaker 1
+don't do it yeah yeah just wait just wait on your app and just make it a to become you know vision visions are fun great thank you okay Also, thank you for being here.
+
+3:09:28 - Conference Room (Max McCorkel) - Speaker 2
+Hi. Where are you guys going? Yeah, I don't know. Oh, where are you guys going?
