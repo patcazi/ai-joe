@@ -31,6 +31,21 @@ def _load_base_system_prompt() -> str:
 
 _BASE_SYSTEM = _load_base_system_prompt()
 
+
+# Load the full BrainLift once (experimental: always inject into system)
+def _load_brainlift() -> str:
+    path = os.getenv("BRAINLIFT_PATH", "docs/brainliftV0.txt")
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return f.read().strip()
+        except Exception:
+            return ""
+    return ""
+
+
+_BRAINLIFT = _load_brainlift()
+
 # --- Post-processing helpers ---
 import re
 
@@ -75,12 +90,24 @@ def answer(message: str, history: Optional[List[Tuple[str, str]]] = None) -> str
         context_blocks.append(f"[{src}#{idx}] {doc}")
     retrieval_context = "\n\n".join(context_blocks)
 
-    system_prompt_final = (
-        (_BASE_SYSTEM.strip() if _BASE_SYSTEM else "")
-        + "\n\n---\nCONTEXT (top matches from transcripts/brainlift):\n"
+    parts: List[str] = []
+
+    # Persona (system.md)
+    if _BASE_SYSTEM:
+        parts.append(_BASE_SYSTEM.strip())
+
+    # Full BrainLift (always include for experiment)
+    if _BRAINLIFT:
+        parts.append("---\nBRAINLIFT (full):\n" + _BRAINLIFT)
+
+    # Retrieved context (keep citations)
+    parts.append(
+        "---\nCONTEXT (top matches from transcripts/brainlift):\n"
         + retrieval_context
-        + "\n---\n\nUse only what is relevant. Cite [source#chunk] when you pull facts."
+        + "\n---\nUse only what is relevant. Cite [source#chunk] when you pull facts."
     )
+
+    system_prompt_final = "\n\n".join(parts)
 
     # Call Anthropic
     msg = claude_client.messages.create(
